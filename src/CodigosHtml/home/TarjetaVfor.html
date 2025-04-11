@@ -1,0 +1,128 @@
+    
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{background-color:bisque;}
+  .img{
+    width: 600px;
+    margin: 4em;
+    border: brown double 6px;
+  }
+  </style>
+  <title>ELEMENTOS RÁPIDOS</title>
+</head>
+<body>
+  <h1>TARJETAS CON V-FOR NAVEGADOR A PÁGINAS </h1> 
+<pre>
+  &lt;template>
+  &lt;MainLayout>
+     &lt;template #main> &lt;h1>BACK&lt;/h1> &lt;/template>
+     &lt;template #image1>  &lt;a href="/graph" class="lat">GRAPH&lt;/a> &lt;/template>
+     &lt;template #image2>  &lt;a href="/graph" class="lat">SQL Server&lt;/a> &lt;/template>
+     &lt;template #image3>  &lt;a href="/graph" class="lat">MongoDB&lt;/a> &lt;/template>
+     &lt;template #image4>  &lt;a href="/graph" class="lat">Sequlize&lt;/a> &lt;/template>
+     &lt;template #image5>  &lt;a href="/graph" class="lat">PhpMyAdmin&lt;/a> &lt;/template>
+     &lt;template #image6>  &lt;a href="/graph" class="lat">SQL&lt;/a> &lt;/template>
+  &lt;/MainLayout>
+   &lt;!-- ********************************************* -->
+    &lt;v-row class="mt-12">
+     &lt;v-col class="mt-4">
+       &lt;h3 class="bg-blue pa-4  text-center">MODELOS &lt;/h3>
+     &lt;/v-col>
+      
+       &lt;/v-row>
+       &lt;!-- fin de navegador derecho -->
+    
+         &lt;!-- ****************************************************************************** -->
+         &lt;div class="mt-12" id="section1">
+         &lt;v-row class="bg-purple-lighten-4">
+      &lt;v-col
+       v-for="exercise1 in exercises1"
+      :key="exercise1.id"
+       cols="12"
+       sm="6"
+       md="4"
+       lg="3"
+       >
+      &lt;v-card
+    class="mx-auto my-8 bg-brown-lighten-4"
+    elevation="16"
+    max-width="344" >
+    &lt;v-card-item>
+    &lt;v-card-title class="text-purple">{{ exercise1.title }} &lt;/v-card-title>
+    &lt;v-card-subtitle class="">{{ exercise1.description }}&lt;/v-card-subtitle>
+    &lt;/v-card-item>
+    &lt;v-card-text>
+    &lt;p>&lt;b>Tiempo restante: {{ exercise1.remainingTime }} segundos&lt;/b>&lt;/p>
+    &lt;/v-card-text>
+    &lt;v-card-actions>
+    &lt;v-btn @click="startExercise1(exercise1)" :disabled="exercise1.intervalId" class="bg-blue text-white pa-2">
+      Iniciar
+    &lt;/v-btn>
+    &lt;v-btn @click="stopExercise1(exercise1)" :disabled="!exercise1.intervalId" class="bg-red text-white">
+      Detener
+    &lt;/v-btn>
+    &lt;v-btn :href="exercise1.link" target="_blank" class="bg-teal text-white">
+      Ver 
+    &lt;/v-btn>
+    &lt;/v-card-actions>
+    &lt;/v-card>
+    &lt;/v-col>
+    &lt;/v-row>
+    &lt;/div>
+ &lt;/template>
+ &lt;!-- /////////////////////////////////////////////////////////////////////////////////////-->
+ 
+ &lt;script setup>
+import MainLayout from '@/layouts/MainLayout.vue';
+import { ref } from 'vue';
+
+ 
+   const exercises1 = ref([
+      { id: 1, title: 'CREAR ', description: 'TIME:', time: 160, remainingTime: 160, intervalId: null, link: '' },
+      { id: 2, title: '', description: 'TIME:', time: 120, remainingTime: 120, intervalId: null, link: '' },
+    
+  
+    ]);
+       
+    const startExercise1 = (exercise1) => {
+      if (exercise1.intervalId) return;
+
+      exercise1.intervalId = setInterval(() => {
+        if (exercise1.remainingTime > 0) {
+          exercise1.remainingTime--
+        } else {
+          clearInterval(exercise1.intervalId);
+          exercise1.intervalId = null;
+        }
+      }, 1000);
+    };
+
+    const stopExercise1 = (exercise1) => {
+      clearInterval(exercise1.intervalId);
+      exercise1.intervalId = null;
+    }; 
+
+ &lt;/script>
+ &lt;!-- ******************************* -->
+ &lt;style scoped>
+ h6{
+   margin: 1em;
+ }
+ 
+ .lat{
+   margin-left: 3em;
+   margin-top: 1em;
+   color: white;
+ 
+ }
+ &lt;/style>
+   
+</pre>
+</body>
+</html>
+

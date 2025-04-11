@@ -1,0 +1,99 @@
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body{background-color:bisque;}
+        .img{
+          width: 800px;
+          margin: 4em;
+          border: brown double 6px;
+        }
+        </style>
+        <title>ELEMENTOS RÁPIDOS</title>
+      </head>
+      <body>
+        <pre>
+          <div>
+            &lt;template>
+            &lt;v-row class="bg-cyan-darken-1 pa-2 mt-12 fixed-top" >
+                &lt;v-col cols="11" class="text-center">
+                    &lt;h2 >VUETIFY view &lt;/h2>
+              &lt;/v-col>
+              &lt;v-col cols="1" >
+          
+          &lt;v-btn icon @click="toggleDrawer" >
+              &lt;v-img src="@/assets/image/CERVERA.png" alt="My Image2" style="width: 39px; border-radius: 1em;"/>&lt;/v-btn>
+              &lt;/v-col>
+            &lt;/v-row>
+            &lt;!-- ********************************************* -->
+            &lt;v-navigation-drawer v-model="drawer" class="br-teal-darken-4" theme="dark">
+                &lt;v-list>
+                  &lt;v-list-item link to="/" title="HOME" prepend-icon="mdi-grid">&lt;/v-list-item>
+                  &lt;v-list-item link to="/front" title="Containment" prepend-icon="mdi-arrange-bring-to-front">&lt;/v-list-item>
+                  &lt;v-list-item link to="/vue2" title="Navigation" prepend-icon="mdi-arrange-send-to-back">&lt;/v-list-item>
+                  &lt;v-list-item link to="/store" title="Form, inputs & controls" prepend-icon="mdi-database-cog-outline">&lt;/v-list-item>
+                  &lt;v-list-item link to="/backend" title="Layouts" prepend-icon="mdi-store">&lt;/v-list-item>
+                  &lt;v-list-item link to="/backend" title="Selection" prepend-icon="mdi-store">&lt;/v-list-item>
+                  &lt;v-list-item link to="/backend" title="Data & Display" prepend-icon="mdi-store">&lt;/v-list-item>
+                &lt;/v-list>
+              &lt;/v-navigation-drawer>
+              &lt;!-- ********************************** -->
+            &lt;v-row class="mt-12">
+              &lt;v-col class="mt-4">
+                &lt;h3 class="bg-green-darken-4 pa-4  text-center">MODELOS &lt;/h3>
+              &lt;/v-col>
+               
+                &lt;/v-row>
+                &lt;!-- fin de navegador derecho -->
+                &lt;v-row class="bg-green-lighten-4">
+                  &lt;!-- ****************************************************************************** -->
+                  &lt;v-col cols="3">
+                &lt;v-card
+              class="mx-auto my-8"
+              elevation="16"
+              target="_blank"
+              href="http://127.0.0.1:5500/src/assets/vue2/ModelVue2.html"
+              max-width="344" >
+              &lt;v-card-item>
+                &lt;v-card-title class="text-red"> CREACIÓN  &lt;/v-card-title>
+                &lt;v-card-subtitle>Secuencia de Desarrollo&lt;/v-card-subtitle>
+              &lt;/v-card-item>
+              &lt;v-card-text>
+          Model
+              &lt;/v-card-text>
+            &lt;/v-card>
+            &lt;/v-col>
+            &lt;/v-row>
+            
+          &lt;/template>
+          &lt;!-- /////////////////////////////////////////////////////////////////////////////////////-->
+          
+          &lt;script setup>
+            import { ref } from 'vue';
+          const drawer = ref(false);
+          
+          const toggleDrawer = () => {
+            drawer.value = !drawer.value;
+          }
+          &lt;/script>
+          &lt;!-- ******************************* -->
+          &lt;style scoped>
+          .fixed-top {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 101%;
+            z-index: 1000
+          }
+          
+          &lt;/style>
+            
+          </div>
+        </pre>
+      </body>
+      </html>
+    
+
+  

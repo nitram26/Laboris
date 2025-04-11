@@ -1,0 +1,290 @@
+    
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{background-color:bisque;}
+  .img{
+    width: 600px;
+    margin: 4em;
+    border: brown double 6px;
+  }
+  </style>
+  <title>ELEMENTOS RÁPIDOS</title>
+</head>
+<body>
+  <h1> MENU TARJETA DE ESTUDIO </h1> 
+  <ol>
+  <li>Tarjeta con temporizador</li>
+  <li>Menu lateral secundario</li>
+  <li>Con el uso de v-for se reduce el espacio mucho</li>
+  </ol>
+  <img src="/src/assets/image/home/secYtarjeta.PNG" alt="secYtarjeta" class="img">
+  <pre>
+    <div>
+      
+
+&lt;template>
+&lt;v-row class="bg-teal-darken-2 pa-2" >
+    &lt;v-col cols="11" class="text-center">
+        &lt;h2 >VUE3 COMPONENT  &lt;/h2>
+  &lt;/v-col>
+  &lt;v-col cols="1" >
+
+&lt;v-btn icon @click="toggleDrawer" >
+  &lt;v-img src="@/assets/image/CERVERA.png" alt="My Image2" style="width: 39px; border-radius: 1em;"/>&lt;/v-btn>
+  &lt;/v-col>
+&lt;/v-row>
+&lt;!-- ********************************************* -->
+&lt;v-navigation-drawer v-model="drawer" class="br-teal-darken-4" theme="dark">
+    &lt;v-list>
+      &lt;v-list-item link to="/" title="HOME" prepend-icon="mdi-grid">&lt;/v-list-item>
+      &lt;v-list-item >&lt;v-btn @click="scrollTo('section1')" prepend-icon="mdi-arrange-bring-to-front">INTRODUCCIÓN&lt;/v-btn>&lt;/v-list-item>
+
+      &lt;v-list-item>&lt;v-btn @click="scrollTo('section2')" prepend-icon="mdi-store">COMPONENTES&lt;/v-btn>&lt;/v-list-item>
+
+      &lt;v-list-item>&lt;v-btn @click="scrollTo('section3')" prepend-icon="mdi-store">ESTILOS&lt;/v-btn>&lt;/v-list-item>
+
+      &lt;v-list-item>&lt;v-btn @click="scrollTo('section4')" prepend-icon="mdi-store">&lt;/v-btn>&lt;/v-list-item>
+    &lt;/v-list>
+  &lt;/v-navigation-drawer>
+  &lt;!-- fin de navegador derecho -->
+  &lt;!-- ********************************** -->  
+&lt;!-- /////////////////////////////////////////////////////// -->
+ &lt;div class="mt-12" id="section1">
+
+&lt;v-row class="bg-purple pa-2" >
+  &lt;v-col cols="11" class="text-center">
+    &lt;h2 >INTRODUCCIÓN &lt;/h2>
+  &lt;/v-col>
+&lt;/v-row>
+&lt;!-- *************************************************** -->
+&lt;v-row class="bg-purple-lighten-4">
+  &lt;v-col
+   v-for="exercise1 in exercises"
+  :key="exercise1.id"
+   cols="12"
+   sm="6"
+   md="4"
+   lg="3"
+   >
+  &lt;v-card
+class="mx-auto my-8 bg-brown-lighten-4"
+elevation="16"
+max-width="344" >
+&lt;v-card-item>
+&lt;v-card-title class="text-purple">{{ exercise1.title }} &lt;/v-card-title>
+&lt;v-card-subtitle class="">{{ exercise1.description }}&lt;/v-card-subtitle>
+&lt;/v-card-item>
+&lt;v-card-text>
+&lt;p>&lt;b>Tiempo restante: {{ exercise1.remainingTime }} segundos&lt;/b>&lt;/p>
+&lt;/v-card-text>
+&lt;v-card-actions>
+&lt;v-btn @click="startExercise1(exercise1)" :disabled="exercise1.intervalId" class="bg-blue text-white pa-2">
+  Iniciar
+&lt;/v-btn>
+&lt;v-btn @click="stopExercise1(exercise1)" :disabled="!exercise1.intervalId" class="bg-red text-white">
+  Detener
+&lt;/v-btn>
+&lt;v-btn :href="exercise1.link" target="_blank" class="bg-teal text-white">
+  Ver 
+&lt;/v-btn>
+&lt;/v-card-actions>
+&lt;/v-card>
+&lt;/v-col>
+&lt;/v-row>
+&lt;/div>
+&lt;!-- /////////////////////////////////////////////////////// -->
+
+ &lt;div class="mt-12" id="section2">
+
+&lt;v-row class="bg-indigo pa-2" >
+  &lt;v-col cols="11" class="text-center">
+    &lt;h2 >COMPONENTES &lt;/h2>
+  &lt;/v-col>
+&lt;/v-row>
+&lt;!-- *************************************************** -->
+&lt;v-row class="bg-indigo-lighten-4">
+  &lt;v-col
+   v-for="exercise2 in exercises2"
+  :key="exercise2.id"
+   cols="12"
+   sm="6"
+   md="4"
+   lg="3"
+   >
+  &lt;v-card
+class="mx-auto my-8 bg-brown-lighten-4"
+elevation="16"
+max-width="344" >
+&lt;v-card-item>
+&lt;v-card-title class="text-indigo">{{ exercise2.title }} &lt;/v-card-title>
+&lt;v-card-subtitle class="">{{ exercise2.description }}&lt;/v-card-subtitle>
+&lt;/v-card-item>
+&lt;v-card-text>
+&lt;p>&lt;b>Tiempo restante: {{ exercise2.remainingTime }} segundos&lt;/b>&lt;/p>
+&lt;/v-card-text>
+&lt;v-card-actions>
+&lt;v-btn @click="startExercise2(exercise2)" :disabled="exercise2.intervalId" class="bg-blue text-white pa-2">
+  Iniciar
+&lt;/v-btn>
+&lt;v-btn @click="stopExercise2(exercise2)" :disabled="!exercise2.intervalId" class="bg-red text-white">
+  Detener
+&lt;/v-btn>
+&lt;v-btn :href="stopExercise2.link" target="_blank" class="bg-teal text-white">
+  Ver 
+&lt;/v-btn>
+&lt;/v-card-actions>
+&lt;/v-card>
+&lt;/v-col>
+&lt;/v-row>
+&lt;/div>
+  &lt;!-- /////////////////////////////////////////////////////// -->
+ &lt;div class="mt-12" id="section3">
+
+&lt;v-row class="bg-blue pa-2" >
+  &lt;v-col cols="11" class="text-center">
+    &lt;h2 >ESTILOS &lt;/h2>
+  &lt;/v-col>
+&lt;/v-row>
+&lt;!-- *************************************************** -->
+&lt;v-row class="bg-blue-lighten-4">
+  &lt;v-col
+   v-for="exercise3 in exercises3"
+  :key="exercise3.id"
+   cols="12"
+   sm="6"
+   md="4"
+   lg="3"
+   >
+  &lt;v-card
+class="mx-auto my-8 bg-brown-lighten-4"
+elevation="16"
+max-width="344" >
+&lt;v-card-item>
+&lt;v-card-title class="text-blue">{{ exercise3.title }} &lt;/v-card-title>
+&lt;v-card-subtitle class="">{{ exercise3.description }}&lt;/v-card-subtitle>
+&lt;/v-card-item>
+&lt;v-card-text>
+&lt;p>&lt;b>Tiempo restante: {{ exercise3.remainingTime }} segundos&lt;/b>&lt;/p>
+&lt;/v-card-text>
+&lt;v-card-actions>
+&lt;v-btn @click="startExercise3(exercise3)" :disabled="exercise3.intervalId" class="bg-blue text-white pa-2">
+  Iniciar
+&lt;/v-btn>
+&lt;v-btn @click="stopExercise3(exercise3)" :disabled="!exercise3.intervalId" class="bg-red text-white">
+  Detener
+&lt;/v-btn>
+&lt;v-btn :href="stopExercise3.link" target="_blank" class="bg-teal text-white">
+  Ver 
+&lt;/v-btn>
+&lt;/v-card-actions>
+&lt;/v-card>
+&lt;/v-col>
+&lt;/v-row>
+&lt;/div>
+  &lt;!-- /////////////////////////////////////////////////////// -->
+    &lt;/template>
+&lt;!-- ///////////////////////////////////////////////////// -->
+&lt;script setup>
+import { ref } from 'vue';
+const drawer = ref(false);
+
+const toggleDrawer = () => {
+drawer.value = !drawer.value;
+}
+// NAV
+const scrollTo = (sectionId) => {
+const element = document.getElementById(sectionId);
+if (element) {
+  element.scrollIntoView({ behavior: 'smooth' });
+}
+}
+// V-FOR
+const exercises = ref([
+    { id: 1, title: 'CREAR PROYECTO', description: 'VUE CLI - VUE VITE', time: 160, remainingTime: 160, intervalId: null, link: 'http://127.0.0.1:5501/src/assets/front/vue3/CrearProyecto.html' },
+
+  ]);
+  //  ********************************************************************
+const exercises2 = ref([
+    { id: 1, title: 'CONTADOR', description: 'USO DE IF & SHOW', time: 375, remainingTime: 375, intervalId: null, link: 'http://127.0.0.1:5501/src/assets/front/vue3/Contador.html' },
+
+
+  ]);
+  //  ********************************************************************
+const exercises3 = ref([
+    { id: 1, title: 'PROCESADORES', description: 'BOOTSTRAP', time: 375, remainingTime: 375, intervalId: null, link: 'http://127.0.0.1:5501/src/assets/front/vue3/framework.html' },
+  ]);
+  //  ********************************************************************
+// ////////////////////////////////////////////////////////////////////////////////////////////
+  const startExercise1 = (exercise1) => {
+    if (exercise1.intervalId) return;
+
+    exercise1.intervalId = setInterval(() => {
+      if (exercise1.remainingTime > 0) {
+        exercise1.remainingTime--
+      } else {
+        clearInterval(exercise1.intervalId);
+        exercise1.intervalId = null;
+      }
+    }, 1000);
+  };
+
+  const stopExercise1 = (exercise1) => {
+    clearInterval(exercise1.intervalId);
+    exercise1.intervalId = null;
+  };
+  //  ********************************************************************
+
+  const startExercise2 = (exercise2) => {
+    if (exercise2.intervalId) return;
+
+    exercise2.intervalId = setInterval(() => {
+      if (exercise2.remainingTime > 0) {
+        exercise2.remainingTime--
+      } else {
+        clearInterval(exercise2.intervalId);
+        exercise2.intervalId = null;
+      }
+    }, 1000);
+  };
+
+  const stopExercise2 = (exercise2) => {
+    clearInterval(exercise2.intervalId);
+    exercise2.intervalId = null;
+  };
+  //  ********************************************************************
+  const startExercise3 = (exercise3) => {
+    if (exercise2.intervalId) return;
+
+    exercise3.intervalId = setInterval(() => {
+      if (exercise3.remainingTime > 0) {
+        exercise3.remainingTime--
+      } else {
+        clearInterval(exercise3.intervalId);
+        exercise2.intervalId = null;
+      }
+    }, 1000);
+  };
+  const stopExercise3 = (exercise3) => {
+    clearInterval(exercise3.intervalId);
+    exercise3.intervalId = null;
+  };
+  //  ********************************************************************
+&lt;/script>
+&lt;!-- ************************************************* -->
+    
+        
+    
+    
+
+    </div>
+  </pre>
+</body>
+</html>
+    
+
+  

@@ -1,0 +1,184 @@
+    
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{background-color:bisque;}
+  .img{
+    width: 600px;
+    margin: 4em;
+    border: brown double 6px;
+  }
+  </style>
+  <title>ELEMENTOS RÁPIDOS</title>
+</head>
+<body>
+  <h1>  PROCESUM </h1> 
+  <ol>
+  <li>LA NECESIDAD: VITAL</li>
+  <li>LA IDEA: QUE ES LO QUE SE QUIERE</li>
+  <li>EL APRENDIZAJE:
+    <ol>
+      <li>LA REPETICIÓN ESPACIADA</li>
+      <p>Utiliza aplicaciones como Anki o Quizlet para crear tarjetas de memoria (flashcards) y repasar las frases con un intervalo de tiempo entre cada revisión. <br> Esto ayuda a que la información se fije en la memoria a largo plazo.</p>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ol>
+  </li>
+  <li></li>
+
+  </ol>
+
+  <pre>
+    <div>
+
+
+2. **Asociaciones Visuales**: Crea imágenes mentales de lo que cada frase representa. Relacionar conceptos abstractos con imágenes puede facilitar la memorización.
+
+3. **Lectura en Voz Alta**: Lee las frases en voz alta. Esto no solo mejora la pronunciación, sino que también refuerza la memoria auditiva.
+
+4. **Escritura**: Escribe las frases varias veces. El acto de escribir ayuda a fijar la información en la memoria.
+
+5. **Contexto**: Intenta relacionar cada frase con un contexto o una historia. Esto puede hacer que sean más significativas y fáciles de recordar.
+
+6. **Grupo de Estudio**: Si es posible, únete a un grupo de estudio. Discutir las frases y explicarlas a otros puede ayudarte a consolidar tu comprensión y memoria.
+
+7. **Recitación**: Practica recitar las frases. Puedes hacerlo en momentos libres o incluso al despertar o antes de dormir.
+
+8. **Descomposición**: Divide las frases en partes más pequeñas y memoriza cada parte antes de unirlas nuevamente.
+
+OPTIMIZAR CODIGO
+OPTIMIZAR CÓDIGO
+
+
+Errores tipográficos
+
+Uso de las propiedades del FRAMEWORK que se está usando
+
+ Reglas Generales para Optimización y Simplicidad
+
+1. Dividir componentes grandes en partes más pequeñas: 
+   - Si un componente tiene demasiada lógica o es responsable de demasiadas funciones, divídelo en componentes más pequeños y específicos. Cada uno debería tener una única responsabilidad (principio de responsabilidad única).
+
+2. Eliminar código duplicado:
+   - Revisa el proyecto para identificar patrones repetitivos o funciones duplicadas. Refactoriza el código creando funciones reutilizables, mixins o composables (en Vue 3).
+
+3. Uso adecuado de `computed` y `watch`:
+   - Usa `computed` properties para lógica derivada, en lugar de calcular cosas en los templates o usar funciones dentro del template.
+   - Usa `watch` para responder a cambios en valores reactivos, pero sólo cuando realmente sea necesario.
+
+4. Evitar cálculos dentro del template:
+   - Cualquier cálculo o transformación de datos dentro de un template hace que Vue.js tenga que recalcular en cada renderizado. Mueve esas transformaciones a `computed` o métodos.
+
+5. Lazy Loading de componentes:
+   - Carga los componentes sólo cuando son necesarios usando la función `import()` para dividir el código en trozos más pequeños y reducir el tiempo de carga inicial.
+
+   ```js
+   components: {
+     AsyncComponent: () => import('~/components/AsyncComponent.vue')
+   }
+   ```
+
+6. Simplificar la lógica de `data` y métodos:
+   - Asegúrate de que los datos en `data()` sean solo los necesarios. Si tienes datos que no están siendo utilizados, elimínalos.
+   - Verifica la posibilidad de combinar varias funciones que hacen cosas similares en una sola función más flexible.
+
+7. Uso adecuado de `props` y `emit`:
+   - Pasa solo las `props` necesarias y evita sobrecargar los componentes con demasiadas propiedades que no son esenciales.
+   - Usa `emit` para comunicar eventos entre componentes de manera simple y directa.
+
+8. Usar Slots cuando sea necesario:
+   - Los `slots` son útiles para crear componentes más reutilizables. Si tienes contenido que cambia dentro de un mismo componente, considera usar `slots`.
+
+9. Manejo eficiente del estado global:
+   - Si tienes un `store` centralizado (como Vuex), asegúrate de que solo el estado realmente necesario se guarde allí y no sobrecargues el store con datos locales que pueden manejarse en componentes individuales.
+
+ Optimizaciones Específicas para tu Código
+
+1. Optimización de la carga de datos (API Calls):
+   - Las llamadas a la API deben estar bien gestionadas para evitar múltiples solicitudes innecesarias. Considera la posibilidad de implementar una estrategia de caching para no hacer las mismas solicitudes varias veces.
+   
+   ```js
+   async buscar () {
+     if (!this.needsFetch()) return; // Solo buscar si es necesario
+     this.loading = true;
+     try {
+       const response = await axios.get(`${config.URL}guides`, {
+         params: { initialDate: this.initialDate, finalDate: this.finalDate }
+       });
+       this.guias = response.data.data;
+       this.total = response.data.docs;
+     } catch (error) {
+       this.mensaje(true, 'red', 'Error al buscar guías');
+     } finally {
+       this.loading = false;
+     }
+   }
+   ```
+
+   Optimizaciones adicionales:
+   - Implementa una verificación para saber si ya has obtenido los datos en lugar de hacer una nueva llamada cada vez que el componente se monta.
+
+2. Revisar el uso de `v-chip` y `v-tooltip`:
+   - Como los `v-chip` tienen lógica de color en función de los datos, podrías crear una función reutilizable para evitar repetición de código:
+
+   ```js
+   getChipColor(type, value) {
+     const colorMap = {
+       esActivo: value ? 'green' : 'red',
+       esOpcional: value ? 'orange' : 'blue',
+       estadoNombre: this.returnStatus(value),
+     };
+     return colorMap[type];
+   }
+   ```
+
+   Y luego usas:
+
+   ```vue
+   <v-chip :color="getChipColor('esActivo', item.esActivo)" outlined>
+     {{ item.esActivo ? 'Activo' : 'Inactivo' }}
+   </v-chip>
+   ```
+
+3. Evitar la lógica compleja en el template:
+   - Estás usando varias expresiones dentro del template como `{{ guias.indexOf(item) + 1 }}` o `{{ fech(item.fechaDoc) }}`. En lugar de hacer esto en el template, podrías crear una propiedad computada:
+
+   ```js
+   computed: {
+     guiasWithIndex() {
+       return this.guias.map((item, index) => ({
+         ...item,
+         index: index + 1
+       }));
+     }
+   }
+   ```
+
+   Luego puedes usar `item.index` directamente en el template, mejorando la legibilidad y rendimiento.
+
+ Herramientas para Ayudar a Optimizar
+
+1. Vue Devtools: Utiliza Vue Devtools para inspeccionar el rendimiento y la estructura de tu aplicación. Te permitirá identificar cuellos de botella y mejorar la eficiencia de componentes específicos.
+
+2. Linter y Prettier: Un linter como ESLint con las reglas específicas para Vue.js te ayudará a seguir buenas prácticas, evitar errores y mantener un código limpio y consistente.
+
+3. Bundle Analyzer: Para optimizar el tamaño del proyecto, puedes usar herramientas como Webpack Bundle Analyzer, que te mostrará cómo está distribuido tu código y te permitirá identificar partes pesadas que puedes dividir.
+
+
+
+
+    </div>
+  </pre>
+</body>
+</html>
+    
+
+  

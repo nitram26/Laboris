@@ -1,0 +1,110 @@
+    
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{background-color:bisque;}
+  .img{
+    width: 600px;
+    margin: 4em;
+    border: brown double 6px;
+  }
+  </style>
+  <title>ELEMENTOS RÁPIDOS</title>
+</head>
+<body>
+  <h1>MainLayout  </h1> 
+  <ol>
+  <li>Carpeta layout</li>
+  <li>Para que funcionen los navegadores que redirigen a páginas</li>
+  </ol>
+  <img src="../../assets/image/home/NavPagina.png" alt="" class="img1">
+  <pre>
+    <div>
+      &lt;template>
+  &lt;v-row class="bg-teal-darken-2 pa-2" >
+   &lt;v-col cols="11" class="text-center">
+       &lt;slot name="main">&lt;/slot>
+ &lt;/v-col>
+ &lt;v-col cols="1" >
+
+&lt;v-btn icon @click="toggleDrawer" >
+ &lt;img src="../assets/image/home/CERVERA.png" alt="My Image2" style="width: 39px; border-radius: 1em;"/>&lt;/v-btn>
+ &lt;/v-col>
+&lt;/v-row>
+
+&lt;v-navigation-drawer v-model="drawer" class="br-teal-darken-4" theme="dark">
+ &lt;div class="container">
+   &lt;div class="dos">
+   &lt;img src="../assets/image/home/CERVERA.png" class="img">
+   &lt;slot name="image1">&lt;/slot>
+ &lt;/div>
+   &lt;div class="dos">
+   &lt;img src="../assets/image/home/CERVERA.png" class="img">
+   &lt;slot name="image2">&lt;/slot>
+ &lt;/div>
+   &lt;div class="dos">
+   &lt;img src="../assets/image/home/CERVERA.png" class="img">
+   &lt;slot name="image3">&lt;/slot>
+ &lt;/div>
+   &lt;div class="dos">
+   &lt;img src="../assets/image/home/CERVERA.png" class="img">
+   &lt;slot name="image4">&lt;/slot>
+ &lt;/div>
+   &lt;div class="dos">
+   &lt;img src="../assets/image/home/CERVERA.png" class="img">
+   &lt;slot name="image5">&lt;/slot>
+ &lt;/div>
+   &lt;div class="dos">
+   &lt;img src="../assets/image/home/CERVERA.png" class="img">
+   &lt;slot name="image6">&lt;/slot>
+ &lt;/div>
+   &lt;div class="dos">
+   &lt;img src="../assets/image/home/CERVERA.png" class="img">
+   &lt;slot name="image7">&lt;/slot>
+ &lt;/div>
+ &lt;/div>
+ &lt;/v-navigation-drawer>
+ 
+&lt;/template>
+&lt;!-- ************************************* -->
+&lt;script setup>
+import { ref } from 'vue';
+const drawer = ref(false);
+
+const toggleDrawer = () => {
+drawer.value = !drawer.value;
+}
+
+&lt;/script>
+&lt;!-- ************************************* -->
+&lt;style scoped>
+.img{
+max-width: 30px;
+border-radius: 10px;
+margin-left: 1em;
+margin-right: 1em;
+
+}
+.container{
+display: block;
+
+}
+.dos{
+display: flex;
+padding: 0.5em;
+}
+
+
+&lt;/style>
+
+    </div>
+  </pre>
+</body>
+</html>
+    
+
+  

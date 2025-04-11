@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>body{background-color: antiquewhite;}</style>
+  <title>Pagina App.vue</title>
+</head>
+<body>
+  <pre>
+   <div>
+    &lt;template>
+  &lt;v-app>
+    &lt;v-app-bar
+      app
+      color="teal-darken-4"
+      scroll-target="#scrolling-container"
+    >
+      &lt;!-- botón de menú lateral -->
+      &lt;v-btn icon @click="toggleDrawer">
+        &lt;v-icon>mdi-menu&lt;/v-icon>
+      &lt;/v-btn>
+      &lt;v-app-bar-title>OPUS&lt;/v-app-bar-title>
+      &lt;!-- botones de enlace a páginas -->
+      &lt;!-- home -->
+      &lt;v-app-bar-nav-icon>
+        &lt;v-btn to="/">
+          &lt;v-img
+            src="@/assets/image/CERVERA.png"
+            alt="My Image2"
+            style="width: 39px; border-radius: 1em;"
+          />
+        &lt;/v-btn>
+      &lt;/v-app-bar-nav-icon>
+      &lt;!-- homeFront -->
+      &lt;v-app-bar-nav-icon class="ma-14">
+        &lt;v-btn icon="mdi-arrange-bring-to-front" to="/homeFront">&lt;/v-btn>
+        Traductor
+      &lt;/v-app-bar-nav-icon>
+      &lt;!-- Back -->
+      &lt;v-app-bar-nav-icon class="ma-14">
+        &lt;v-btn icon="mdi-arrange-send-to-back" to="/backend">&lt;/v-btn>
+        Chat GPT
+      &lt;/v-app-bar-nav-icon>
+      &lt;!-- Data -->
+      &lt;v-app-bar-nav-icon class="ma-14">
+        &lt;v-btn icon="mdi-database-cog-outline" to="/data">&lt;/v-btn>
+        Vuetify
+      &lt;/v-app-bar-nav-icon>
+      &lt;!-- Store -->
+      &lt;v-app-bar-nav-icon class="ma-14">
+        &lt;v-btn icon="mdi-store" to="/store">&lt;/v-btn>
+        M Design
+      &lt;/v-app-bar-nav-icon>
+    &lt;/v-app-bar>
+    &lt;!-- Navigation Drawer -->
+    &lt;v-navigation-drawer v-model="drawer" color="teal-darken-4" dark>
+      &lt;v-list-item link to="/homeFront" title="HOME FRONT" prepend-icon="mdi-grid" @click="handle">&lt;/v-list-item>
+      &lt;v-list-item link to="/vue2" title="Vue2" prepend-icon="mdi-arrange-bring-to-front"  @click="handle">&lt;/v-list-item>
+      &lt;v-list-item link to="/vue3" title="Vue3" prepend-icon="mdi-arrange-send-to-back" @click="handle">&lt;/v-list-item>
+      &lt;v-list-item link to="/backend" title="BACK" prepend-icon="mdi-store" @click="handle">&lt;/v-list-item>
+      &lt;v-list-item link to="/homeFront" title="DATA" prepend-icon="mdi-database-cog-outline" @click="handle">&lt;/v-list-item>
+    &lt;/v-navigation-drawer>
+    &lt;!-- Main y router -->
+    &lt;v-main>
+      &lt;div id="scrolling-container">
+        &lt;router-view />
+      &lt;/div>
+    &lt;/v-main>
+  &lt;/v-app>
+&lt;/template>
+&lt;!-- ********************************************************* -->
+&lt;script setup>
+import { ref } from 'vue';
+// navigation-drawer
+const drawer = ref(false);
+const toggleDrawer = () => {
+  drawer.value = !drawer.value;
+ 
+}
+const handle = () => {
+  drawer.value = false;
+};
+&lt;/script>
+
+&lt;style scoped>
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000
+}
+#scrolling-container {
+  height: 100vh;
+  overflow-y: auto;
+}
+&lt;/style>
+   </div>
+  </pre>
+</body>
+</html>

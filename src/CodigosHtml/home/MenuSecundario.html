@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Secundario</title>
+  <style>
+    body{
+      background-color: bisque;
+    }
+    .img{
+      width: 600px;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <h1>MENU SECUNDARIO</h1>
+  <ol>
+    <li>Crear el View</li>
+    <li>Elegir el menu</li>
+    <li>Establecer la ruta</li>
+  </ol> <br><br><br>
+  <pre>
+    &lt;template>
+  &lt;v-row class="bg-purple-darken-4 pa-2 mt-12 fixed-top" >
+      &lt;v-col cols="11" class="text-center">
+          &lt;h2 >VUE2 &lt;/h2>
+    &lt;/v-col>
+    &lt;v-col cols="1" >
+
+&lt;v-btn icon @click="toggleDrawer" >
+    &lt;v-img src="@/assets/image/CERVERA.png" alt="My Image2" style="width: 39px; border-radius: 1em;"/>&lt;/v-btn>
+    &lt;/v-col>
+  &lt;/v-row>
+  &lt;!-- ********************************************* -->
+  &lt;v-navigation-drawer v-model="drawer" class="br-teal-darken-4" theme="dark">
+      &lt;v-list>
+        &lt;v-list-item link to="/" title="HOME" prepend-icon="mdi-grid">&lt;/v-list-item>
+        &lt;v-list-item >&lt;v-btn @click="scrollTo('section1')" prepend-icon="mdi-arrange-bring-to-front">MODELOS DE PAG&lt;/v-btn>&lt;/v-list-item>
+        &lt;v-list-item>&lt;v-btn @click="scrollTo('section2')" prepend-icon="mdi-store">OPTIONS&lt;/v-btn>&lt;/v-list-item>
+        
+      &lt;/v-list>
+    &lt;/v-navigation-drawer>
+    &lt;!-- fin de navegador derecho -->
+    &lt;!-- ********************************** -->
+    &lt;div id="section1" class="mt-12" >
+      &lt;v-row class="bg-red-lighten-4">
+    &lt;v-col cols="12" class="mt-6">
+      &lt;h3 class="bg-blue pa-4  text-center">MODELOS DE PAGINAS COMPLETAS&lt;/h3>
+    &lt;/v-col>
+        &lt;!-- ****************************************************************************** -->
+        &lt;v-col cols="3">
+      &lt;v-card
+    class="mx-auto my-8"
+    elevation="16"
+    target="_blank"
+    href="http://127.0.0.1:5500/src/assets/vue2/ModelVue2.html"
+    max-width="344" >
+    &lt;v-card-item>
+      &lt;v-card-title class="text-red"> CREACIÓN  &lt;/v-card-title>
+      &lt;v-card-subtitle>Secuencia de Desarrollo&lt;/v-card-subtitle>
+    &lt;/v-card-item>
+    &lt;v-card-text>
+   1. Model
+   2. Controller
+   3. Pages
+   4. Route
+   5. Component
+   6. Validaciones
+    &lt;/v-card-text>
+  &lt;/v-card>
+  &lt;/v-col>
+      &lt;/v-row>
+    &lt;/div>
+
+      &lt;!-- /////////////////////////////////////////////////////////////////////////////////////-->
+      &lt;div id="section2">
+      &lt;v-row class="my-12 text-center bg-teal-lighten-4">
+  &lt;v-col cols="12">
+    &lt;h2 class="bg-pink-darken-4 pa-4">Vue2 OPTIONS &lt;/h2>
+  &lt;/v-col>
+  &lt;!-- ****************************************** -->
+  &lt;v-col cols="3">
+    &lt;v-card
+    class="mx-auto my-8"
+    elevation="16"
+    target="_blank"
+    href="http://127.0.0.1:5500/src/assets/vue2/TemaMenu.html"
+    max-width="344" >
+    &lt;v-card-item>
+      &lt;v-card-title> Color según Estado &lt;/v-card-title>
+      &lt;v-card-subtitle>Color de acuerdo al cambio de estado&lt;/v-card-subtitle>
+    &lt;/v-card-item>
+    &lt;v-card-text>     Ver imagen
+    &lt;/v-card-text>
+  &lt;/v-card>
+&lt;/v-col>
+
+&lt;!-- ********************************************************************** -->
+&lt;/v-row>
+&lt;/div>
+&lt;!-- ********************************************************************** -->
+ &lt;div id="section3">
+&lt;v-row class="bg-purple-lighten-4">
+  &lt;v-col cols="12">
+    &lt;h2 class="bg-pink-darken-4 pa-4 text-center">FECHA&lt;/h2>
+  &lt;/v-col>
+  &lt;!-- ********************************************************************** -->
+  &lt;v-col cols="3" >
+    &lt;v-card
+    class="mx-auto my-8"
+    elevation="16"
+    target="_blank"
+    href="http://127.0.0.1:5500/src/assets/vue2/FechaSinhora.html"
+    max-width="344" >
+    &lt;v-card-item>
+      &lt;v-card-title> FECHA SIN HORA &lt;/v-card-title>
+      &lt;v-card-subtitle> Eliminar la hora&lt;/v-card-subtitle>
+    &lt;/v-card-item>
+    &lt;v-card-text>
+    fecha sin hora
+    &lt;/v-card-text>
+  &lt;/v-card>
+&lt;/v-col>
+&lt;!-- ********************************************************************** -->
+
+&lt;/v-row>
+&lt;/div>
+&lt;/template>
+&lt;!-- ******************************* -->
+&lt;script setup>
+  import { ref } from 'vue';
+const drawer = ref(false);
+
+const toggleDrawer = () => {
+  drawer.value = !drawer.value;
+}
+// NAV
+
+const scrollTo = (sectionId) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
+
+&lt;/script>
+&lt;!-- ******************************* -->
+&lt;style scoped>
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 101%;
+  z-index: 1000
+}
+
+&lt;/style>
+  </pre>
+</div>
+</body>
+</html>

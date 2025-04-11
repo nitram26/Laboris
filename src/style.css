@@ -1,0 +1,55 @@
+body{
+  margin-left: 1em;
+}
+
+.img{
+  width: 39px; 
+  border-radius: 1em
+}
+
+.img1{
+  width:97%; 
+  
+}
+
+.li{
+  border: 1px solid brown;
+  width: 100%;
+  margin-left: 1em;
+  margin-top: 0.3em;
+  font-size: 1em;
+  padding-left: 0.5em;
+}
+
+.cita{
+  color: brown;
+  font-style: italic;
+  font-size: 1.5em;
+
+}
+
+.select{
+  width: 95%;
+  margin: 0.3em;
+  font-size: 1em;
+  padding-left: 0.5em;
+  border: 1px solid brown;
+  border-radius: 0.5em;
+  background-color: bisque;
+}
+
+.select>ol>li{
+  margin-left: 1em;
+  padding: 0.5em;
+}
+
+.a {
+  text-decoration: none;
+  color: brown;
+  font-size: 1.5em;
+}
+
+.lat{
+  text-decoration: none;
+  color: white;
+}

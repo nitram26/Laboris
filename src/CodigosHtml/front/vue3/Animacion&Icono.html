@@ -1,0 +1,206 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{background-color:bisque;}
+  .img{
+    width: 600px;
+    margin: 4em;
+    border: brown double 6px;
+  }
+  </style>
+  <title>ELEMENTOS RÁPIDOS</title>
+</head>
+
+  <body>
+  <section id="uno">
+    <div class="uno">  <H3>Animaciones</H3>
+      <H2>ANIMACIONES  & ICONOS</H2>
+    <ol>
+      <li>enter-from es el estado inicial va en style</li>
+      <li>enter-active es la accion</li>
+      <li>enter-to es la salida</li>
+      <img src="/src/assets/image/front/vue3/transition1.png" alt="transition1">
+    </ol>
+    
+    <pre>
+      &lt;template>
+      &lt;div class="container">
+    
+        &lt;Transition>
+          &lt;h1 v-if="show">Animaciones con VUE3&lt;/h1>
+        &lt;/Transition>
+        &lt;v-btn @click="show =!show" class="bg-purple">Mostrar/ Ocultar&lt;/v-btn>
+      &lt;/div>
+     
+    &lt;/template>
+    &lt;!-- ************************************* -->
+    &lt;script setup>
+    import { ref } from 'vue';
+    
+    
+    const show = ref(false)
+    
+    &lt;/script>
+    &lt;!-- ************************************* -->
+    &lt;style scoped>
+    .v-enter-active, .v-leave-active{
+      transition: opacity 1s ease;
+    }
+    .v-enter-from, .v-leave-to{
+      opacity: 0;
+    }
+    .container{
+      margin: 2em;
+    }
+    &lt;/style>
+    
+    </pre>
+    </div>
+  
+  </section>
+  
+  <!-- ///////////////////////////////////// -->
+   <section id="dos">
+    <h2>Transiciones a Grupos</h2>
+    <ol>
+     <li>se hace un agregar elementos normal</li>
+     <pre>
+       &lt;template>
+     &lt;div class="container">
+       &lt;ol >
+         &lt;li v-for="(note, index) in notes" :key="index">{{ note }}&lt;/li>
+   
+       &lt;/ol> &lt;br>&lt;br>
+       &lt;input type="text" v-model="note" class="bg-purple">
+       &lt;br>&lt;br>
+       &lt;v-btn class="bg-teal" @click="handleNote">Save / Note&lt;/v-btn>
+     &lt;/div>
+   
+   &lt;/template>
+   &lt;!-- ************************************* -->
+   &lt;script setup>
+   import { ref } from 'vue';
+   
+   
+   const notes = ref([])
+   const note = ref('')
+   
+   const handleNote = ()=>{
+     notes.value.push(note.value)
+     note.value = ''
+   }
+   &lt;/script>
+   &lt;!-- ************************************* -->
+   &lt;style scoped>
+   
+   .container{
+     margin: 2em;
+     padding: 2em;
+     border: brown 4px double;
+   }
+   &lt;/style>
+   
+     </pre>
+   </section>
+  <!-- //////////////////////////////////////////////// -->
+   <section id="tres">
+  
+  
+  <h2>TransitionGroup</h2>
+    <li>Para hacer la transicion de grupos se cambia el elemeto padre <br> en este caso el ol por transitionGroup</li>
+  <pre>
+    &lt;template>
+    &lt;div class="container">
+      &lt;TransitionGroup name="list" tag="ol">
+        &lt;li v-for="(note, index) in notes" :key="index">{{ note }}&lt;/li>
+  
+      &lt;/TransitionGroup> &lt;br>&lt;br>
+      &lt;input type="text" v-model="note" class="bg-purple">
+      &lt;br>&lt;br>
+      &lt;v-btn class="bg-teal" @click="handleNote">Save / Note&lt;/v-btn>
+    &lt;/div>
+  
+  &lt;/template>
+  &lt;!-- ************************************* -->
+  &lt;script setup>
+  import { ref } from 'vue';
+  
+  
+  const notes = ref([])
+  const note = ref('')
+  
+  const handleNote = ()=>{
+    notes.value.push(note.value)
+    note.value = ''
+  }
+  &lt;/script>
+  &lt;!-- ************************************* -->
+  &lt;style scoped>
+  .container{
+    margin: 2em;
+    padding: 2em;
+    border: brown 4px double;
+  }
+  
+  .list-enter-active, .list-leave-active{
+    transition: all 1s ease;
+  }
+  .list-enter-from, .list-leave-to{
+    opacity: 0;
+    transform:  translateX(30px);
+  }
+  &lt;/style>
+  </pre>
+   </ol>
+  </section>
+  <!-- ////////////////////////////////////// -->
+   <section id="cuatro">
+    <h2>V-Icons</h2>
+    <ol>
+      <li>Ir a : <br></li>
+      <li>https://oh-vue-icons.js.org/</li>
+      <li>se instala el paquete con: <br>npm install oh-vue-icons</li>
+      <li>Pero no debe tener instalado otro paquete como bootstrap o vuetify</li>
+      <li>En vuetify se trae de material design</li>
+      <li>esta es la sintaxis</li>
+      <pre>
+        &lt;div class="container">
+  
+        &lt;v-icon size="48px">mdi-home&lt;/v-icon>
+        &lt;v-icon color="blue">mdi-angular&lt;/v-icon>
+        &lt;v-icon spin color="red" size="36px">mdi-gitlab&lt;/v-icon>
+        &lt;v-icon class="icon-animate" color="green">mdi-language-php&lt;/v-icon>
+        &lt;v-icon class="icon-animate" color="purple" size="64px">mdi-vuejs&lt;/v-icon>
+        &lt;v-icon>mdi-bell&lt;/v-icon>
+      &lt;/div>
+  
+      <!-- ///////////////// en style -->
+      .container{
+        margin: 2em;
+        padding: 2em;
+        border: brown 4px double;
+      }
+  
+      .icon-animate {
+        transition: transform 0.3s ease;
+      }
+  
+      .icon-animate:hover {
+        transform: scale(1.5) rotate(360deg);
+      }
+      </pre>
+  
+    </ol>
+  
+   </section>
+  
+  
+  <img src="/src/assets/image/front/vue3/iconos01.png" alt="iconos01" class="img">
+</body>
+</html>
+    
+
+  

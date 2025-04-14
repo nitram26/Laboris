@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{background-color:bisque;}
+    .img{
+      width: 800px;
+      margin: 4em;
+      border: brown double 6px;
+    }
+    </style>
+</head>
+<body>
+
+  <H1>PWA en vue3</H1>
+  <a href="https://www.youtube.com/watch?v=9oQIylJ-JpU&list=PLvq-jIkSeTUYIw8CP2AP7QJs4GeeZdvs6">PWA</a>
+  <ol>
+    <li>Crear un proyecto nuevo</li>
+    <li>Generar el proyecto manualmente</li>
+    <li>incluir PWA</li>
+    <li>Todo lo demás por defecto</li>
+    <li>dirigir se al directorio de trabajo si no se a limpiado GIT</li>
+    <li>ejecutar el constructor con: npm run build</li>
+    <li>instalar el servidor de prueba : npm install http-server -g</li>
+    <li>Borrar el caché de chrome para evitar conflictos (ver store/windows/borrar datos de caché)</li>
+    <li>levantar el dist con http-server dist/</li>
+    <li>el servicio se levanta para iniciar la configuración del manifest.json y Service Worker</li>
+    <li>Se debe a que un service worker solo funciona a través de un https, un navegador seguro</li>
+    <h2>TUNELADO</h2>
+    <li>Se hace con ngrok: https://download.ngrok.com/windows</li>
+    <li>Descargar el ejecutable e instalarlo</li>
+    <li>Mostrará una consola donde ejecutaremos: ngrok.exe http 8080</li>
+    <h2>Registro </h2>
+    <li>si no estamos registrados dará error </li>
+    <li>Si no tienes una cuenta, ve a https://dashboard.ngrok.com/signup y regístrate.</li>
+       <li>en la terminal aparece https://dashboard.ngrok.com/signup y nos dará un token</li>
+    <li>ngrok config add-authtoken 2qOfOrs9pEYlOVwrvJzc2gohs2c_7xtxumV8LDcRQQJKLFpQv</li>
+    <li>se ejecuta en la terminal y guarda el acceso</li>
+    <li>Authtoken guardado en el archivo de configuración: C:\Users\cm7ch\AppData\Local/ngrok/ngrok.yml</li>
+    <li>Se levanta el servicio con el link que proporciona ngrok</li>
+    <li>Y debera aparecer el icono de instalar app</li>
+    <li>La app estará instalada en la PC y en el buscador se pone pwa y aparece la app</li>
+    <li>El manifest es para configurar la app</li>
+    <li>El service worker para optimizar el rendimiento</li>
+    <li></li>
+  </ol>
+
+    <h2>Elaboración del MANIFIESTO</h2>
+    <ol>
+      <li>Se busca el manifest.json</li>
+      <li>todo aparece desordenado y en una linea; Se da formato con ALT+SHIFT+F</li>
+      <li>El manifest.json se mueve a public y se elimina de la carpeta dist</li>
+      <li>el name es el nombre que se muestra en la app</li>
+
+    </ol>
+    <h2>Service Worker</h2>
+      <ol>
+        
+      <li>En src encontraremos registerServiceWorker ya configurado</li>
+      <li>TEMA : 33 VUE3 PROF</li>
+    </ol>
+
+</body>
+</html>

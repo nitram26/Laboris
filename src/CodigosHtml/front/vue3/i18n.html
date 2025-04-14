@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>i18n</title>
+  <style>
+    body{background-color:bisque;}
+    .img{
+      width: 600px;
+      margin: 4em;
+      border: brown double 6px;
+    }
+    </style>
+</head>
+<body>
+  <H1>i18n Paquete Estándar de Internacionalización </H1>
+  <h2>Al final de la página esta el código completo de cada página</h2>
+<ol>
+ <li>Crear un proyecto normal</li>
+ <li>Se instala el paquete de idiomas con: <br>  npm install vue-i18n@9</li>
+ <li>Para cada proyecto se instala el i18n para que configure el package.json</li>
+ <li>Se configura el main 
+   <pre>
+     import { createApp } from 'vue'
+     import App from './App.vue'
+     import router from './router'
+     import { createI18n } from 'vue-i18n' 
+     import { messages } from './lang/messages'
+     
+     const i18n = createI18n ({
+       locale: 'en',
+       fallbackLocale: 'en',
+       messages
+     })
+     const app = createApp(App)
+     
+     app.use(i18n)
+     app.use(router)
+     app.mount('#app')
+     
+
+   </pre>
+   <li>Esta es la configuración básica inicial para el paquete i18n</li>
+ </li>
+ <li> se hace correr la app </li>
+ <h3>Configurar idiomas</h3>
+ <li>Crear una carpeta donde se aloje el contenido src / carpeta lang o language</li>
+ <li>dentro un archivo ejemplo messages.ts o js <br>
+ <pre>
+   export const messages = {
+     en: {
+        message: {
+         hello: 'Hello World',
+         content: 'We are using i18n package'
+        }
+     },
+   
+     es: {
+       message: {
+         hello: 'Hola mundo',
+         content: 'Estamos usando el paquete i18n',
+     }
+   }
+   }
+ </pre>
+ </li>
+
+ <li>En la pagina que se muestra 
+   <pre>
+     &lt;template>
+       &lt;div>
+           &lt;h1>I18n &lt;/h1>
+           &lt;h2>{{ $t("message.hello") }}&lt;/h2>
+           &lt;p>{{ $t("message.content") }}&lt;/p>
+       &lt;/div>
+   &lt;/template>
+   &lt;!-- ************************************* -->
+   &lt;script setup>
+   import { messages } from '@/lang/messages';
+   
+   
+   &lt;/script>
+   &lt;!-- ************************************* -->
+   &lt;style scoped>
+   h1{
+     color: brown;
+   }
+   
+   &lt;/style>
+   &lt;/pre>
+ &lt;/li> <br><br><br>
+ &lt;h3>VARIABLES Y PLURALES&lt;/h3>
+ &lt;li>Se cambia el nombre por la variable &lt;br>
+   export const messages = {
+     en: {
+        message: {
+         hello: 'Hello {name}',
+         content: 'We are using i18n package'
+        }
+     },
+   
+     es: {
+       message: {
+         hello: 'Hola {name}',
+         content: 'Estamos usando el paquete i18n',
+     }
+   }
+   }
+ &lt;/li>
+ &lt;h3>Plurales&lt;/h3>
+ &lt;li> messages.ts
+   &lt;pre>
+     export const messages = {
+       en: {
+          message: {
+           hello: 'Hello {name} {surname}',
+           content: 'We are using i18n package',
+           products: 'no products | one product | {count} products',
+           comments: 'no comments | comment | comments',
+          }
+       },
+     
+       es: {
+         message: {
+           hello: 'Hola {name} {surname}',
+           content: 'Estamos usando el paquete i18n',
+           products: 'sin productos | un producto | {count} productos',
+           comments: 'sin comentarios|  comentario | comentarios',
+       }
+     }
+     }
+   &lt;/pre>
+ &lt;/li>
+ &lt;li>home.vue &lt;br>
+ &lt;pre>
+   &lt;template>
+     &lt;div>
+         &lt;h1>I18n &lt;/h1>
+         &lt;h2>{{ $t("message.hello", {name:userName, surname: surName }) }}&lt;/h2>
+         &lt;p>{{ $t("message.content") }}&lt;/p>
+         &lt;p>{{ $t("message.products", {count: 0}) }}&lt;/p>
+         &lt;p>{{ $t("message.comments",  {count: 5}) }}&lt;/p>
+     &lt;/div>
+ &lt;/template>
+ &lt;!-- ************************************* -->
+ &lt;script setup>
+ // import { messages } from '@/lang/messages';
+ import { ref } from 'vue';
+ 
+ const userName = ref('Carlos')
+ const surName = ref('Cervera')
+ 
+ &lt;/script>
+ &lt;!-- ************************************* -->
+ &lt;style scoped>
+ h1{
+   color: brown;
+ }
+ 
+ &lt;/style>
+ &lt;/pre>&lt;/li>
+ &lt;h3>MENU CAMBIO DE IDIOMA&lt;/h3>
+&lt;/ol>
+<pre>
+  &lt;div class="">
+    &lt;select v-model="$i18n.locale">
+  &lt;option
+    v-for="locale in $i18n.availableLocales"
+    :key="locale"
+    :value="locale">
+    {{ locale }}
+  &lt;/option>
+&lt;/select>
+
+  &lt;/div>
+</pre>
+&lt;!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+<h2>CONFIGURACIÓN FINAL</h2>
+<h2>main.ts</h2>
+<pre>
+  import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
+import { createI18n } from 'vue-i18n' 
+import { messages } from './lang/messages'
+
+const i18n = createI18n ({
+  locale: 'en',
+  fallbackLocale: 'en',
+  messages
+})
+const app = createApp(App)
+
+app.use(i18n)
+app.use(router)
+app.mount('#app')
+
+</pre>
+
+<h2>messages.ts</h2>
+<pre>
+  export const messages = {
+    en: {
+       message: {
+        hello: 'Hello {name} {surname}',
+        content: 'We are using i18n package',
+        products: 'no products | one product | {count} products',
+        comments: 'no comments | comment | comments',
+       }
+    },
+  
+    es: {
+      message: {
+        hello: 'Hola {name} {surname}',
+        content: 'Estamos usando el paquete i18n',
+        products: 'sin productos | un producto | {count} productos',
+        comments: 'sin comentarios|  comentario | comentarios',
+    }
+  }
+  }
+</pre>
+<h2>HomeView.vue</h2>
+<pre>
+  &lt;template>
+  &lt;div class="">
+    &lt;select v-model="$i18n.locale">
+  &lt;option
+    v-for="locale in $i18n.availableLocales"
+    :key="locale"
+    :value="locale">
+    {{ locale }}
+  &lt;/option>
+&lt;/select>
+
+  &lt;/div>
+  
+    &lt;div>
+        &lt;h1>I18n &lt;/h1>
+        &lt;h2>{{ $t("message.hello", {name:userName, surname: surName }) }}&lt;/h2>
+        &lt;p>{{ $t("message.content") }}&lt;/p>
+        &lt;p>{{ $t("message.products", {count: 0}) }}&lt;/p>
+        &lt;p>{{ $t("message.comments",  {count: 5}) }}&lt;/p>
+    &lt;/div>
+&lt;/template>
+&lt;!-- ************************************* -->
+&lt;script setup>
+// import { messages } from '@/lang/messages';
+import { ref } from 'vue';
+
+const userName = ref('Carlos')
+const surName = ref('Cervera')
+
+&lt;/script>
+&lt;!-- ************************************* -->
+&lt;style scoped>
+h1{
+  color: brown;
+}
+
+&lt;/style>
+</pre>
+
+</body>
+</html>

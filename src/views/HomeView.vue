@@ -35,6 +35,23 @@
         <!-- ****************************** -->
         <li class="li">
           <details class="select">
+            <summary>Estructura de Página</summary>
+            <a href="http://127.0.0.1:5502/src/CodigosHtml/home/NavDentroDePagina.html" class="a" target="_blank">
+              <h4>Estructura y Nav Interno</h4>
+            </a>
+            <ol>
+              <li>Estructura de Pagina</li>
+              <li>Necesita el layout: NavInterno </li>
+              <li></li>
+            </ol>
+            <img src="../assets/image/home/NavImagen.png" alt=" " class="img1">
+            <p><br></p>
+
+          </details>
+        </li>
+        <!-- ****************************** -->
+        <li class="li">
+          <details class="select">
             <summary>Página Principal</summary>
             <a href="http://127.0.0.1:5502/src/CodigosHtml/home/PaginaPrincipal.html" class="a" target="_blank">
               <h4>Barra de navegación principal</h4>
@@ -68,23 +85,6 @@
               <h4>Navegador lateral con enlaces a Páginas</h4>
             </a>
             <img src="../assets/image/home/navPagina.png " alt=" " class="img1">
-            <p><br></p>
-
-          </details>
-        </li>
-        <!-- ****************************** -->
-        <li class="li">
-          <details class="select">
-            <summary>Estructura de Página</summary>
-            <a href="http://127.0.0.1:5502/src/CodigosHtml/home/NavDentroDePagina.html" class="a" target="_blank">
-              <h4>Estructura y Nav Interno</h4>
-            </a>
-            <ol>
-              <li>Estructura de Pagina</li>
-              <li>Necesita el layout: NavInterno </li>
-              <li></li>
-            </ol>
-            <img src="../assets/image/home/NavImagen.png" alt=" " class="img1">
             <p><br></p>
 
           </details>

@@ -1,0 +1,102 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{background-color:bisque;}
+  .img{
+    width: 800px;
+    margin: 4em;
+    border: brown double 6px;
+  }
+  </style>
+  <title>ELEMENTOS RÁPIDOS</title>
+</head>
+<body>
+<h1> PROPS & ARRAY</h1> 
+<ol>
+<li>Se crea la estructura en el componente hijo</li>
+<li>Se llama el componente hijo DESDE EL COMPONENTE PADRE</li>
+<li>Los datos del componente padre se insertan en el </li>
+<li>Aveces necesita para funcionar importar los props</li>
+<li>import { defineProps } from 'vue'</li>
+</ol>
+<img src="/src/assets/image/front/propsArray.png" alt="propsArray" class="img">
+  <pre>
+    <h2>Componente Padre</h2>
+    <div>
+      &lt;template>
+      &lt;v-container>
+        &lt;h1>VUE3&lt;/h1>
+        &lt;br>&lt;br>
+        &lt;v-row>
+          &lt;v-col
+            v-for="elm in info"
+            :key="elm.title"
+            cols="4"
+            
+          >
+            &lt;WorkComponent 
+              :title="elm.title" 
+              :content="elm.content" 
+            />
+          &lt;/v-col>
+        &lt;/v-row>
+      &lt;/v-container>
+    &lt;/template>
+    
+    &lt;script setup>
+    import WorkComponent from '@/components/WorkComponent'
+    
+    let info = [
+      { title: "Este es post 1", content: "Texto de Ejemplo1" },
+      { title: "Este es post 2", content: "Texto de Ejemplo2" },
+      { title: "Este es post 3", content: "Texto de Ejemplo3" },
+      { title: "Este es post 4", content: "Texto de Ejemplo4" },
+      { title: "Este es post 5", content: "Texto de Ejemplo5" },
+    ]
+    &lt;/script>
+    
+    &lt;style scoped>
+    
+    &lt;/style>
+
+    <h4>/////////////////////////////////////////////////</h4>
+    <h2>Componente Hijo</h2>
+    
+    &lt;template>
+  &lt;v-card 
+  class="mx-auto bg-teal" 
+  max-width="400"
+  height="177"
+  >
+    &lt;v-card-title>{{ title }}&lt;/v-card-title>
+    &lt;v-card-text>{{ content }}&lt;/v-card-text>
+  &lt;/v-card>
+&lt;/template>
+&lt;!-- //////////////////////////////////////////////////// -->
+&lt;script setup>
+const props = defineProps({
+  title: {
+    type: String,
+    required: true
+  },
+  content: {
+    type: String,
+    required: true
+  }
+})
+&lt;/script>
+&lt;!-- //////////////////////////////////////////////////// -->
+&lt;style scoped>
+
+&lt;/style>
+    </div>
+  </pre>
+</body>
+</html>
+
+

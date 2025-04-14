@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{background-color:bisque;}
+  .img{
+    width: 600px;
+    margin: 4em;
+    border: brown double 6px;
+  }
+  </style>
+  <title>ELEMENTOS RÁPIDOS</title>
+</head>
+<body>
+  <h1> ROUTER CON VUETIFY </h1> 
+
+  <pre>
+    <div>
+      
+
+&lt;template>
+&lt;div>
+&lt;v-app>
+  &lt;v-app-bar class="bg-blue">
+    &lt;v-toolbar-title>Mi App&lt;/v-toolbar-title>
+    &lt;v-spacer>&lt;/v-spacer>
+    &lt;v-btn
+    v-for="(route, index) in routes" :key="index"
+    @click="navigate(route.path)"
+    :color="isActive(route.path)? 'purple' : 'white'"
+    text
+    >{{ route.name }}&lt;/v-btn>
+  &lt;/v-app-bar>
+  &lt;v-main >
+    &lt;router-view/>
+  &lt;/v-main>
+&lt;/v-app>
+&lt;/div>
+&lt;/template>
+&lt;!-- ************************************* -->
+&lt;script setup>
+import {useRouter, useRoute  } from "vue-router";
+
+let router = useRouter()
+let route = useRoute()
+
+const routes = [
+{ name: 'Home', path: '/' },
+{ name: 'About', path: '/about' },
+{ name: 'Practica', path: '/practica' }
+]
+
+const navigate = (path) => {
+router.push(path)
+}
+
+let isActive = (path) => {
+return route.path ===path
+}
+
+&lt;/script>
+&lt;!-- ************************************* -->
+&lt;style scoped>
+
+&lt;/style>
+
+    </div>
+  </pre>
+</body>
+</html>

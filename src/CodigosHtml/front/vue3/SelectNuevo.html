@@ -1,0 +1,74 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{background-color:bisque;}
+  .img{
+    width: 400px;
+    margin: 4em;
+    border: brown double 6px;
+  }
+  </style>
+  <title>ELEMENTOS RÁPIDOS</title>
+</head>
+<body>
+<h1> SELECT </h1>
+<ol>
+<li>Realizado con vuetify</li>
+
+<li>Usar v-select</li>
+<li>los elementos van en un array en el script</li>
+<li>:items="items" <br>para traer el array u objeto</li>
+<h5>Luego mostrar por pantalla</h5>
+<li>v-model = "item1" <br> En el scriptt es ref y va vacío para que capture el elemento seleccionado y lo muestre</li>
+</ol>
+<img src="/src/assets/image/select&Ckeckbox.png" alt="select&Ckeckbox" class="img">
+  <pre>
+    <div>
+      &lt;template>
+      &lt;div class="work">
+        &lt;h1>Practica Julio 2024&lt;/h1> 
+        &lt;v-select
+        :items="select"
+        label="País"
+        width="15em"
+        class="azul"
+        />
+    
+        
+      &lt;/div>
+      
+    &lt;/template>
+    &lt;!-- ******************************* --> 
+    &lt;script setup>
+    import { ref } from 'vue';
+
+    let select = ref(['Peru', 'Brasil', 'Japón', 'India'])
+
+    &lt;/script>
+    &lt;!-- ******************************* -->
+    &lt;style scoped>
+    .work{
+      background-color: burlywood;
+      height: 5em;
+      margin-left: 3em;
+    }
+    .rojo{
+      color: red;
+    }
+    .azul {
+      color: blue;
+      border: 1px solid green;
+    }
+    &lt;/style>
+
+    </div>
+  </pre>
+</body>
+</html>
+
+

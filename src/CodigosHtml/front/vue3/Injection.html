@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{background-color:bisque;}
+  .img{
+    width: 800px;
+    margin: 4em;
+  }
+  </style>
+  <title>ELEMENTOS RÁPIDOS</title>
+</head>
+<body>
+  <h2>	INJECTION </h2>
+<ol>	
+<li>Se usa para traer elementos de una página a otra</li>	
+<li>EL Padre envia los datos usa el provide</li>	
+<li>el hijo los recibe con inject</li>	
+<li></li>	
+<li>	Padre: Se importa el hijo, se crea la variable y se envía con provide	</li>
+<li> Primero se pone el nombre de envio entre comillas simples</li>
+<li> y a continuación la variable que se envia, sin comillas</li>
+<li>Ejemplo: provide('envio', num) </li>
+<li>	Hijo: se recibe con el inject 	</li>
+<li> Ejemplo : let producto = inject('envio')</li>
+<li>Se muestra la variable producto</li>
+<li>	Para cambiar se crea una función en el hijo con un botón 	</li>
+<li>	Y el valor que se quiere cambiar. Listo 	</li>
+</ol>		
+<img src="/src/assets/image/injection.png" alt="injection" class="img">
+  <pre>
+    <div>
+    <h2>PADRE</h2>
+
+&lt;template>
+  &lt;v-container :fluid="true">
+   &lt;h1>PADRE MÉTODO INJECTION&lt;/h1> &lt;br>&lt;br>
+
+   &lt;WorkView/>
+  &lt;/v-container>
+&lt;/template>
+&lt;!-- ******************************* --> 
+&lt;script setup>
+import { provide, ref } from 'vue'
+import WorkView from './WorkView.vue'
+
+let canal = ref('Sofia')
+provide('cambio', canal)
+&lt;/script>
+&lt;!-- ******************************* -->
+&lt;style scoped>
+
+&lt;/style>
+  //////////////////////////////////////////////////
+    <h2>HIJO</h2>
+
+    &lt;template>
+    &lt;div>
+     &lt;h1>HIJO MÉTODO INJECTION&lt;/h1> 
+    &lt;h2>{{ canalHijo }}&lt;/h2> &lt;br>&lt;br>
+  &lt;v-btn @click="modificar">Cambiar&lt;/v-btn>
+  &lt;/div>
+  &lt;/template>
+  &lt;!-- ******************************* --> 
+  &lt;script setup>
+  import { inject } from 'vue';
+  
+  let canalHijo = inject('cambio')
+  
+  const modificar = () =>{
+    canalHijo.value = 'Ingrid'
+  }
+  
+  &lt;/script>
+  &lt;!-- ******************************* -->
+  &lt;style scoped>
+  div{
+    background-color: antiquewhite;
+    padding: 4em;
+  }
+  &lt;/style>
+    </div>
+  </pre>
+</body>
+</html>
+    

@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>body{background-color:bisque;}</style>
+  <title>Contador </title>
+</head>
+<body>
+  <h1>Contador </h1>
+  <img src="/src/assets/image/contador.png" alt="">
+  <pre>
+    <div>
+      &lt;template>
+      &lt;h1>HOME&lt;/h1>
+      &lt;div class="ma-8 bg-teal text-black ">
+        &lt;v-btn @click="contador++" >AGREGAR&lt;/v-btn>
+        &lt;h2 class="mx-10 my-6">{{ contador }}&lt;/h2>
+        &lt;v-btn @click="contador--" >DISMINUIR&lt;/v-btn>
+      &lt;/div>
+      
+      &lt;/template>
+      &lt;!-- ******************************* --> 
+      &lt;script setup>
+    import { ref } from 'vue';
+    
+         let contador = ref(1)
+      &lt;/script>
+      &lt;!-- ******************************* --> 
+      &lt;style scoped>
+    
+    &lt;/style>
+    </div>
+  </pre>
+ 
+</body>
+</html>
+
+

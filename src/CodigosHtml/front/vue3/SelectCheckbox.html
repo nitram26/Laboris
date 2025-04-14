@@ -1,0 +1,96 @@
+    
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body{background-color:bisque;}
+        .img{
+          width: 800px;
+          margin: 4em;
+          border: brown double 6px;
+        }
+        </style>
+        <title>ELEMENTOS RÁPIDOS</title>
+      </head>
+      <body>
+      <h1> CHECKBOX </h1>
+      <ol>
+      <li>Realizado con vuetify</li>
+      <li>En html seria diferente la sintaxis</li>
+      <li>Que muestre si acepta usando v-show y color azul</li>
+      <li>por defecto acepta, si cambia muestre no acepta y cambia de color</li>
+     
+      </ol>
+      <img src="/src/assets/image/select&Ckeckbox.png" alt="select&Ckeckbox" class="img">
+      <h2>CON VUETIFY</h2>
+        <pre>
+          <div>
+            &lt;template>
+            &lt;div class="work">
+             &lt;h1>Practica Julio 2024&lt;/h1> 
+             &lt;v-checkbox v-show="acepto ===true"  v-model="acepto" class="azul">acepto  &lt;/v-checkbox>
+             &lt;v-checkbox v-show="acepto ===false"  v-model="acepto" class="rojo">no acepto  &lt;/v-checkbox>
+            &lt;/div>
+            
+          &lt;/template>
+          &lt;!-- ******************************* --> 
+          &lt;script setup>
+          import { ref } from 'vue';
+          
+          let acepto = ref(true)
+          
+          &lt;/script>
+          &lt;!-- ******************************* -->
+          &lt;style scoped>
+          .work{
+            background-color: burlywood;
+            height: 5em;
+            margin-left: 3em;
+          }
+          .rojo{
+            color: red;
+          }
+          .azul {
+            color: blue;
+          }
+          &lt;/style>
+          &lt;!-- ******************************* -->
+          <H2>CON CSS </H2>
+          &lt;template>
+          &lt;div>
+        &lt;input type="checkbox" name="" id="" v-model="cambio">
+        &lt;h4 v-show="cambio ===true" class="uno">ACEPTA&lt;/h4>
+        &lt;h4 v-show="cambio ===false" class="dos"> NO ACEPTA&lt;/h4>
+          &lt;/div>
+        &lt;/template>
+        &lt;!-- ************************************* -->
+        &lt;script setup>
+        import { ref } from 'vue';
+        
+        
+        let cambio = ref(false)
+        &lt;/script>
+        &lt;!-- ************************************* -->
+        &lt;style scoped>
+        .uno {
+          background-color: antiquewhite;
+          color: brown;
+        }
+        .dos {
+          background-color: brown;
+          color: aliceblue;
+        }
+        &lt;/style>
+        
+
+
+
+          </div>
+        </pre>
+      </body>
+      </html>
+
+

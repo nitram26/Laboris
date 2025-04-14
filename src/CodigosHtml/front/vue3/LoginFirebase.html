@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{background-color:bisque;}
+  .img{
+    width: 600px;
+    margin: 4em;
+    border: brown double 6px;
+  }
+  </style>
+  <title>ELEMENTOS RÁPIDOS</title>
+</head>
+<body>
+  <h1>AUTENTICACIÓN</h1>
+  <ol>
+    <li>Crear el proyecto y la página de login</li>
+    <li>Descargar un framework de estilos puede ser vuetify o bootstrap u otros</li>
+    <h4>Agregar algun Framework de estilos</h4>
+    <li>add vuetify</li>
+    <li>Bootstrap necesita 2 paquetes, bootstrap y popper</li>
+    <li>npm install --save bootstrap</li>
+    <li>npm install --save @popperjs/core</li>
+    <li>ir a Firebase y crear una cuenta </li>
+    <li>consola.firebase.google.com</li>
+    <li>elegir Crear un proyecto</li>
+    <li>Elegir Authentication</li>
+    <li>luego el metodo que puede ser correo, telefono, social etc</li>
+    <li>Generar el SDK</li>
+    <li>EN EL MAIN.TS pegar el import, codigo, inicializar el auth </li>
+    <li>ir a firebase</li>
+    <li>registrar el correo y clave en usuarios</li>
+  </ol>
+  <img src="/src/assets/image" alt="" class="img">
+  <pre>
+    <div>
+      &lt;template>
+  &lt;div class="container">
+      &lt;h1>Auth&lt;/h1>
+      &lt;form>
+  &lt;div class="mb-3">
+    &lt;label for="example" >Correo&lt;/label>
+    &lt;input type="email" class="form-control" id="example" aria-describedby="emailHelp" v-model="email">
+  &lt;/div>
+
+  &lt;div class="mb-3">
+    &lt;label for="example" >Contraseña&lt;/label>
+    &lt;input type="password" class="form-control" id="example" v-model="pass">
+  &lt;/div>
+
+  &lt;button type="submit" class="btn btn-primary" @click.prevent="authUser">Submit&lt;/button>
+
+&lt;/form>
+  &lt;/div>
+&lt;/template>
+&lt;!-- ************************************* -->
+&lt;script setup>
+import {ref} from 'vue'
+import {signInWithEmailAndPassword, getAuth} from 'firebase/auth'
+let email = ref("")
+let pass = ref("")
+
+const authUser = () =>{
+  const auth = getAuth()
+  signInWithEmailAndPassword(auth, email.value, pass.value).then(()=>{
+    alert('Muy bien')
+  })
+    .catch((error) =>{
+      alert("error: " + error.message)
+    })
+  }
+
+&lt;/script>
+&lt;!-- ************************************* -->
+&lt;style scoped>
+.container{
+  background-color: antiquewhite;
+  border: double 3px brown;
+  border-radius: 1em;
+  padding: 1em;
+}
+&lt;/style>
+    </div>
+  </pre>
+</body>
+</html>

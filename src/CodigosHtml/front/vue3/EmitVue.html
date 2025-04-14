@@ -1,0 +1,86 @@
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body{background-color:bisque;}
+        .img{
+          width: 800px;
+          margin: 4em;
+        }
+        </style>
+        <title>ELEMENTOS RÁPIDOS</title>
+      </head>
+      <body>
+        <h2>	EMITS	</h2>
+<ol>		
+<li>	Hijo: crear una función en el template	</li>
+<li>	Definir el emit y la función con el nombre y elementos de cambios	</li>
+<li>	Padre: se enlaza la función del hijo con una función  del padre 	</li>
+</ol>		
+<img src="/src/assets/image/emits1.png" alt="emit1" class="img">
+        <pre>
+          <div>
+            
+          <h2>PADRE</h2>
+&lt;template>
+  &lt;v-container :fluid="true">
+   &lt;h1>Padre&lt;/h1> &lt;br>&lt;br>
+
+   &lt;WorkView :nombre="nombre" :edad="edad" @modificar="cambiarValor"/>
+  &lt;/v-container>
+&lt;/template>
+&lt;!-- ******************************* --> 
+&lt;script setup>
+import { ref } from 'vue'
+import WorkView from './WorkView.vue'
+
+const cambiarValor=(valor1, valor2)=>{
+  nombre.value = valor1
+  edad.value = valor2
+}
+let nombre = ref('Carlos')
+let edad = ref(65)
+&lt;/script>
+&lt;!-- ******************************* -->
+&lt;style scoped>
+
+&lt;/style>
+  ////////////////////////////////////////////////
+          <h2>HIJO</h2>
+
+&lt;template>
+  &lt;div>
+   &lt;h1>Hijo&lt;/h1> 
+   &lt;h2>Te llamas {{ nombre }} y tienes {{ edad }} años&lt;/h2> &lt;br>&lt;br>
+
+   &lt;v-btn @click="enviar">Cambiar valores&lt;/v-btn>
+  &lt;/div>
+&lt;/template>
+&lt;!-- ******************************* --> 
+&lt;script setup>
+
+let emit = defineEmits(['modificar'])
+const enviar=()=>{
+  emit('modificar', 'Martin', 38)
+}
+
+const props = defineProps({
+  nombre: String,
+  edad: Number
+})
+&lt;/script>
+&lt;!-- ******************************* -->
+&lt;style scoped>
+div{
+  background-color: blanchedalmond;
+}
+&lt;/style>
+          </div>
+        </pre>
+      </body>
+      </html>
+    
+
+  

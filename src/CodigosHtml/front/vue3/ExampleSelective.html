@@ -1,0 +1,59 @@
+    
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body{
+          background-color:bisque;
+        }
+        .img{
+          width: 800px;
+          margin: 4em;
+          border: brown double 6px;
+        }
+        </style>
+        <title>Example Selective </title>
+      </head>
+      <body>
+          <div>
+            <h2>Example Selective </h2>
+            <ol>
+              <li>	QUE MUESTRE: </li>
+              <li>	SI LA CONSTANTE DICE QUE ES MAYOR DE EDAD</li>
+              <li>	SE MUESTRE DE UN COLOR , SINO SE MUESTRE</li>
+              <li>	DE OTRO COLOR	</li>
+              <li>	PRACTICAR CON V-SHOW Y V-IF-ELSE</li>
+
+            </ol>
+          </div>
+        <img src="/src/assets/image/ExampleSelective.PNG" class="img">
+
+        <div class="">
+          <pre>
+&lt;template>
+  &lt;div>
+   &lt;h1>VUE3&lt;/h1> 
+   &lt;h2 v-show="age>17" class="bg-green">Es mayor de edad&lt;/h2>
+   &lt;h2 v-show="age&lt;18" class="bg-red">Es menor de edad&lt;/h2>
+  
+  &lt;/div>
+&lt;/template>
+&lt;!-- ******************************* --> 
+&lt;script setup>
+let age = 18
+
+&lt;/script>
+&lt;!-- ******************************* -->
+&lt;style scoped>
+
+&lt;/style>
+          </pre>
+        </div>
+      </body>
+      </html>
+    
+
+  

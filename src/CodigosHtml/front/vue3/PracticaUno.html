@@ -1,0 +1,105 @@
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body{background-color:bisque;}
+        .img{
+          width: 600px;
+          margin: 4em;
+        }
+        </style>
+        <title>ELEMENTOS RÁPIDOS</title>
+      </head>
+      <body>
+        <h2>	PRACTICA UNO 	</h2>
+        <h4>Objetivo</h4>
+<ol>
+<li>	mostrar saldo	</li>
+<li>	Botones de depósito y retiro	</li>
+<li>	si esta en o que no pueda retirar //usar un alert	</li>
+<li>	cantidad de movimientos	</li>
+<li>	listado de movimientos 	</li>
+<li>	Dar estilos 	</li>
+</ol>
+<h4>Proceso</h4>
+<ol>
+  <li>Hacer el let referencial y llamarlo en el template</li>
+  <li>Crear un botón con la función mas</li>
+  <li>Hacer la lógica de aumentar </li>
+  <li>Duplicar y cambiar a disminuir</li>
+  <li>Crear el boton menos</li>
+  <li>No puede haber saldo negativo</li>
+  <li>crear una condicional que emita un alert</li>
+  <li>H3 la cantidad de movimientos en let ref</li>
+  <li>Mostrar si ha sido un deposito o retiro de 100</li>
+  <li>Definir un array ref</li>
+  <li>Aumentar la lógica con un push</li>
+  <li>Llamarlo con un v-for</li>
+  <li>Aunmentar la logica para disminuir</li>
+  <li>Darle estilo</li>
+</ol>
+<img src="/src/assets/image/practicaUno.png" alt="Practica Uno" class="img">
+        <pre>
+          <div>
+            &lt;template>
+            &lt;div>
+             &lt;h1>Practica Uno&lt;/h1>  &lt;br>&lt;br>
+              &lt;h2>Ahorros  $.{{ ahorro }}&lt;/h2> &lt;br>&lt;br>
+              &lt;h2>Cantidad de movimientos {{ movimiento }}&lt;/h2> &lt;br>&lt;br>
+              &lt;v-btn @click="deposito" class="btn">Depósito&lt;/v-btn>
+              &lt;v-btn @click="retiro">Retiro&lt;/v-btn> &lt;br>&lt;br>&lt;br>
+           
+              &lt;h3>MOVIMIENTOS &lt;/h3>
+              &lt;ol>
+                &lt;li v-for="(mov, index) in movimientos" :key="index">{{ mov }}&lt;/li>
+              &lt;/ol>
+            &lt;/div>
+          &lt;/template>
+          &lt;!-- ******************************* --> 
+          &lt;script setup>
+          import { ref } from 'vue';
+          
+          
+          let ahorro = ref(0)
+          let movimiento = ref(0)
+          let movimientos = ref([])
+          
+          let retiro = ()=>{
+            if (ahorro.value > 0) {
+              ahorro.value -= 100
+              movimiento.value++
+              movimientos.value.push('Retiro $100.00')
+              
+            }else{
+              alert('No tiene Fondos')
+            }
+          }
+          let deposito = ()=>{
+            ahorro.value += 100
+            movimiento.value++
+            movimientos.value.push('Deposito $100.00')
+          }
+          &lt;/script>
+          &lt;!-- ******************************* -->
+          &lt;style scoped>
+          div{
+            background-color: blanchedalmond;
+            margin: 4em;
+            padding: 4em;
+          }
+          .btn{
+            margin-right: 2em;
+          }
+          h2{
+            margin-left: 3rem;
+          }
+          &lt;/style>
+          </div>
+        </pre>
+      </body>
+      </html>
+    
+
+  

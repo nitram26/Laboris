@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{background-color:bisque;}
+  .img{
+    width: 400px;
+    margin: 4em;
+    border: brown double 6px;
+  }
+  </style>
+  <title>ELEMENTOS RÁPIDOS</title>
+</head>
+<body>
+<h1> BINDEO BIDIRECCIONAL v-model </h1> 
+<ol>
+  <li>crear un input </li>
+  <li>y hacer que lo que se escribe en la caja se muestre por pantalla</li>
+  <li></li>
+ 
+   <h2> BINDEO BIDIRECCIONAL v-model</h2>
+Es reactivo se usa con ref <br>
+El v model relaciona un elemento del template con otro del script
+  </li>
+</ol>
+<img src="/src/assets/image/model.png" alt="model" class="img">
+  <pre>
+    <div>
+      &lt;template>
+      &lt;div>
+          &lt;h1>VUE3&lt;/h1>
+          &lt;v-row>
+            &lt;v-col cols="4">
+            &lt;v-form>
+                &lt;v-text-field
+                placeholder="Escribe aquí"
+                density="compact"
+                v-model="input"
+                >&lt;/v-text-field>
+              &lt;/v-form>
+            &lt;/v-col>
+          &lt;/v-row>
+          &lt;h3>{{ input }}&lt;/h3>
+      &lt;/div>
+    &lt;/template>
+    &lt;!-- ************************************* -->
+    &lt;script setup>
+    import { ref } from 'vue';
+    
+    let input = ref('')
+    &lt;/script>
+    &lt;!-- ************************************* -->
+    &lt;style scoped>
+    
+    &lt;/style>
+    
+    
+    </div>
+  </pre>
+</body>
+</html>

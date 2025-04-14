@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: antiquewhite;
+    }
+  </style>
+</head>
+<body>
+ 
+ 
+  <a href="https://www.youtube.com/watch?v=LAozf_wDejU&list=PLDllzmccetSNgykILXnHMeuO-y-gRcF-i">VUE3 PROF 35</a>
+  <h1>Plugins</h1>
+  <ol>
+    <p>Un plugin en Vue 3 es un código adicional que puedes agregar a tu proyecto Vue para extender sus funcionalidades. Los plugins en Vue 3 permiten agregar capacidades globales a tu aplicación, como componentes, directivas, instancias de métodos y mixins.</p>
+    <p>Aquí hay algunos ejemplos de lo que un plugin puede hacer en Vue 3: <br>
+
+      Agregar funcionalidad global: Puedes registrar componentes o directivas globalmente para que estén disponibles en toda tu aplicación. <br>
+      
+      Extender instancias de Vue: Puedes agregar métodos o propiedades globales que estarán disponibles en todas las instancias de Vue. <br>
+      
+      Ofrecer integraciones con bibliotecas externas: Por ejemplo, puedes crear un plugin que integre Vue con una biblioteca de terceros, como una librería de gráficos o un servicio de autenticación.</p>
+  
+    <li>Crear una carpeta de plugins</li>
+    <li>Crear un archivo para cada plugin</li>
+    <h3>example.js</h3>
+    <pre>
+      export default {
+        install: (app, options) => {
+          app.config.globalProperties.$count = () => 0,
+          app.config.globalProperties.$saySomething = () => alert(options.message)
+        }
+      }
+    </pre>
+    <li>Importar el plugin al main.js</li>
+    <pre>
+    import { createApp } from 'vue'
+    import App from './App.vue'
+    import example from '../plugins/example'
+
+    const app = createApp(App)
+    app.use(example, {
+      message: "Buen día Carlos"
+    })
+    .mount('#app')
+
+    </pre>
+    <li>En la página, en este caso App.vue</li>
+    <pre>
+      &lt;template>
+        &lt;div>
+      
+            &lt;h1>Vue3&lt;/h1>
+       &lt;button @click="$event => $saySomething()">Press&lt;/button>
+         
+        &lt;/div>
+      &lt;/template>
+     
+      &lt;script setup>
+
+      &lt;/script>
+   
+      &lt;style scoped>
+      &lt;/style>
+      
+    </pre>
+
+  </ol>
+
+</body>
+</html>
+<!-- TEMA : 54/ 35
+    TIEMPO: 3622
+-->

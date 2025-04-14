@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{background-color:bisque;}
+  .img{
+    width: 800px;
+    margin: 4em;
+    border: brown double 6px;
+  }
+  </style>
+  <title>ELEMENTOS RÁPIDOS</title>
+</head>
+<body>
+  <H2>USO DEL V-BIND => : 0535</H2>
+  <ol>		
+    <h3>Tarea</h3>
+    <li>Hacer un h3 con el texto: Esta es una etiqueta que cambia de color</li>
+    <li>color por defecto azul</li>
+    <li>hacer un botón que al pulsar cambie el color del texto</li>
+    <li>cambia a rojo</li>
+    <li>despues de 2 segundos regrese a su color</li>
+    <h3>Información</h3>
+    <li>v-bind:  :  SIGNIFICA UNIR, CONECTAR, ASOCIAR</li>
+    <li>	Permite modificar el atributo que se pone después del bind	</li>
+    <li>	Es unidireccional	</li>
+    <li>	Se usa para clases y estilos	</li>
+    <li>	Se pueden aplicar a una etiqueta varias clases en un solo bind	</li>
+    <li>	Trabaja con variables, por eso se traen del SCRIPT	</li>
+    <li> v-bind relaciona datos del STYLE on el template, es unidireccional, se encierra entre llaves </li>
+  </ol>
+  <img src="/src/assets/image/front/bind1.png" alt="bind1" class="img">
+  <img src="/src/assets/image/front/bind2.png" alt="bind2" class="img">
+  <pre>
+    <div class="">
+      &lt;template>
+  &lt;div>
+    &lt;h1>Bind&lt;/h1>
+    &lt;h1 :class="color">esta es una etiqueta que cambiará de color&lt;/h1>
+    &lt;button class="btn btn-primary" @click="cambio">CAMBIA&lt;/button>
+  &lt;/div>
+&lt;/template>
+&lt;!-- ************************************* -->
+&lt;script setup>
+import { ref } from 'vue';
+
+let color = ref('uno');
+
+let cambio = () => {
+  color.value = 'dos';
+  setTimeout(() => {
+    color.value = 'uno';
+  }, 3000);
+}
+
+&lt;/script>
+&lt;!-- ************************************* -->
+&lt;style scoped>
+.uno {
+  background-color: antiquewhite;
+  color: brown;
+}
+.dos {
+  background-color: brown;
+  color: aliceblue;
+}
+&lt;/style>
+
+    </div>
+  </pre>
+</body>
+</html>
+
+

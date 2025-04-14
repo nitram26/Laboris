@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{background-color:bisque;}
+  .img{
+    width: 800px;
+  }
+  </style>
+  <title>ELEMENTOS RÁPIDOS</title>
+</head>
+<body>
+  <div>
+    <h2>V-FOR </h2> 
+    <p>
+    DEL 1 AL 10 separado por guion o espacio <br>
+    iterar las letras de una palabra <br>
+    iterar un array de números o letras<br>
+    iterar un objeto
+  </p>
+    <img src="/src/assets/image/v-for.png" alt="" class="img">
+      <pre>
+      ////////////////////////////////////////////////////////////
+      &lt;template>
+        &lt;div class="bg-teal-lighten-3">
+         &lt;h1>v-for 1438&lt;/h1> 
+         &lt;div>
+          &lt;h2>Números del 1 al 10&lt;/h2>
+        &lt;ul>
+          &lt;li v-for="(num, index) in 10" :key="index">{{ num }}&lt;/li>
+        &lt;/ul>
+      &lt;/div>
+      
+      &lt;div class="uno">
+        &lt;h2>Palabra&lt;/h2>
+        &lt;ul>
+          &lt;li v-for="(letra, index) in 'hola'" :key="index">{{ letra }}&lt;/li>
+        &lt;/ul>
+      &lt;/div>
+      
+      
+        &lt;div class="dos">
+          &lt;h2>Array&lt;/h2>
+          &lt;ul>
+            &lt;li v-for="(num, index) in numeros" :key="index">{{ num }}&lt;/li>
+          &lt;/ul>
+        &lt;/div>
+        &lt;div class="tres">
+          &lt;h2>Objetos&lt;/h2>
+          &lt;ol>
+            &lt;li v-for="(object, index) in objetos" :key="index">{{ object.nombre }} {{ object.apellido }} su edad es {{ object.age }}&lt;/li>
+          &lt;/ol>
+        &lt;/div>
+      &lt;/div>
+      &lt;/template>
+      &lt;!-- ******************************* --> 
+      &lt;script setup>
+      
+      let numeros = [1,2,3,9,8,7,6,5,4]
+      
+      let objetos = [
+        {
+          nombre:"Carlos",
+          apellido: "Cervera",
+          age : 15
+        },
+        {
+          nombre:"Sofia",
+          apellido: "Cobeñas",
+          age : 16
+        },
+        {
+          nombre:"Ingrid",
+          apellido: "Rebeca",
+          age : 17
+        }
+      ]
+      &lt;/script>
+      &lt;!-- ******************************* -->
+      &lt;style scoped>
+      li{
+        margin-left: 2em;
+      }
+      div{
+        display: flex;
+        margin: 2em;
+      }
+      &lt;/style>
+    </div>
+  </pre>
+</body>
+</html>

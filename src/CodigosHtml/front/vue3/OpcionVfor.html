@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{background-color:bisque;}
+  .img{
+    width: 800px;
+    margin: 4em;
+  }
+  </style>
+  <title>ELEMENTOS RÁPIDOS</title>
+</head>
+<body>
+  <h2>	Opciones V-FOR 	</h2>
+<ol>		
+<li>	hacer un card y tener un objeto de preguntas 	</li>
+<li>	que cada pregunta con su respuesta aparezcan	</li>
+<li>	 5 preguntas con 3-4 respuestas 	</li>
+<li>	 Que desaparezcan después de 3 segundos	las respuestas</li>
+</ol>		
+<img src="/src/assets/image/OpcionVfor.png" alt="opcionVfor" class="img">
+  <pre>
+    <div>
+      &lt;template>
+  &lt;h1>Practica  &lt;/h1>
+
+  &lt;div class="div" v-for="(preg, index) in preguntasComputacion" :key="index">
+   &lt;h5> {{ preg.pregunta }}&lt;/h5>
+   &lt;ol>
+    &lt;li v-for="(rpta, index) in preg.opciones" :key="index">{{ rpta }}&lt;/li> &lt;br>&lt;br>
+   &lt;h2 v-show="ver">La respuesta es  {{ preg.respuesta }} &lt;/h2>
+    &lt;v-btn class="bg-teal" @click="res">RESPUESTA&lt;/v-btn>
+   &lt;/ol>
+  &lt;/div>
+
+&lt;/template>
+&lt;!-- ************************************* -->
+&lt;script setup>
+import { ref } from 'vue';
+
+
+let ver = ref(false)
+let res = ()=>{
+  ver.value = !ver.value
+  setTimeout(() => {
+    ver.value = !ver.value
+  }, 2000);
+}
+
+
+const preguntasComputacion = [
+        {
+            pregunta: "¿Cuál de los siguientes es un lenguaje de programación orientado a objetos?",
+            opciones: [
+                "A) COBOL",
+                "B) C++",
+                "C) Assembly",
+                "D) Fortran"
+            ],
+            respuesta: "B) C++"
+        },
+        {
+            pregunta: "¿Qué es una base de datos relacional?",
+            opciones: [
+                "A) Un sistema para gestionar archivos de texto",
+                "B) Un sistema que utiliza tablas para almacenar datos y establecer relaciones entre ellos",
+                "C) Un programa para crear gráficos y diagramas",
+                "D) Un lenguaje de programación utilizado para desarrollar aplicaciones web"
+            ],
+            respuesta: "B) Un sistema que utiliza tablas para almacenar datos y establecer relaciones entre ellos"
+        },
+        {
+            pregunta: "¿Qué representa 'HTTP' en el contexto de la web?",
+            opciones: [
+                "A) HyperText Transfer Protocol",
+                "B) HyperText Transmission Program",
+                "C) HyperText Transfer Program",
+                "D) HyperText Transmission Protocol"
+            ],
+            respuesta: "A) HyperText Transfer Protocol"
+        },
+        {
+            pregunta: "¿Cuál de los siguientes NO es un sistema operativo?",
+            opciones: [
+                "A) Windows",
+                "B) Linux",
+                "C) Python",
+                "D) macOS"
+            ],
+            respuesta: "C) Python"
+        },
+        {
+            pregunta: "¿Qué significa la sigla 'SQL' en el contexto de bases de datos?",
+            opciones: [
+                "A) Structured Query Language",
+                "B) Simple Query Language",
+                "C) Sequential Query Language",
+                "D) Structured Question Language"
+            ],
+            respuesta: "A) Structured Query Language"
+        }]
+&lt;/script>
+&lt;!-- ************************************* -->
+&lt;style scoped>
+
+.div{
+  background-color: blanchedalmond;
+  padding: 4em;
+  border: brown 1px solid;
+  width: 95%;
+  margin: 3em;
+}
+&lt;/style>
+
+    </div>
+  </pre>
+</body>
+</html>

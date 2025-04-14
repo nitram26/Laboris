@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body{background-color:bisque;}
+        .img{
+          width: 600px;
+          margin: 4em;
+        }
+        </style>
+        <title>ELEMENTOS RÁPIDOS</title>
+      </head>
+      <body>
+        <h2>	Props </h2>
+<ol>		
+<li>	Crear el view y el componente  	</li>
+<li>	Padre: Se crean las variables, se importa el hijo y se envían las variables en el template	</li>
+<li>	Hijo: recibe los valores en el script con el uso de defineProps	</li>
+<li>	Se muestran en el template del view 	</li>
+<li> La combinación de padre-hijo</li>
+</ol>		
+<img src="/src/assets/image/props.png" alt="" class="img">
+        <pre>
+          <div>
+          <h2>componente Padre</h2>
+          &lt;template>
+  &lt;v-container :fluid="true">
+   &lt;h1>Padre&lt;/h1> 
+
+   &lt;WorkView :nombre="nombre" :edad="edad"/>
+  &lt;/v-container>
+&lt;/template>
+&lt;!-- ******************************* --> 
+&lt;script setup>
+import { ref } from 'vue'
+import WorkView from './WorkView.vue'
+
+let nombre = ref('Carlos')
+let edad = ref(65)
+&lt;/script>
+&lt;!-- ******************************* -->
+&lt;style scoped>
+
+&lt;/style>
+
+////////////////////////////////////////////////////
+<h2>componente hijo</h2>
+&lt;template>
+  &lt;div>
+   &lt;h1>Hijo&lt;/h1> 
+   &lt;h2>Te llamas {{ nombre }} y tienes {{ edad }} años&lt;/h2>
+  &lt;/div>
+&lt;/template>
+&lt;!-- ******************************* --> 
+&lt;script setup>
+
+const props = defineProps({
+  nombre: String,
+  edad: Number
+})
+&lt;/script>
+&lt;!-- ******************************* -->
+&lt;style scoped>
+
+&lt;/style>
+          </div>
+        </pre>
+      </body>
+      </html>
+    

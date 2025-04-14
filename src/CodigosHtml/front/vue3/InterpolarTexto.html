@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{
+    background-color:bisque;
+  }
+  .img{
+    width: 500px;
+    margin: 4em;
+    border: brown double 6px;
+  }
+  </style>
+  <title>ELEMENTOS RÁPIDOS</title>
+</head>
+<body>
+  
+    <div>
+      <h2>Ejercicio</h2>
+      <ol>
+        <li> un componente e interpolar un texto: El alumno a : APROBADO		</li>
+        <li>Llamarlo desde el app.vue para verlo en pantalla	</li>	
+        <li>Hace una variable color y darle color al elemento	</li>	
+      </ol>
+    </div>
+  <img src="/src/assets/image/interpolar.PNG" class="img">
+
+  <div>
+    <pre>
+&lt;template>
+  &lt;div class="bg-green">
+   &lt;h1>VUE3&lt;/h1> 
+   &lt;h3>El alumno a : {{ evaluado }}&lt;/h3>
+    &lt;h1>///&lt;/h1>
+  &lt;/div>
+&lt;/template>
+&lt;!-- ******************************* --> 
+&lt;script setup>
+let evaluado = 'Aprobado'
+&lt;/script>
+&lt;!-- ******************************* -->
+&lt;style scoped>
+
+&lt;/style>
+    </pre>
+  </div>
+</body>
+</html>

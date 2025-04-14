@@ -1,0 +1,104 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{background-color:bisque;}
+  .img{
+    width: 700px;
+    margin: 1em;
+    border: brown double 6px;
+  }
+  </style>
+  <title>ELEMENTOS RÁPIDOS</title>
+</head>
+<body>
+<h1> ENRUTADO </h1> 
+<H2>USANDO VUETIFY</H2>
+<pre>
+  &lt;template>
+  &lt;v-app>
+
+    &lt;!-- Barra de navegación superior *******************************-->
+    &lt;v-app-bar app color="primary" dark>
+      &lt;v-toolbar-title>Mi Aplicación&lt;/v-toolbar-title>
+      &lt;v-spacer>&lt;/v-spacer>
+
+      &lt;!-- Botones de navegación **********************************-->
+      &lt;v-btn
+        v-for="(route, index) in routes"
+        :key="index"
+        :color="isActive(route.path) ? 'green' : 'white'"
+        text
+        @click="() => navigate(route.path)"
+      >
+        {{ route.name }}
+      &lt;/v-btn>
+    &lt;/v-app-bar>
+
+    &lt;!-- Contenido principal***************************************** -->
+    &lt;v-main>
+      &lt;v-container fluid class="pa-4">
+        &lt;router-view>&lt;/router-view>
+      &lt;/v-container>
+    &lt;/v-main>
+  &lt;/v-app>
+&lt;/template>
+
+&lt; ///////////////////////////////////////////////////////////////////// -->
+
+&lt;script setup>
+import { useRouter, useRoute } from 'vue-router'
+
+const router = useRouter()
+const route = useRoute()
+
+// Definimos las rutas de navegación
+const routes = [
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about' }
+]
+
+// Función para navegar a la ruta seleccionada
+const navigate = (path) => {
+  router.push(path)
+}
+
+// Función para verificar si la ruta actual está activa
+const isActive = (path) => {
+  return route.path === path
+}
+&lt;/script>
+
+</pre>
+
+
+
+<h2>FORMA CLÁSICA</h2>
+<ol>
+<li>Por estructuración las vistas o paginas ejemplo: NombreView.vue</li>
+<li>Crear un navegador con el nombre de las rutas</li>
+<li>Una pagina con rutas internas</li>
+<li>Usar name en vez de path</li>
+<li>sub rutas que se llamen desde la pagina nueva imagen 3</li>
+</ol>
+<p>1 Para que la ruta activa cambie de color</p>
+<img src="/src/assets/image/front/vue3/ruta1.png" alt="ruta1" class="img">
+<p>2 Rutas internas</p>
+<img src="/src/assets/image/front/vue3/ruta2.png" alt="ruta2" class="img">
+<p>3 Uso del name</p>
+<img src="/src/assets/image/front/vue3/ruta3.png" alt="ruta3" class="img">
+<p>4 Enrutado interno- REVISAR</p>
+<img src="/src/assets/image/front/vue3/ruta4.png" alt="ruta4" class="img">
+  <pre>
+    <div>
+    
+    </div>
+  </pre>
+</body>
+</html>
+
+

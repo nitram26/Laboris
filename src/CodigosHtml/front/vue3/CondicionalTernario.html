@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{background-color:bisque;}
+  .img{
+      width: 800px;
+      margin: 4em;
+    }
+  </style>
+  <title>Condicional Ternario</title>
+</head>
+<body>
+  <h2>Condicional ternario </h2>
+    <div>
+    <ol>
+      <li>	Variable que muestre los ahorros	 </li>
+<li>	 azul > 500 o sino rojo	 </li>
+<li> :class="ahorro >= 500 ? 'azul' : 'rojo'" </li>
+
+    </ol>
+    </div>
+    <img src="/src/assets/image/CondicionalTernario.PNG" alt="Condicional Ternaria" class="img">
+
+    <div class="">
+      <pre>
+&lt;template>
+  &lt;h1>HOME&lt;/h1>
+  &lt;div :class="ahorro >= 500 ? 'azul' : 'rojo'">
+    &lt;h3>Los ahorros de Carlos son: {{ ahorro }}&lt;/h3>
+  &lt;/div>
+&lt;/template>
+&lt;!-- ******************************* -->
+&lt;script setup>
+let ahorro = 400
+&lt;/script>
+&lt;!-- ******************************* -->
+&lt;style scoped>
+.rojo{
+  color: red;
+}
+.azul{
+  color: blue;
+}
+&lt;/style>
+
+      </pre>
+    </div>
+</body>
+</html>

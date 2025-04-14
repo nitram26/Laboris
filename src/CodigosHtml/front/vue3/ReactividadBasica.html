@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body{background-color:bisque;}
+  .img{
+    width: 600px;
+    margin: 4em;
+  }
+  </style>
+  <title>ELEMENTOS RÁPIDOS</title>
+</head>
+<body>
+  <h2>	Reactividad</h2>
+<ol>		
+<li> botón que incremente de 100 en 100	</li>
+<li>	Que cambie de color pasando 1000	</li>
+<li>inicie en 500	</li>
+</ol>		
+<img src="/src/assets/image/reactividad.png" alt="reactividad" class="img">
+/////////////////////////////////////////////////////////
+  <pre>
+    <div>
+    
+&lt;template>
+&lt;div>
+ &lt;h1>REACTIVIDAD&lt;/h1> 
+  &lt;h2 :class="ahorro>1000 ? 'blue' :'green'">Ahorro : {{ ahorro }}&lt;/h2> &lt;br>&lt;br>
+
+  &lt;v-btn @click="aumento">Ingresar $ 100&lt;/v-btn>
+&lt;/div>
+&lt;/template>
+&lt;!-- ******************************* --> 
+&lt;script setup>
+import { ref } from 'vue';
+
+let ahorro = ref(500)
+let aumento = () => {
+ahorro.value+= 100
+}
+&lt;/script>
+&lt;!-- ******************************* -->
+&lt;style scoped>
+.blue{
+color: blue;
+}
+.green{
+color: green;
+}
+div{
+background-color: blanchedalmond;
+}
+&lt;/style>
+    </div>
+  </pre>
+</body>
+</html>

@@ -35,7 +35,23 @@
         <!-- ****************************** -->
         <li class="li">
           <details class="select">
-            <summary>Estructura de Página</summary>
+            <summary>Estructura y Navegador a Páginas</summary>
+            <a href="http://127.0.0.1:5502/src/CodigosHtml/home/NavPaginas.html" class="a" target="_blank">
+              <h4>Para redirigir a otras páginas</h4>
+            </a>
+            <ol>
+              <li>Necesita tener el MainLayout</li>
+              <li></li>
+            </ol>
+            <img src="../assets/image/home/navPagina.png " alt=" " class="img1">
+            <p><br></p>
+
+          </details>
+        </li>
+        <!-- ****************************** -->
+        <li class="li">
+          <details class="select">
+            <summary>Estructura de Página y Nav Interno</summary>
             <a href="http://127.0.0.1:5502/src/CodigosHtml/home/NavDentroDePagina.html" class="a" target="_blank">
               <h4>Estructura y Nav Interno</h4>
             </a>
@@ -52,29 +68,90 @@
         <!-- ****************************** -->
         <li class="li">
           <details class="select">
-            <summary>Página Principal</summary>
+            <summary>Subir proyecto a GitHub  </summary>
+            <a href="http://127.0.0.1:5502/src/CodigosHtml/home/SubirGithub.html" class="a" target="_blank">
+              <h4>Proyecto en GitHub</h4>
+            </a>
+            <img src="../assets/image/home/gitHub.png " alt="gitHub " class="img1">
+            <p><br></p>
+
+          </details>
+        </li>
+        <!-- ****************************** -->    
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <a href="" class="a" target="_blank">
+              <h4></h4>
+            </a>
+            <img src="../assets/image " alt=" " class="img1">
+            <p><br></p>
+
+          </details>
+        </li>
+        <!-- ****************************** -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <a href="" class="a" target="_blank">
+              <h4></h4>
+            </a>
+            <img src="../assets/image " alt=" " class="img1">
+            <p><br></p>
+
+          </details>
+        </li>
+        <!-- ****************************** -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <a href="" class="a" target="_blank">
+              <h4></h4>
+            </a>
+            <img src="../assets/image " alt=" " class="img1">
+            <p><br></p>
+
+          </details>
+        </li>
+        <!-- ****************************** -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <a href="" class="a" target="_blank">
+              <h4></h4>
+            </a>
+            <img src="../assets/image " alt=" " class="img1">
+            <p><br></p>
+
+          </details>
+        </li>
+        <!-- ****************************** -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <a href="" class="a" target="_blank">
+              <h4></h4>
+            </a>
+            <img src="../assets/image " alt=" " class="img1">
+            <p><br></p>
+
+          </details>
+        </li>
+        <!-- ****************************** -->
+  
+      </ol>
+    </v-col>
+    <v-col cols="6">
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>Barra de Nav. Página Principal</summary>
             <a href="http://127.0.0.1:5502/src/CodigosHtml/home/PaginaPrincipal.html" class="a" target="_blank">
               <h4>Barra de navegación principal</h4>
             </a>
 
             <img src="../assets/image/home/paginaPrincipal.png" alt="paginaPrincipal" class="img1">
             <p><br></p>
-          </details>
-        </li>
-        <!-- ****************************** -->
-        <li class="li">
-          <details class="select">
-            <summary>Navegador Lateral a Páginas</summary>
-            <a href="http://127.0.0.1:5502/src/CodigosHtml/home/NavPaginas.html" class="a" target="_blank">
-              <h4>Para redirigir a otras páginas</h4>
-            </a>
-            <ol>
-              <li>Necesita tener el MainLayout</li>
-              <li></li>
-            </ol>
-            <img src="../assets/image/home/navPagina.png " alt=" " class="img1">
-            <p><br></p>
-
           </details>
         </li>
         <!-- ****************************** -->
@@ -107,22 +184,6 @@
           </details>
         </li>
         <!-- ****************************** -->
-        <li class="li">
-          <details class="select">
-            <summary></summary>
-            <a href="" class="a" target="_blank">
-              <h4></h4>
-            </a>
-            <img src="../assets/image " alt=" " class="img1">
-            <p><br></p>
-
-          </details>
-        </li>
-        <!-- ****************************** -->
-      </ol>
-    </v-col>
-    <v-col cols="6">
-      <ol>
         <li class="li">
           <details class="select">
             <summary>Menu Primario</summary>
@@ -222,17 +283,7 @@
           </details>
         </li>
         <!-- ****************************** -->
-        <li class="li">
-          <details class="select">
-            <summary></summary>
-            <a href="" class="a" target="_blank">
-              <h4></h4>
-            </a>
-            <img src="../assets/image " alt=" " class="img1">
-            <p><br></p>
-
-          </details>
-        </li>
+     
       </ol>
     </v-col>
   </v-row>
@@ -400,11 +451,11 @@
           <!-- ****************************************** -->
           <li class="li">
             <details class="select">
-              <summary></summary>
-              <a href="" class="a" target="_blank">
+              <summary>Recordaris</summary>
+              <a href="http://127.0.0.1:5502/src/CodigosHtml/home/Recordaris.html" class="a" target="_blank">
                 <h4></h4>
               </a>
-              <img src="../assets/image " alt=" " class="img1">
+              <img src="../assets/image/home/25 AÑOS.jpeg " alt=" 25 AÑOS" class="img1">
               <p><br></p>
             </details>
           </li>

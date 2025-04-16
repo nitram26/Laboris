@@ -23,16 +23,18 @@
     <li></li>
   
   </ol>
-  <pre>
-    <div>
-      &lt;template>
+ <pre>
+  <div>
+    &lt;template>
   &lt;div id="section1">
-  &lt;NavInterno>
-    &lt;template #main>HTML || INITIUM&lt;/template>
-    &lt;template #title1> &lt;h4>INICIO&lt;/h4>&lt;/template>
-      &lt;template #title2>&lt;h4>OPTIONS&lt;/h4>&lt;/template>
-    &lt;template #title3>&lt;h4>PROCESSUS&lt;/h4>&lt;/template>
-  &lt;/NavInterno>
+    &lt;MainLayout>
+      &lt;template #main> &lt;h2>Home Front || INITIUM&lt;/h2> &lt;/template>
+      &lt;template #image1>  &lt;a href="/htmlView" class="lat">HTML&lt;/a> &lt;/template>
+      &lt;template #image2>  &lt;a href="/" class="lat">JAVASCRIPT&lt;/a> &lt;/template>
+      &lt;template #image3>  &lt;a href="/" class="lat">VUE2&lt;/a> &lt;/template>
+      &lt;template #image4>  &lt;a href="/vueView" class="lat">VUE3&lt;/a> &lt;/template>
+      &lt;template #image5>  &lt;a href="/" class="lat">&lt;/a> &lt;/template>
+   &lt;/MainLayout>
   &lt;!-- fin de navegador derecho -->
   &lt;/div>
   &lt;!-- *************************************************************** -->
@@ -154,9 +156,13 @@
             &lt;/details>
           &lt;/li>
     &lt;!-- ****************************************** -->
+
       &lt;/ol>
     &lt;/v-col>
    &lt;/v-row>
+ 
+
+
   &lt;!-- ///////////////////////////////////////////////// -->
   &lt;div id="section2" class="mt-1">
     &lt;v-row class="mt-1 text-center">
@@ -423,7 +429,7 @@
 &lt;/template>
 &lt;!-- ///////////////////////////////////////////////////////////// -->
 &lt;script setup>
-import NavInterno from '../layouts/NavInterno.vue';
+import MainLayout from '../../layouts/MainLayout.vue';
 
 
 
@@ -438,8 +444,8 @@ import NavInterno from '../layouts/NavInterno.vue';
   z-index: 1000
 }
 &lt;/style>
-    </div>
-  </pre>
+  </div>
+ </pre>
 </body>
 </html>
     

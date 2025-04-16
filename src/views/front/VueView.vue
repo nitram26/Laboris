@@ -16,11 +16,11 @@
             <details class="select">
               <summary>Crear proyecto</summary>
               <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/CrearProyecto.html" class="a" target="_blank">
-                <h4>Crear Proyecto Vue con Vuetify,Vite y Cli</h4>
+                <h4>Crear Proyecto con Vuetify,Vite y Cli</h4>
              </a>
               <ol>
-                <li>npm init vue@latest</li>
-                <li>vue create nombreDelProyecto <br>Para CLI</li>
+                <li>Tener Instalado Node</li>
+                <li>Crear una carpeta y llevarla a VSCode </li>
                 <li></li>
               </ol>
               <img src="../../assets/image/front/vue3/instalar.png" alt="instalar " class="img1">

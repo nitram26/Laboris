@@ -14,7 +14,7 @@
       <ol>
         <li class="li">
             <details class="select">
-              <summary>Crear proyecto</summary>
+              <summary class="text-teal">Crear Proyecto</summary>
               <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/CrearProyecto.html" class="a" target="_blank">
                 <h4>Crear Proyecto con Vuetify,Vite y Cli</h4>
              </a>

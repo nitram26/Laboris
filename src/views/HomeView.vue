@@ -68,7 +68,7 @@
         <!-- ****************************** -->
         <li class="li">
           <details class="select">
-            <summary>Subir proyecto a GitHub  </summary>
+            <summary>Subir proyecto a GitHub </summary>
             <a href="http://127.0.0.1:5502/src/CodigosHtml/home/SubirGithub.html" class="a" target="_blank">
               <h4>Proyecto en GitHub</h4>
             </a>
@@ -77,18 +77,6 @@
 
           </details>
         </li>
-        <!-- ****************************** -->    
-        <li class="li">
-          <details class="select">
-            <summary></summary>
-            <a href="" class="a" target="_blank">
-              <h4></h4>
-            </a>
-            <img src="../assets/image " alt=" " class="img1">
-            <p><br></p>
-
-          </details>
-        </li>
         <!-- ****************************** -->
         <li class="li">
           <details class="select">
@@ -138,7 +126,19 @@
           </details>
         </li>
         <!-- ****************************** -->
-  
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <a href="" class="a" target="_blank">
+              <h4></h4>
+            </a>
+            <img src="../assets/image " alt=" " class="img1">
+            <p><br></p>
+
+          </details>
+        </li>
+        <!-- ****************************** -->
+
       </ol>
     </v-col>
     <v-col cols="6">
@@ -283,7 +283,7 @@
           </details>
         </li>
         <!-- ****************************** -->
-     
+
       </ol>
     </v-col>
   </v-row>
@@ -296,7 +296,7 @@
         <h2 class="bg-pink-darken-4 pa-4"> ORDER </h2>
       </v-col>
     </v-row>
-<!-- ORDER => ORDEN -->
+    <!-- ORDER => ORDEN -->
     <!-- ****************************************** -->
     <v-row>
       <v-col cols="6">
@@ -332,7 +332,8 @@
           <li class="li">
             <details class="select">
               <summary>Tutoriales</summary>
-              <a href="http://127.0.0.1:5502/src/CodigosHtml/home/EnlacesReferencias.html#developer" class="a" target="_blank">
+              <a href="http://127.0.0.1:5502/src/CodigosHtml/home/EnlacesReferencias.html#developer" class="a"
+                target="_blank">
                 <h4>Enlaces a tutoriales</h4>
               </a>
               <img src="../assets/image/home/youtube.png " alt="youtube " class="img1">
@@ -353,11 +354,18 @@
           <!-- ****************************************** -->
           <li class="li">
             <details class="select">
-              <summary></summary>
+              <summary>Encendido PC</summary>
               <a href="" class="a" target="_blank">
-                <h4></h4>
+                <h4>Muestra cuando se encendió la PC</h4>
               </a>
-              <img src="../assets/image " alt=" " class="img1">
+              <ol>
+                <li>Windows+R</li>
+                <li>cmd</li>
+                <li>wevtutil query-events System "/q:*[System[(EventID=6005 or EventID=6006 or EventID=6008)]]"
+                  /f:text </li>
+                <li>NO TIENE PÁGINA HTML ENLACE</li>
+              </ol>
+              <img src="../assets/image/home/encender1.png " alt="encender1 " class="img1">
               <p><br></p>
             </details>
           </li>

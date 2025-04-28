@@ -17,8 +17,12 @@
         <h3>Para todos</h3>
         <li>Tener instalado node</li>
         <li><a href="https://nodejs.org/en/download">Download</a></li>
-        <li>   cada cierto tiempo se debería actualizar el node hoy 180425</li>
-        <li>Verificar la versión de Node.js <br> node -v <br> node --version </li>
+        <li>cada cierto tiempo se debería actualizar el node hoy 180425</li>
+        <li>
+          Verificar la versión de Node.js <br />
+          node -v <br />
+          node --version
+        </li>
         <li>Crear carpeta y llevarla a VSCode</li>
 
         <h2>VITE</h2>
@@ -38,7 +42,7 @@
         <li>tener instalado node</li>
         <li>Tener instalado el CLI de Vue asi:</li>
         <li>npm install -g @vue/cli</li>
-        <h3 >Proceso</h3>
+        <h3>Proceso</h3>
         <li>vue create nombreDelProyecto</li>
         <li>elegir manual o vue3</li>
         <li>npm add vuetify</li>
@@ -48,13 +52,43 @@
         <li>npm install --save bootstrap</li>
         <li>npm install --save @popperjs/core</li>
       </ol>
-      <h2> VUETIFY</h2>
+      <h2>VUETIFY</h2>
       <ol>
-        <li>	npm install vuetify		</li>
-        <li>	npm install vite-plugin-vuetify		</li>
-        <li>			</li>
-        
+        <li>npm install vuetify</li>
+        <li>npm install vite-plugin-vuetify</li>
+        <li></li>
       </ol>
+      <h3>EL MAIN</h3>
+      <pre>
+        import { createApp } from 'vue'
+        import './style.css'
+        import App from './App.vue'
+        import { createVuetify } from 'vuetify'
+        import 'vuetify/styles'
+
+        const vuetify = createVuetify()
+        const app = createApp(App)
+        app.use(vuetify)
+        app.mount('#app')
+
+      </pre>
+
+      <h3>VITE CONFIG</h3>
+      <pre>
+        import { defineConfig } from 'vite'
+        import vue from '@vitejs/plugin-vue'
+        import vuetify from 'vite-plugin-vuetify' 
+
+        // https://vite.dev/config/
+        export default defineConfig({
+          plugins: [
+            vue(),
+            vuetify({ autoImport: true }),
+            // Add any other plugins you need here
+          ],
+        })
+
+      </pre>
     </div>
     <img src="/src/assets/image/front/vue3/viteConfig.png" alt="viteConfig" />
     <img src="/src/assets/image/front/vue3/viteConfig1.png" alt="viteConfig1" />

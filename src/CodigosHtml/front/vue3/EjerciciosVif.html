@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: bisque;
+      }
+      .img {
+        width: 600px;
+        margin: 4em;
+        border: brown double 6px;
+      }
+
+      .li {
+        margin: 0.5em;
+        padding: 0.5em;
+        border: brown solid 1px;
+        width: 65em;
+      }
+
+      .select {
+        font-size: 1.3em;
+        color: brown;
+        background-color: white;
+      }
+
+      pre {
+        margin-left: 1em;
+      }
+    </style>
+    <title>ELEMENTOS RÁPIDOS</title>
+  </head>
+  <body>
+    <h1>Ejercicios V-IF</h1>
+    <ol>
+      <!-- ++++++++++++++++++++++++++++++++++ -->
+      <li class="li">
+        <details class="select">
+          <summary>Mostrar un mensaje si el usuario está autenticado</summary>
+          <pre>
+  &lt;template>
+  &lt;div>
+      &lt;h1 v-show="login===true" class="green">Usuario autenticado &lt;/h1>
+      &lt;h1 v-show="login===false" class="peru">Falta autenticar &lt;/h1>
+  &lt;/div>
+&lt;/template>
+&lt;!-- ************************************* -->
+&lt;script setup>
+let login = false
+&lt;/script>
+&lt;!-- ************************************* -->
+&lt;style scoped>
+.green{
+background-color: green;
+color: white;
+width: 20em;
+height: 4em;
+display: flex;  
+justify-content: center; /* Alineación horizontal */  
+align-items: center;    /* Alineación vertical */  
+
+}
+
+.peru{
+background-color: peru;
+color: white;
+width: 20em;
+height: 4em;
+display: flex;  
+justify-content: center; /* Alineación horizontal */  
+align-items: center;    /* Alineación vertical */  
+}
+&lt;/style>
+</pre
+          >
+          <img
+            src="../../../assets/image/front/vue3/ifAutenticar.png"
+            alt="ifAutenticar"
+            class="img"
+          />
+          <p><br /><br /></p>
+        </details>
+      </li>
+      <!-- ++++++++++++++++++++++++++++++++++ -->
+      <li class="li">
+        <details class="select">
+          <summary>Alternar entre dos mensajes</summary>
+          <pre>
+  &lt;template>
+  &lt;div>
+      &lt;h1 v-show="mensaje===true" class="green">¡Hola, bienvenido! &lt;/h1>
+      &lt;h1 v-show="mensaje===false" class="peru">¡Nos vemos pronto! &lt;/h1>
+  &lt;/div>
+&lt;/template>
+&lt;!-- ************************************* -->
+&lt;script setup>
+let mensaje = true
+&lt;/script>
+&lt;!-- ************************************* -->
+&lt;style scoped>
+.green{
+background-color: green;
+color: white;
+width: 20em;
+height: 4em;
+display: flex;  
+justify-content: center; /* Alineación horizontal */  
+align-items: center;    /* Alineación vertical */  
+
+}
+
+.peru{
+background-color: peru;
+color: white;
+width: 20em;
+height: 4em;
+display: flex;  
+justify-content: center; /* Alineación horizontal */  
+align-items: center;    /* Alineación vertical */  
+}
+&lt;/style>
+</pre
+          >
+          <img
+            src="../../../assets/image/front/vue3/ifBienvenido.png"
+            alt="ifBienvenido"
+            class="img"
+          />
+          <p><br /><br /></p>
+        </details>
+      </li>
+      <!-- ++++++++++++++++++++++++++++++++++ -->
+      <li class="li">
+        <details class="select">
+          <summary>
+            Mostrar formulario solo si el usuario hace clic en botón
+          </summary>
+          <pre>
+  &lt;template>
+  &lt;button @click="formulario = !formulario" class="btn">Mostrar formulario&lt;/button>
+  &lt;form v-if="formulario">
+    &lt;input type="text" placeholder="Escribe tu nombre" class="input"/>
+  
+    &lt;button type="submit" class="btn">Enviar&lt;/button>
+  &lt;/form>
+&lt;/template>
+&lt;!-- ******************************* -->
+&lt;script setup>
+import { ref } from 'vue';
+
+const formulario = ref(false);
+&lt;/script>
+&lt;!-- ******************************* -->
+&lt;style scoped>
+.btn{
+  color: white;
+  background-color: green;
+  padding: 0.4em;
+  border-radius: 0.5em;
+  margin: 1em;
+}
+
+.input{
+  font-size: 1.5em;
+  font-style: italic;
+  color: brown;
+  border: 2px solid peru;
+}
+&lt;/style>
+</pre
+          >
+          <img
+            src="../../../assets/image/front/vue3/ifForm.png"
+            alt="ifForm"
+            class="img"
+          />
+          <p><br /><br /></p>
+        </details>
+      </li>
+      <!-- ++++++++++++++++++++++++++++++++++ -->
+      <li class="li">
+        <details class="select">
+          <summary>Mostrar una alerta si la edad es menor de 18</summary>
+          <pre>
+  &lt;template>
+  &lt;h2 class="h2">Tu edad es: {{ age }} años&lt;/h2>
+ &lt;p v-if="age &lt; 18" class="green">Eres menor de edad.&lt;/p>
+ &lt;p v-else-if="age >17 " class="peru">Eres Mayor de edad.&lt;/p>
+&lt;/template>
+&lt;!-- *************************************** -->
+&lt;script setup>
+
+const age = 65;
+&lt;/script>
+&lt;!-- *************************************** -->
+
+&lt;style>
+.h2{
+border: 2px solid brown;
+margin: 1em;
+padding: 0.5em;
+width: 12em;
+}
+
+.green{
+background-color: green;
+color: white;
+width: 20em;
+height: 4em;
+display: flex;  
+justify-content: center; /* Alineación horizontal */  
+align-items: center;    /* Alineación vertical */  
+}
+
+.peru{
+background-color: peru;
+color: white;
+width: 20em;
+height: 4em;
+display: flex;  
+justify-content: center; /* Alineación horizontal */  
+align-items: center;    /* Alineación vertical */  
+}
+&lt;/style>
+</pre
+          >
+          <img
+            src="../../../assets/image/front/vue3/ifEdad.png"
+            alt="ifEdad"
+            class="img"
+          />
+          <p><br /><br /></p>
+        </details>
+      </li>
+      <!-- ++++++++++++++++++++++++++++++++++ -->
+      <li class="li">
+        <details class="select">
+          <summary>Cambio de calificación según Ahorro</summary>
+          <p>
+            Un programa que muestre lo siguiente<br />
+            SI ahorro > 1000 ==> excelente cliente <br />
+            mayor a 600 => Cliente en Proceso <br />
+            de lo contrario => En Inicio <br />
+            SE PUEDE USAR IF PARA CANTIDADES Y SHOW PARA TEXTO, PREFERENTEMENTE
+            <br />
+            pero ambas funcionan en cualquier caso <br />
+          </p>
+          <pre></pre>
+
+          <img src="../../../assets/image/front/vue3/IfShow.PNG" alt="IfShow" />
+          <p><br /><br /></p>
+        </details>
+      </li>
+      <!-- ++++++++++++++++++++++++++++++++++ -->
+      <li class="li">
+        <details class="select">
+          <summary>
+            Input que si está vacío se muestre un mensaje de error
+          </summary>
+          <pre>
+  &lt;template>
+  &lt;input v-model="name" type="text" placeholder="Escribe tu nombre" />
+  &lt;p v-if="name === ''" style="color: red;">El nombre es obligatorio.&lt;/p>
+&lt;/template>
+
+&lt;script setup>
+import { ref } from 'vue';
+
+const name = ref('');
+&lt;/script>
+</pre
+          >
+          <img src="" alt="" class="img" />
+          <p><br /><br /></p>
+        </details>
+      </li>
+      <!-- ++++++++++++++++++++++++++++++++++ -->
+      <li class="li">
+        <details class="select">
+          <summary>
+            Usando un botón Mostrar/ocultar detalles de un producto
+          </summary>
+          <pre>
+  &lt;template>
+  &lt;div>
+    &lt;h2>If- Mostrar&lt;/h2>
+    
+
+    &lt;v-simple-table v-show="mostrar">
+      &lt;thead>
+        &lt;tr>
+          &lt;th class="px-4">Nombre &lt;/th>
+          &lt;th class="px-4"> Precio&lt;/th>
+          &lt;th class="px-4"> Cantidad&lt;/th>
+        &lt;/tr>
+      &lt;/thead>
+      &lt;tbody>
+        &lt;tr v-for="(producto, index) in productos" :key="index">
+          &lt;td class="px-4">{{ producto.nombre }}&lt;/td>
+          &lt;td class="px-4">{{ producto.precio }}&lt;/td>
+          &lt;td class="px-4">{{ producto.stock }}&lt;/td>
+        &lt;/tr>
+      &lt;/tbody>
+    &lt;/v-simple-table>
+&lt;/div> &lt;br>
+&lt;v-btn @click="mostrar = !mostrar" class="bg-teal">Mostrar/Ocultar&lt;/v-btn>
+&lt;/template>
+
+&lt;!-- ************************************* -->
+&lt;script setup>
+import { ref } from 'vue';
+
+
+let mostrar= ref(true)
+
+
+let productos = [
+  {
+    nombre:'arroz' ,
+    precio: 4.20,
+    stock: 100
+  },
+  {
+    nombre: 'aceite',
+    precio: 9.80,
+    stock: 150
+  },
+  {
+    nombre: 'fideos',
+    precio: 3.20,
+    stock: 220
+  },
+  {
+    nombre: 'frijol',
+    precio: 7.40 ,
+    stock: 140
+  },
+]
+&lt;/script>
+&lt;!-- ************************************* -->
+&lt;style scoped>
+
+&lt;/style>
+</pre
+          >
+          <img
+            src="../../../assets/image/front/vue3/ifMostrar.png"
+            alt="ifMostrar"
+            class="img"
+          />
+          <img
+            src="../../../assets/image/front/vue3/ifOcultar.png"
+            alt="ifMostrar"
+            class="img"
+          />
+          <p><br /><br /></p>
+        </details>
+      </li>
+      <!-- ++++++++++++++++++++++++++++++++++ -->
+      <li class="li">
+        <details class="select">
+          <summary></summary>
+          <p><br /><br /></p>
+        </details>
+      </li>
+      <!-- ++++++++++++++++++++++++++++++++++ -->
+      <li class="li">
+        <details class="select">
+          <summary></summary>
+          <p><br /><br /></p>
+        </details>
+      </li>
+      <!-- ++++++++++++++++++++++++++++++++++ -->
+      <li class="li">
+        <details class="select">
+          <summary></summary>
+          <p><br /><br /></p>
+        </details>
+      </li>
+      <!-- ++++++++++++++++++++++++++++++++++ -->
+    </ol>
+  </body>
+</html>

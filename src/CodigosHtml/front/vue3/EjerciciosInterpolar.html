@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: bisque;
+      }
+      .img {
+        width: 600px;
+        margin: 4em;
+        border: brown double 6px;
+      }
+
+      .li {
+        margin: 0.5em;
+        padding: 0.5em;
+        border: brown solid 1px;
+        width: 65em;
+      }
+
+      .select {
+        font-size: 1.3em;
+        color: brown;
+        background-color: white;
+      }
+
+      pre {
+        margin-left: 1em;
+        color: black;
+      }
+    </style>
+    <title>ELEMENTOS RÁPIDOS</title>
+  </head>
+  <body>
+    <h1>Interpolar Textos</h1>
+    <section id="1">
+      <h2 class="subtitulo"></h2>
+      <!-- /////////////////////////////////////// -->
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>Interpolación básica</summary>
+            <p>
+              Declara una variable mensaje en el script setup y muéstrala en el
+              template utilizando interpolación de texto.
+            </p>
+            <pre>
+              &lt;template> 
+                &lt;div class="bg-teal-lighten-2 text-white text-center py-5">
+                &lt;h1>ProbatioVue&lt;/h1>
+                &lt;h2>{{ mensaje }}&lt;/h2> 
+                &lt;/div> 
+                &lt;/template>
+              &lt;!-- ++++++++++++++++++++++++++++++++++++ --> 
+              &lt;script setup> 
+                let mensaje= "Hello World!" 
+              &lt;/script> 
+              &lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+              &lt;style scoped>&lt;/style>
+            </pre>
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Interpolación con variables dinámicas</summary>
+            <p>
+              Crea una variable nombre, asigna un valor y muestra un saludo
+              personalizado en el template usando interpolación.
+            </p>
+            <pre>
+    &lt;template>
+        &lt;div class="bg-teal-lighten-2 text-white text-center py-5">
+          &lt;h1>ProbatioVue&lt;/h1>
+          &lt;h2>{{ mensaje }}&lt;/h2>
+        &lt;/div>
+    &lt;/template>
+    &lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+    &lt;script setup>
+        let nombre = "Carlos M";
+        let mensaje = "Hola " + nombre + ", bienvenido a ProbatioVue";
+    &lt;/script>
+      &lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+    &lt;style scoped>&lt;/style></pre
+            >
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Interpolación con expresiones matemáticas</summary>
+            <p>
+              Declara dos variables numéricas y utiliza interpolación para
+              mostrar el resultado de una operación matemática en el template.
+            </p>
+            <pre>
+  NOTA : LAS COMILLAS INVERTIDAS SE HACEN CON ALT+96 
+&lt;template>
+  &lt;div class="bg-teal-lighten-2 text-white text-center py-5">
+    &lt;h1>ProbatioVue&lt;/h1>
+    &lt;h2>{{ mensaje }}&lt;/h2>
+  &lt;/div>
+&lt;/template>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+  let num1 = 10;
+  let num2 = 20;
+  let mensaje = `El resultado de la suma ${num1} + ${num2} es: ${num1 + num2}`;
+&lt;/script>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>&lt;/style>
+
+            </pre>
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Interpolación con métodos</summary>
+            <p>
+              Define un método que devuelva un mensaje y utilízalo en la
+              interpolación dentro del template.
+            </p>
+            <pre></pre>
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Interpolación con valores booleanos</summary>
+            <p>
+              Declara una variable booleana activo y usa interpolación para
+              mostrar un estado basado en su valor (Activo o Inactivo).
+            </p>
+            <pre></pre>
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Interpolación con objetos</summary>
+            <p>
+              Crea un objeto usuario con propiedades nombre y edad, y utiliza
+              interpolación para mostrar su información en el template.
+            </p>
+            <pre></pre>
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Interpolación con listas</summary>
+            <p>
+              Declara una lista de frutas y muestra sus elementos en el template
+              utilizando interpolación.
+            </p>
+            <pre></pre>
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Interpolación con fecha actual</summary>
+            <p>
+              Obtén la fecha actual utilizando new Date() y muéstrala en el
+              template con interpolación.
+            </p>
+            <pre></pre>
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Interpolación con valores computados</summary>
+            <p>
+              Crea un precio base y un porcentaje de descuento, luego usa una
+              propiedad computada para calcular el precio final y mostrarlo en
+              el template.
+            </p>
+            <pre></pre>
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Interpolación dentro de atributos HTML</summary>
+            <p>
+              Declara una variable color, asígnale un valor y úsala para definir
+              el color de un texto dentro del template con interpolación.
+            </p>
+            <pre></pre>
+            <p><br /><br /></p>
+          </details>
+        </li>
+      </ol>
+      <!-- ////////////////////////////////// -->
+    </section>
+  </body>
+</html>

@@ -16,228 +16,418 @@
             </template>
           </NavInterno>
           <!-- fin de navegador derecho -->
+
+          <!-- +++++++++++++++++++++++++++++++++++++++++++++++++ -->
+          <v-row>
+            <v-col cols="6">
+              <ol>
+                <li class="li">
+                  <details class="select">
+                    <summary class="text-teal">Crear Proyecto</summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/CrearProyecto.html" class="a"
+                      target="_blank">
+                      <h4>Crear Proyecto con Vuetify,Vite y Cli</h4>
+                    </a>
+                    <ol>
+                      <li>Tener Instalado Node</li>
+                      <li>Crear una carpeta y llevarla a VSCode </li>
+                      <li></li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3/instalar.png" alt="instalar " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary>Crear Snippets</summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Snippet.html" class="a" target="_blank">
+                      <h4>Crear un Snippet</h4>
+                    </a>
+                    <ol>
+                      <li>Ir a <a href="https://snippet-generator.app/?description=&tabtrigger=&snippet=&mode=vscode"
+                          target="_blank">Snippet Generator</a> </li>
+                      <li>Pegar el Código, poner descripción y nombre y copiarlo en VScode</li>
+                      <li> A FRAGMENTOS DE USUARIO Y PARA QUE LENGUAJES</li>
+                      <li> y en ese JSON se pega</li>
+                      <li></li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3/snippet.png " alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary>LLamar un Componente </summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/RelacionarComponentes.html" class="a"
+                      target="_blank">
+                      <h4></h4>
+                    </a>
+                    <ol>
+                      <li>Se trata de traer el componente a otra página</li>
+                      <li>Se llama en el template y la ruta va en el script</li>
+                      <li></li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3/relacionarComponentes.png" alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary>Interpolar Textos</summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/InterpolarTexto.html" class="a"
+                      target="_blank">
+                      <h4>LLamar una variable</h4>
+                    </a>
+                    <ol>
+                      <li>Desde el template se usa las llaves dobles</li>
+                      <li>Dentro se pone la variable que tenemos en el script</li>
+                      <li></li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3/interpolar.PNG " alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary>v-if v-show</summary>
+                    <a href="" class="a" target="_blank">
+                      <h4>Ejemplo Selectivo</h4>
+                    </a>
+                    <ol>
+                      <li>solo se muestra la opción elegida</li>
+                      <li>Se usa cualquiera aunque funciona mejor if con números</li>
+                      <li></li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3/ExampleSelective.PNG " alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary>V-MODEL</summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Model.html" class="a" target="_blank">
+                      <h4>Condiciones Reactivas</h4>
+                    </a>
+                    <ol>
+                      <li>Necesita usar el Ref</li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3/model.png " alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+              </ol>
+            </v-col>
+            <v-col cols="6">
+              <ol>
+                <li class="li">
+                  <details class="select">
+                    <summary>V-BIND</summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Bind.html" class="a" target="_blank">
+                      <h4>Uso de v-bind</h4>
+                    </a>
+                    <ol>
+                      <li>Como el If y show</li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3/bind1.png " alt=" " class="img1">
+                    <img src="../../assets/image/front/vue3/bind2.png " alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary>CHECKBOX</summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/SelectCheckbox.html" class="a"
+                      target="_blank">
+                      <h4>CON VUETIFY y CSS</h4>
+                    </a>
+                    <ol>
+                      <li>Revisar</li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3 " alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary>SELECT</summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/SelectNuevo.html" class="a"
+                      target="_blank">
+                      <h4>Realizado con vuetify</h4>
+                    </a>
+                    <ol>
+                      <li>Revisar</li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3/select&Ckeckbox.png " alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary>CONDICIONAL TERNARIO</summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/CondicionalTernario.html" class="a"
+                      target="_blank">
+                      <h4>TERNARIO</h4>
+                    </a>
+                    <ol>
+                      <li>Simplificación del if y show</li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3/CondicionalTernario.PNG " alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary>CONDICIONALES V-IF V-SHOW</summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/IfShow.html" class="a" target="_blank">
+                      <h4>CONDICIONALES</h4>
+                    </a>
+                    <ol>
+                      <li>Revisar</li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3/IfShow.PNG " alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary></summary>
+                    <a href="" class="a" target="_blank">
+                      <h4></h4>
+                    </a>
+                    <ol>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3 " alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+              </ol>
+            </v-col>
+          </v-row>
         </div>
-        <!-- *************************************************************** -->
-        <v-row>
-          <v-col cols="6">
-            <ol>
-              <li class="li">
-                <details class="select">
-                  <summary class="text-teal">Crear Proyecto</summary>
-                  <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/CrearProyecto.html" class="a"
-                    target="_blank">
-                    <h4>Crear Proyecto con Vuetify,Vite y Cli</h4>
-                  </a>
-                  <ol>
-                    <li>Tener Instalado Node</li>
-                    <li>Crear una carpeta y llevarla a VSCode </li>
-                    <li></li>
-                  </ol>
-                  <img src="../../assets/image/front/vue3/instalar.png" alt="instalar " class="img1">
-                  <p><br></p>
-                </details>
-              </li>
-              <!-- ****************************************** -->
-              <li class="li">
-                <details class="select">
-                  <summary>Crear Snippets</summary>
-                  <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Snippet.html" class="a" target="_blank">
-                    <h4>Crear un Snippet</h4>
-                  </a>
-                  <ol>
-                    <li>Ir a <a href="https://snippet-generator.app/?description=&tabtrigger=&snippet=&mode=vscode"
-                        target="_blank">Snippet Generator</a> </li>
-                    <li>Pegar el Código, poner descripción y nombre y copiarlo en VScode</li>
-                    <li> A FRAGMENTOS DE USUARIO Y PARA QUE LENGUAJES</li>
-                    <li> y en ese JSON se pega</li>
-                    <li></li>
-                  </ol>
-                  <img src="../../assets/image/front/vue3/snippet.png " alt=" " class="img1">
-                  <p><br></p>
-                </details>
-              </li>
-              <!-- ****************************************** -->
-              <li class="li">
-                <details class="select">
-                  <summary>LLamar un Componente </summary>
-                  <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/RelacionarComponentes.html" class="a"
-                    target="_blank">
-                    <h4></h4>
-                  </a>
-                  <ol>
-                    <li>Se trata de traer el componente a otra página</li>
-                    <li>Se llama en el template y la ruta va en el script</li>
-                    <li></li>
-                  </ol>
-                  <img src="../../assets/image/front/vue3/relacionarComponentes.png" alt=" " class="img1">
-                  <p><br></p>
-                </details>
-              </li>
-              <!-- ****************************************** -->
-              <li class="li">
-                <details class="select">
-                  <summary>Interpolar Textos</summary>
-                  <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/InterpolarTexto.html" class="a"
-                    target="_blank">
-                    <h4>LLamar una variable</h4>
-                  </a>
-                  <ol>
-                    <li>Desde el template se usa las llaves dobles</li>
-                    <li>Dentro se pone la variable que tenemos en el script</li>
-                    <li></li>
-                  </ol>
-                  <img src="../../assets/image/front/vue3/interpolar.PNG " alt=" " class="img1">
-                  <p><br></p>
-                </details>
-              </li>
-              <!-- ****************************************** -->
-              <li class="li">
-                <details class="select">
-                  <summary>v-if v-show</summary>
-                  <a href="" class="a" target="_blank">
-                    <h4>Ejemplo Selectivo</h4>
-                  </a>
-                  <ol>
-                    <li>solo se muestra la opción elegida</li>
-                    <li>Se usa cualquiera aunque funciona mejor if con números</li>
-                    <li></li>
-                  </ol>
-                  <img src="../../assets/image/front/vue3/ExampleSelective.PNG " alt=" " class="img1">
-                  <p><br></p>
-                </details>
-              </li>
-              <!-- ****************************************** -->
-              <li class="li">
-                <details class="select">
-                  <summary>V-MODEL</summary>
-                  <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Model.html" class="a" target="_blank">
-                    <h4>Condiciones Reactivas</h4>
-                  </a>
-                  <ol>
-                    <li>Necesita usar el Ref</li>
-                    <li></li>
-                    <li></li>
-                  </ol>
-                  <img src="../../assets/image/front/vue3/model.png " alt=" " class="img1">
-                  <p><br></p>
-                </details>
-              </li>
-              <!-- ****************************************** -->
-            </ol>
-          </v-col>
-          <v-col cols="6">
-            <ol>
-              <li class="li">
-                <details class="select">
-                  <summary>V-BIND</summary>
-                  <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Bind.html" class="a" target="_blank">
-                    <h4>Uso de v-bind</h4>
-                  </a>
-                  <ol>
-                    <li>Como el If y show</li>
-                    <li></li>
-                    <li></li>
-                  </ol>
-                  <img src="../../assets/image/front/vue3/bind1.png " alt=" " class="img1">
-                  <img src="../../assets/image/front/vue3/bind2.png " alt=" " class="img1">
-                  <p><br></p>
-                </details>
-              </li>
-              <!-- ****************************************** -->
-              <li class="li">
-                <details class="select">
-                  <summary>CHECKBOX</summary>
-                  <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/SelectCheckbox.html" class="a"
-                    target="_blank">
-                    <h4>CON VUETIFY y CSS</h4>
-                  </a>
-                  <ol>
-                    <li>Revisar</li>
-                    <li></li>
-                    <li></li>
-                  </ol>
-                  <img src="../../assets/image/front/vue3 " alt=" " class="img1">
-                  <p><br></p>
-                </details>
-              </li>
-              <!-- ****************************************** -->
-              <li class="li">
-                <details class="select">
-                  <summary>SELECT</summary>
-                  <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/SelectNuevo.html" class="a" target="_blank">
-                    <h4>Realizado con vuetify</h4>
-                  </a>
-                  <ol>
-                    <li>Revisar</li>
-                    <li></li>
-                    <li></li>
-                  </ol>
-                  <img src="../../assets/image/front/vue3/select&Ckeckbox.png " alt=" " class="img1">
-                  <p><br></p>
-                </details>
-              </li>
-              <!-- ****************************************** -->
-              <li class="li">
-                <details class="select">
-                  <summary>CONDICIONAL TERNARIO</summary>
-                  <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/CondicionalTernario.html" class="a"
-                    target="_blank">
-                    <h4>TERNARIO</h4>
-                  </a>
-                  <ol>
-                    <li>Simplificación del if y show</li>
-                    <li></li>
-                    <li></li>
-                  </ol>
-                  <img src="../../assets/image/front/vue3/CondicionalTernario.PNG " alt=" " class="img1">
-                  <p><br></p>
-                </details>
-              </li>
-              <!-- ****************************************** -->
-              <li class="li">
-                <details class="select">
-                  <summary>CONDICIONALES V-IF V-SHOW</summary>
-                  <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/IfShow.html" class="a" target="_blank">
-                    <h4>CONDICIONALES</h4>
-                  </a>
-                  <ol>
-                    <li>Revisar</li>
-                    <li></li>
-                    <li></li>
-                  </ol>
-                  <img src="../../assets/image/front/vue3/IfShow.PNG " alt=" " class="img1">
-                  <p><br></p>
-                </details>
-              </li>
-              <!-- ****************************************** -->
-              <li class="li">
-                <details class="select">
-                  <summary></summary>
-                  <a href="" class="a" target="_blank">
-                    <h4></h4>
-                  </a>
-                  <ol>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ol>
-                  <img src="../../assets/image/front/vue3 " alt=" " class="img1">
-                  <p><br></p>
-                </details>
-              </li>
-              <!-- ****************************************** -->
-            </ol>
-          </v-col>
-        </v-row>
         <!-- ///////////////////////////////////////////////// -->
         <div id="section2" class="mt-1">
+          <v-row class="bg-purple-lighten-4 text-center">
+            <v-col cols="12">
+              <h2 class="bg-pink-darken-4 pa-4">DIRECTIVAS</h2>
+            </v-col>
+          </v-row>
+          <!-- +++++++++++++++++++++++++++++++++++++++++++++++++ -->
+          <v-row>
+            <v-col cols="6">
+              <ol>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary>Interpolar Textos</summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/InterpolarTexto.html" class="a"
+                      target="_blank">
+                      <h4>Ejercicios</h4>
+                    </a>
+                    <ol>
+                      <li>Interpolar textos significa insertar dinámicamente valores o expresiones en la
+                        plantilla HTML usando las llaves dobles {{ }}</li>
+                      <li> Es una forma sencilla de mostrar datos del componente en la vista.</li>
+                      <li>Solo tienen que estar en una variable, la cual se llama </li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3/interpolar.PNG" class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary>V-IF Renderizado Condicional</summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/EjerciciosVif.html" class="a"
+                      target="_blank">
+                      <h4>EJERCICIOS</h4>
+                    </a>
+                    <ol>
+                      <li>Se usa para añadir o quitar elementos del DOM según una condición.</li>
+                      <li>Usa v-if cuando la condición cambia pocas veces.</li>
+                      <li>Usa v-show cuando la condición cambia frecuentemente.</li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3/v-ifLog.png" alt=" ifLog" class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary>V-SHOW Visibilidad condicional</summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Ejercicios%20VShow.html" class="a"
+                      target="_blank">
+                      <h4>EJERCICIOS</h4>
+                    </a>
+                    <ol>
+                      <li>Controla la visibilidad del elemento mediante display: none; en CSS.</li>
+                      <li>El elemento siempre está en el DOM, pero se oculta visualmente</li>
+                      <li>Es más eficiente si necesitas mostrar/ocultar elementos con frecuencia, ya que solo cambia un
+                        estilo CSS.</li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3/v-showLog.png" alt=" showLog" class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary></summary>
+                    <a href="" class="a" target="_blank">
+                      <h4></h4>
+                    </a>
+                    <ol>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="" alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary></summary>
+                    <a href="" class="a" target="_blank">
+                      <h4></h4>
+                    </a>
+                    <ol>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="" alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+              </ol>
+            </v-col>
+            <v-col cols="6">
+              <ol>
+                <li class="li">
+                  <details class="select">
+                    <summary></summary>
+                    <a href="" class="a" target="_blank">
+                      <h4></h4>
+                    </a>
+                    <ol>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="" alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary></summary>
+                    <a href="" class="a" target="_blank">
+                      <h4></h4>
+                    </a>
+                    <ol>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="" alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary></summary>
+                    <a href="" class="a" target="_blank">
+                      <h4></h4>
+                    </a>
+                    <ol>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="" alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary></summary>
+                    <a href="" class="a" target="_blank">
+                      <h4></h4>
+                    </a>
+                    <ol>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="" alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary></summary>
+                    <a href="" class="a" target="_blank">
+                      <h4></h4>
+                    </a>
+                    <ol>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="" alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+
+              </ol>
+            </v-col>
+          </v-row>
+        </div>
+        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+        <div id="section3" class="mt-1">
           <v-row class="mt-1 text-center">
             <v-col cols="12">
               <h2 class="bg-pink-darken-4 pa-4"> COMPONENTES </h2>
             </v-col>
           </v-row>
 
-          <!-- ****************************************** -->
+          <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
           <v-row>
             <v-col cols="6">
               <ol>
@@ -256,7 +446,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary>Reactividad</summary>
@@ -273,7 +463,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary>V_FOR</summary>
@@ -290,7 +480,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary>Practica Uno</summary>
@@ -310,7 +500,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary>V-FOR</summary>
@@ -327,7 +517,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
 
               </ol>
             </v-col>
@@ -351,7 +541,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary>LAYOUTS & COMPOSABLES</summary>
@@ -371,7 +561,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary>Animaciones e Iconos </summary>
@@ -388,7 +578,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary>Router</summary>
@@ -405,7 +595,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary></summary>
@@ -421,20 +611,20 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
 
               </ol>
             </v-col>
           </v-row>
         </div> <br>
         <!-- ///////////////////////////////////////////////// -->
-        <div id="section3" class="mt-1">
+        <div id="section4" class="mt-1">
           <v-row class="bg-purple-lighten-4 text-center">
             <v-col cols="12">
               <h2 class="bg-pink-darken-4 pa-4">PROCESSUS</h2>
             </v-col>
           </v-row>
-          <!-- ************************************************* -->
+          <!-- +++++++++++++++++++++++++++++++++++++++++++++++++ -->
           <v-row>
             <v-col cols="6">
               <ol>
@@ -454,7 +644,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary>Emits</summary>
@@ -470,7 +660,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary>Props Array</summary>
@@ -486,7 +676,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary>Injection</summary>
@@ -502,7 +692,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary>PlaceHolder</summary>
@@ -519,7 +709,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
 
               </ol>
             </v-col>
@@ -541,7 +731,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary>Pinia</summary>
@@ -559,7 +749,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary>PWA</summary>
@@ -575,7 +765,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary>il18n</summary>
@@ -591,7 +781,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary>Plugins</summary>
@@ -607,21 +797,21 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
 
               </ol>
             </v-col>
           </v-row>
         </div>
 
-        <!-- ///////////////////////////////////////////////////////////// -->
-        <div id="section4" class="mt-1">
+        <!-- ///////////////////////////////////////////////////// -->
+        <div id="section5" class="mt-1">
           <v-row class="bg-purple-lighten-4 text-center">
             <v-col cols="12">
               <h2 class="bg-pink-darken-4 pa-4">DISPONIBLE</h2>
             </v-col>
           </v-row>
-          <!-- ************************************************* -->
+          <!-- +++++++++++++++++++++++++++++++++++++++++++++++++ -->
           <v-row>
             <v-col cols="6">
               <ol>
@@ -640,7 +830,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary></summary>
@@ -656,7 +846,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary></summary>
@@ -672,7 +862,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary></summary>
@@ -688,7 +878,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary></summary>
@@ -704,7 +894,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
 
 
               </ol>
@@ -726,7 +916,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary></summary>
@@ -742,7 +932,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary></summary>
@@ -758,7 +948,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary></summary>
@@ -774,7 +964,7 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
                     <summary></summary>
@@ -790,12 +980,13 @@
                     <p><br></p>
                   </details>
                 </li>
-                <!-- ****************************************** -->
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
 
               </ol>
             </v-col>
           </v-row>
         </div>
+        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
       </template>
 <!-- ///////////////////////////////////////////////////////////// -->
 <script setup>

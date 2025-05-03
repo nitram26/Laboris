@@ -1,5 +1,6 @@
 body{
-  margin-left: 1em;
+background-color: cadetblue;
+ 
 }
 
 .img{
@@ -42,6 +43,7 @@ body{
   margin-left: 1em;
   padding: 0.5em;
 }
+.select>
 
 .a {
   text-decoration: none;
@@ -52,4 +54,10 @@ body{
 .lat{
   text-decoration: none;
   color: white;
+}
+
+.summary{
+  font-size: 1.5em;
+  color: brown;
+  margin-left: 1em;
 }

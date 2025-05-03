@@ -4,7 +4,7 @@ import HomeFront from '../views/front/HomeFront.vue';
 import HtmlView from '../views/front/HtmlView.vue';
 import VueView from '../views/front/VueView.vue';
 import IndexOffice from '../views/Office/IndexOffice.vue';
-
+import ProbatioVue from '../views/ProbatioVue.vue'; 
 const routes = [
   {
     path: '/',
@@ -31,11 +31,11 @@ const routes = [
     name: 'IndexOffice',
     component: IndexOffice
   },
-  // {
-  //   path: '/',
-  //   name: '',
-  //   component: 
-  // },
+  {
+    path: '/probatioVue',
+    name: 'ProbatioVue',
+    component: ProbatioVue
+  },
   // {
   //   path: '/',
   //   name: '',

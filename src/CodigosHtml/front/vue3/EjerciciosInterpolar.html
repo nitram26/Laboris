@@ -34,7 +34,7 @@
     <title>ELEMENTOS RÁPIDOS</title>
   </head>
   <body>
-    <h1>Interpolar Textos</h1>
+    <h1 class="bg-teal-lighten-2">Interpolar Textos</h1>
     <section id="1">
       <h2 class="subtitulo"></h2>
       <!-- /////////////////////////////////////// -->
@@ -55,11 +55,16 @@
                 &lt;/template>
               &lt;!-- ++++++++++++++++++++++++++++++++++++ --> 
               &lt;script setup> 
-                let mensaje= "Hello World!" 
+                let mensaje= "Buenos Días!" 
               &lt;/script> 
               &lt;!-- +++++++++++++++++++++++++++++++++++++ -->
               &lt;style scoped>&lt;/style>
             </pre>
+            <img
+              src="/src/assets/image/front/vue3/inter01.png"
+              alt="inter01"
+              class="img"
+            />
             <p><br /><br /></p>
           </details>
         </li>
@@ -87,6 +92,11 @@
     &lt;style scoped>&lt;/style></pre
             >
             <p><br /><br /></p>
+            <img
+              src="/src/assets/image/front/vue3/inter02.png"
+              alt="inter02"
+              class="img"
+            />
           </details>
         </li>
         <!-- ++++++++++++++++++++++++++++++ -->
@@ -115,6 +125,11 @@
 &lt;style scoped>&lt;/style>
 
             </pre>
+            <img
+              src="/src/assets/image/front/vue3/inter03.png"
+              alt="inter03"
+              class="img"
+            />
             <p><br /><br /></p>
           </details>
         </li>
@@ -126,7 +141,32 @@
               Define un método que devuelva un mensaje y utilízalo en la
               interpolación dentro del template.
             </p>
-            <pre></pre>
+            <pre>
+&lt;template>
+&lt;div class="bg-teal-lighten-2 text-white text-center py-5">
+  &lt;h1>ProbatioVue&lt;/h1>
+  &lt;h2>{{ mensajes }}&lt;/h2>
+  &lt;v-btn @click="mensaje" class="bg-blue">Obtener Mensaje&lt;/v-btn>
+&lt;/div>
+&lt;/template>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+import { ref } from 'vue';
+
+let nombre = "Carlos M";
+let mensajes = ref('');
+let mensaje = () => {
+  mensajes.value = 'Hola, ' + nombre + ' !';
+}
+&lt;/script>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>&lt;/style>
+            </pre>
+            <img
+              src="/src/assets/image/front/vue3/inter04.png"
+              alt="inter04"
+              class="img"
+            />
             <p><br /><br /></p>
           </details>
         </li>
@@ -135,10 +175,39 @@
           <details class="select">
             <summary>Interpolación con valores booleanos</summary>
             <p>
-              Declara una variable booleana activo y usa interpolación para
-              mostrar un estado basado en su valor (Activo o Inactivo).
+              Declara una variable booleana activa y usa interpolación para
+              mostrar un estado basado en su valor (true / false).Usando un
+              botón,mostrar un mensaje si es true y si es al revés mostrar otro
+              mensaje. Con colores diferentes en cada caso.
             </p>
-            <pre></pre>
+            <pre>
+&lt;template>
+&lt;div class="bg-teal-lighten-2 text-white text-center py-5">
+  &lt;h1>ProbatioVue&lt;/h1>
+  &lt;h2 v-show="boolean == true" class="text-red">{{ mensaje1 }}&lt;/h2>
+  &lt;h2 v-show="boolean == false" class="text-purple">{{ mensaje2 }}&lt;/h2>
+  &lt;v-btn @click="boolean = !boolean" class="bg-blue"> Mensaje&lt;/v-btn>
+&lt;/div>
+&lt;/template>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+import { ref } from 'vue'
+
+let boolean = ref(true)
+let mensaje1 = ref('Hola, soy mensaje 1')
+let mensaje2 = ref('Hola, soy mensaje 2')
+
+
+&lt;/script>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>&lt;/style>
+
+            </pre>
+            <img
+              src="/src/assets/image/front/vue3/inter05.png"
+              alt="inter05"
+              class="img"
+            />
             <p><br /><br /></p>
           </details>
         </li>
@@ -150,7 +219,31 @@
               Crea un objeto usuario con propiedades nombre y edad, y utiliza
               interpolación para mostrar su información en el template.
             </p>
-            <pre></pre>
+            <pre>
+&lt;template>
+&lt;div class="bg-teal-lighten-2 text-white text-center py-5">
+  &lt;h1>ProbatioVue&lt;/h1>
+  &lt;h2>{{ object.name }} tiene {{ object.age }}&lt;/h2>
+&lt;/div>
+&lt;/template>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+let object =
+{
+  name: 'Rebeca',
+  age: 30
+}
+
+&lt;/script>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>&lt;/style>
+
+            </pre>
+            <img
+              src="/src/assets/image/front/vue3/inter06.png"
+              alt="inter06"
+              class="img"
+            />
             <p><br /><br /></p>
           </details>
         </li>
@@ -162,7 +255,28 @@
               Declara una lista de frutas y muestra sus elementos en el template
               utilizando interpolación.
             </p>
-            <pre></pre>
+            <pre>
+  &lt;template>
+    &lt;div class="bg-teal-lighten-2 text-white text-center py-5">
+      &lt;h1>ProbatioVue&lt;/h1>
+
+      &lt;h2>{{ frutas.join(', ') }}&lt;/h2>
+    &lt;/div>
+  &lt;/template>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+const frutas = ['Manzana', 'Banana', 'Cereza']
+
+&lt;/script>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>&lt;/style>
+
+            </pre>
+            <img
+              src="/src/assets/image/front/vue3/inter07.png"
+              alt="inter07"
+              class="img"
+            />
             <p><br /><br /></p>
           </details>
         </li>
@@ -174,7 +288,36 @@
               Obtén la fecha actual utilizando new Date() y muéstrala en el
               template con interpolación.
             </p>
-            <pre></pre>
+            <pre>
+   &lt;template>
+    &lt;div class="bg-teal-lighten-2 text-white text-center py-5">
+      &lt;h1>ProbatioVue&lt;/h1>
+
+      &lt;h2>{{ fecha }}&lt;/h2>
+    &lt;/div>
+  &lt;/template>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+const fecha = new Date().toLocaleDateString('es-ES', {
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+  hour: '2-digit',
+  minute: '2-digit',
+  second: '2-digit',
+  timeZoneName: 'short'
+});
+
+&lt;/script>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>&lt;/style>
+
+            </pre>
+            <img
+              src="/src/assets/image/front/vue3/inter08.png"
+              alt="inter08"
+              class="img"
+            />
             <p><br /><br /></p>
           </details>
         </li>
@@ -187,7 +330,35 @@
               propiedad computada para calcular el precio final y mostrarlo en
               el template.
             </p>
-            <pre></pre>
+            <pre>
+&lt;template>
+&lt;div class="bg-teal-lighten-2 text-white text-center py-5">
+  &lt;h1>ProbatioVue&lt;/h1>
+  &lt;h2>La compra es de: $ {{ compra }}.00&lt;/h2>
+  &lt;h2>Su IGV 18% es: {{ igv }}.00&lt;/h2> &lt;br>
+  &lt;h2>El pago mas IGV es: $ {{ precio }}.00&lt;/h2>
+&lt;/div>
+&lt;/template>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+import { computed, ref, } from 'vue';
+
+let compra = 2500;
+let igv = `${compra * 0.18}`;
+let precio = ref(computed(() => {
+  return compra * 1.18;
+}));
+
+&lt;/script>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>&lt;/style>
+
+            </pre>
+            <img
+              src="/src/assets/image/front/vue3/inter09.png"
+              alt="inter09"
+              class="img"
+            />
             <p><br /><br /></p>
           </details>
         </li>
@@ -196,10 +367,36 @@
           <details class="select">
             <summary>Interpolación dentro de atributos HTML</summary>
             <p>
-              Declara una variable color, asígnale un valor y úsala para definir
-              el color de un texto dentro del template con interpolación.
+              Declara una variable color, asígnale un valor true y úsala para
+              definir el color de un texto dentro del template con
+              interpolación. Usando v-show y un botón que haga el cambio de
+              color.
             </p>
-            <pre></pre>
+            <pre>
+&lt;template>
+&lt;div class="bg-teal-lighten-2 text-white text-center py-5">
+&lt;h1>ProbatioVue&lt;/h1>
+&lt;h2 v-show="color === true" class="text-red">EL color es rojo&lt;/h2>
+&lt;h2 v-show="color === false" class="text-purple">EL color es purpura&lt;/h2>
+
+&lt;v-btn @click="color = !color" class="bg-purple">Color&lt;/v-btn>
+&lt;/div>
+&lt;/template>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+import { ref } from 'vue';
+
+let color = ref(true)
+&lt;/script>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>&lt;/style>
+
+            </pre>
+            <img
+              src="/src/assets/image/front/vue3/inter10.png"
+              alt="inter10"
+              class="img"
+            />
             <p><br /><br /></p>
           </details>
         </li>

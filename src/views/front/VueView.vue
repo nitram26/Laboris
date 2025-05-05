@@ -23,7 +23,7 @@
               <ol>
                 <li class="li">
                   <details class="select">
-                    <summary class="text-teal">Crear Proyecto</summary>
+                    <summary class="laboris">Crear Proyecto</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/CrearProyecto.html" class="a"
                       target="_blank">
                       <h4>Crear Proyecto con Vuetify,Vite y Cli</h4>
@@ -245,8 +245,8 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>Interpolar Textos</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/InterpolarTexto.html" class="a"
+                    <summary class="laboris">Interpolar Textos</summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/EjerciciosInterpolar.html" class="a"
                       target="_blank">
                       <h4>Ejercicios</h4>
                     </a>
@@ -263,7 +263,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>V-IF Renderizado Condicional</summary>
+                    <summary class="laboris">V-IF Renderizado Condicional</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/EjerciciosVif.html" class="a"
                       target="_blank">
                       <h4>EJERCICIOS</h4>
@@ -280,8 +280,8 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>V-SHOW Visibilidad condicional</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Ejercicios%20VShow.html" class="a"
+                    <summary class="laboris">V-SHOW Visibilidad condicional</summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/EjerciciosVShow.html" class="a"
                       target="_blank">
                       <h4>EJERCICIOS</h4>
                     </a>
@@ -433,7 +433,7 @@
               <ol>
                 <li class="li">
                   <details class="select">
-                    <summary class="text-teal">Contador</summary>
+                    <summary class="laboris">Contador</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Contador.html" class="a" target="_blank">
                       <h4>Contador </h4>
                     </a>
@@ -1003,6 +1003,11 @@ import NavInterno from '../../layouts/NavInterno.vue';
   left: 0;
   width: 101%;
   z-index: 1000
+}
+
+.laboris:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
 }
 </style>
 

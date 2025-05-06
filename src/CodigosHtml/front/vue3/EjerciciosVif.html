@@ -28,6 +28,7 @@
 
       pre {
         margin-left: 1em;
+        color: black;
       }
     </style>
     <title>ELEMENTOS RÁPIDOS</title>
@@ -243,11 +244,47 @@ align-items: center;    /* Alineación vertical */
             SI ahorro > 1000 ==> excelente cliente <br />
             mayor a 600 => Cliente en Proceso <br />
             de lo contrario => En Inicio <br />
-            SE PUEDE USAR IF PARA CANTIDADES Y SHOW PARA TEXTO, PREFERENTEMENTE
+            SE PUEDE USAR PREFERENTEMENTE IF PARA CANTIDADES Y SHOW PARA TEXTO,
             <br />
             pero ambas funcionan en cualquier caso <br />
           </p>
-          <pre></pre>
+          <pre>
+               &lt;template>
+    &lt;div class="bg-teal-lighten-2 text-white text-center py-5">
+      &lt;h1>ProbatioVue&lt;/h1>
+      &lt;h2 v-if="ahorro > 1000" class="uno">Cliente en Progreso&lt;/h2>
+      &lt;h2 v-else-if="ahorro > 500" class="dos">Cliente en Espera&lt;/h2>
+      &lt;h2 v-else-if="ahorro > 0" class="tres">Cliente en Inicio&lt;/h2>
+      &lt;br>&lt;br>
+      &lt;v-text-field label="Ingresa el monto de Ahorro" v-model="ahorro" />
+    &lt;/div>
+  &lt;/template>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+import { ref } from 'vue';
+
+
+let ahorro = ref(0);
+&lt;/script>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>
+.uno {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.dos {
+  background-color: red;
+  color: #fff;
+}
+
+.tres {
+  background-color: blue;
+  color: #fff;
+}
+&lt;/style>
+
+          </pre>
 
           <img src="../../../assets/image/front/vue3/IfShow.PNG" alt="IfShow" />
           <p><br /><br /></p>
@@ -361,8 +398,52 @@ let productos = [
       <!-- ++++++++++++++++++++++++++++++++++ -->
       <li class="li">
         <details class="select">
-          <summary></summary>
+          <summary>Mensaje si esta llena o vacía la caja de texto</summary>
+          <p>
+            Que cuando la caja de texto este vacía muestre 'Ingresar su nombre',
+            y al escribir muestre 'Bienvenido'
+          </p>
+          <pre>
+   &lt;template>
+    &lt;div class="bg-teal-lighten-2 text-white text-center py-5">
+      &lt;h1>ProbatioVue&lt;/h1>
+      &lt;h2 v-if="name" class="uno">Bienvenido&lt;/h2>
+      &lt;h2 v-else-if="!name" class="dos">Ingrese un Nombre&lt;/h2>
+      &lt;br>&lt;br>
+      &lt;v-text-field label="Ingresa su nombre" v-model="name" />
+    &lt;/div>
+  &lt;/template>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+import { ref } from 'vue';
+
+const name = ref('');
+&lt;/script>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>
+.uno {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.dos {
+  background-color: red;
+  color: #fff;
+}
+&lt;/style>
+
+          </pre>
           <p><br /><br /></p>
+          <img
+            src="/src/assets/image/front/vue3/v-if001.png"
+            alt=""
+            class="img"
+          />
+          <img
+            src="/src/assets/image/front/vue3/v-if002.png"
+            alt=""
+            class="img"
+          />
         </details>
       </li>
       <!-- ++++++++++++++++++++++++++++++++++ -->

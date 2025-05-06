@@ -1,18 +1,17 @@
    <template>
     <div class="bg-teal-lighten-2 text-white text-center py-5">
       <h1>ProbatioVue</h1>
-      <h2 v-show="color === true" class="text-red">EL color es rojo</h2>
-      <h2 v-show="color === false" class="text-purple">EL color es purpura</h2>
-
-      <v-btn @click="color = !color" class="bg-purple">Color</v-btn>
+      <h2>Ejemplo de V-for</h2>
+      <ul>
+        <li v-for="(nombre, index) in nombres" :key="index">{{ nombre }}</li>
+      </ul>
     </div>
   </template>
 <!-- +++++++++++++++++++++++++++++++++++++ -->
 <script setup>
-import { ref } from 'vue';
 
+let nombres = ['Juan', 'Pedro', 'Maria', 'Jose', 'Luis', 'Ana', 'Laura', 'Carlos', 'Javier', 'Sofia'];
 
-let color = ref(true)
 </script>
 <!-- +++++++++++++++++++++++++++++++++++++ -->
 <style scoped></style>

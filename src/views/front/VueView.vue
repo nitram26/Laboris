@@ -40,26 +40,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>Crear Snippets</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Snippet.html" class="a" target="_blank">
-                      <h4>Crear un Snippet</h4>
-                    </a>
-                    <ol>
-                      <li>Ir a <a href="https://snippet-generator.app/?description=&tabtrigger=&snippet=&mode=vscode"
-                          target="_blank">Snippet Generator</a> </li>
-                      <li>Pegar el Código, poner descripción y nombre y copiarlo en VScode</li>
-                      <li> A FRAGMENTOS DE USUARIO Y PARA QUE LENGUAJES</li>
-                      <li> y en ese JSON se pega</li>
-                      <li></li>
-                    </ol>
-                    <img src="../../assets/image/front/vue3/snippet.png " alt=" " class="img1">
-                    <p><br></p>
-                  </details>
-                </li>
-                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
-                <li class="li">
-                  <details class="select">
-                    <summary>LLamar un Componente </summary>
+                    <summary class="laboris">LLamar un Componente </summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/RelacionarComponentes.html" class="a"
                       target="_blank">
                       <h4></h4>
@@ -76,40 +57,27 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>Interpolar Textos</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/InterpolarTexto.html" class="a"
-                      target="_blank">
-                      <h4>LLamar una variable</h4>
+                    <summary class="labori">Crear Snippets</summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Snippet.html" class="a" target="_blank">
+                      <h4>Crear un Snippet</h4>
                     </a>
                     <ol>
-                      <li>Desde el template se usa las llaves dobles</li>
-                      <li>Dentro se pone la variable que tenemos en el script</li>
+                      <li>Ir a <a href="https://snippet-generator.app/?description=&tabtrigger=&snippet=&mode=vscode"
+                          target="_blank">Snippet Generator</a> </li>
+                      <li>Pegar el Código, poner descripción y nombre y copiarlo en VScode</li>
+                      <li> A FRAGMENTOS DE USUARIO Y PARA QUE LENGUAJES</li>
+                      <li> y en ese JSON se pega</li>
                       <li></li>
                     </ol>
-                    <img src="../../assets/image/front/vue3/interpolar.PNG " alt=" " class="img1">
+                    <img src="../../assets/image/front/vue3/snippet.png " alt=" " class="img1">
                     <p><br></p>
                   </details>
                 </li>
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+
                 <li class="li">
                   <details class="select">
-                    <summary>v-if v-show</summary>
-                    <a href="" class="a" target="_blank">
-                      <h4>Ejemplo Selectivo</h4>
-                    </a>
-                    <ol>
-                      <li>solo se muestra la opción elegida</li>
-                      <li>Se usa cualquiera aunque funciona mejor if con números</li>
-                      <li></li>
-                    </ol>
-                    <img src="../../assets/image/front/vue3/ExampleSelective.PNG " alt=" " class="img1">
-                    <p><br></p>
-                  </details>
-                </li>
-                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
-                <li class="li">
-                  <details class="select">
-                    <summary>V-MODEL</summary>
+                    <summary class="labori">V-MODEL</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Model.html" class="a" target="_blank">
                       <h4>Condiciones Reactivas</h4>
                     </a>
@@ -123,13 +91,30 @@
                   </details>
                 </li>
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary class="labori"></summary>
+                    <a href="" class="a" target="_blank">
+                      <h4></h4>
+                    </a>
+                    <ol>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3 " alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
               </ol>
             </v-col>
+            <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
             <v-col cols="6">
               <ol>
                 <li class="li">
                   <details class="select">
-                    <summary>V-BIND</summary>
+                    <summary class="labori">V-BIND</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Bind.html" class="a" target="_blank">
                       <h4>Uso de v-bind</h4>
                     </a>
@@ -146,7 +131,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>CHECKBOX</summary>
+                    <summary class="labori">CHECKBOX</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/SelectCheckbox.html" class="a"
                       target="_blank">
                       <h4>CON VUETIFY y CSS</h4>
@@ -163,7 +148,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>SELECT</summary>
+                    <summary class="labori">SELECT</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/SelectNuevo.html" class="a"
                       target="_blank">
                       <h4>Realizado con vuetify</h4>
@@ -180,7 +165,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>CONDICIONAL TERNARIO</summary>
+                    <summary class="labori">CONDICIONAL TERNARIO</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/CondicionalTernario.html" class="a"
                       target="_blank">
                       <h4>TERNARIO</h4>
@@ -197,23 +182,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>CONDICIONALES V-IF V-SHOW</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/IfShow.html" class="a" target="_blank">
-                      <h4>CONDICIONALES</h4>
-                    </a>
-                    <ol>
-                      <li>Revisar</li>
-                      <li></li>
-                      <li></li>
-                    </ol>
-                    <img src="../../assets/image/front/vue3/IfShow.PNG " alt=" " class="img1">
-                    <p><br></p>
-                  </details>
-                </li>
-                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
-                <li class="li">
-                  <details class="select">
-                    <summary></summary>
+                    <summary class="labori"></summary>
                     <a href="" class="a" target="_blank">
                       <h4></h4>
                     </a>
@@ -298,23 +267,25 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary></summary>
-                    <a href="" class="a" target="_blank">
-                      <h4></h4>
+                    <summary class="laboris">V_FOR recorrido de arrays</summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/EjerciciosVfor.html" class="a"
+                      target="_blank">
+                      <h4>Ejercicios</h4>
+                      <ol>
+                        <li>v-for es una directiva en Vue que permite iterar sobre listas de datos para generar
+                          elementos dinámicamente en el DOM.</li>
+
+                      </ol>
                     </a>
-                    <ol>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ol>
-                    <img src="" alt=" " class="img1">
+
+                    <img src="../../assets/image/front/vue3/v-for.png " alt="v-for " class="img1">
                     <p><br></p>
                   </details>
                 </li>
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary></summary>
+                    <summary class="labori"></summary>
                     <a href="" class="a" target="_blank">
                       <h4></h4>
                     </a>
@@ -336,7 +307,7 @@
               <ol>
                 <li class="li">
                   <details class="select">
-                    <summary></summary>
+                    <summary class="labori"></summary>
                     <a href="" class="a" target="_blank">
                       <h4></h4>
                     </a>
@@ -352,7 +323,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary></summary>
+                    <summary class="labori"></summary>
                     <a href="" class="a" target="_blank">
                       <h4></h4>
                     </a>
@@ -368,7 +339,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary></summary>
+                    <summary class="labori"></summary>
                     <a href="" class="a" target="_blank">
                       <h4></h4>
                     </a>
@@ -384,7 +355,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary></summary>
+                    <summary class="labori"></summary>
                     <a href="" class="a" target="_blank">
                       <h4></h4>
                     </a>
@@ -400,7 +371,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary></summary>
+                    <summary class="labori"></summary>
                     <a href="" class="a" target="_blank">
                       <h4></h4>
                     </a>
@@ -433,7 +404,7 @@
               <ol>
                 <li class="li">
                   <details class="select">
-                    <summary class="laboris">Contador</summary>
+                    <summary class="labori">Contador</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Contador.html" class="a" target="_blank">
                       <h4>Contador </h4>
                     </a>
@@ -449,7 +420,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>Reactividad</summary>
+                    <summary class="labori">Reactividad</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/ReactividadBasica.html" class="a"
                       target="_blank">
                       <h4>Básica</h4>
@@ -466,24 +437,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>V_FOR</summary>
-                    <a href="" class="a" target="_blank">
-                      <h4>Recorre y muestra Array y Objetos</h4>
-                    </a>
-                    <ol>
-                      <li>DEL 1 AL 10 separado por guion o espacio</li>
-                      <li>Iterar las letras de una palabra</li>
-                      <li>Iterar un array de números o letras</li>
-                      <li>Iterar un objeto</li>
-                    </ol>
-                    <img src="../../assets/image/front/vue3/v-for.png " alt="v-for " class="img1">
-                    <p><br></p>
-                  </details>
-                </li>
-                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
-                <li class="li">
-                  <details class="select">
-                    <summary>Practica Uno</summary>
+                    <summary class="labori">Practica Uno</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/PracticaUno.html" class="a"
                       target="_blank">
                       <h4>Practica Básica</h4>
@@ -503,29 +457,43 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>V-FOR</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/OpcionVfor.html" class="a"
-                      target="_blank">
-                      <h4>v-for</h4>
+                    <summary class="labori"></summary>
+                    <a href="" class="a" target="_blank">
+                      <h4></h4>
                     </a>
                     <ol>
-                      <li>Hacer un card y tener un objeto de preguntas</li>
-                      <li>Que desaparezcan después de 3 segundos las respuestas</li>
+                      <li></li>
+                      <li></li>
                       <li></li>
                     </ol>
-                    <img src="../../assets/image/front/vue3/OpcionVfor.png " alt="OpcionVfor " class="img1">
+                    <img src="" alt=" " class="img1">
                     <p><br></p>
                   </details>
                 </li>
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
-
+                <li class="li">
+                  <details class="select">
+                    <summary class="labori"></summary>
+                    <a href="" class="a" target="_blank">
+                      <h4></h4>
+                    </a>
+                    <ol>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="" alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
               </ol>
             </v-col>
             <v-col cols="6">
               <ol>
                 <li class="li">
                   <details class="select">
-                    <summary>Rutas</summary>
+                    <summary class="labori">Rutas</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Enrutado.html" class="a" target="_blank">
                       <h4>USANDO VUETIFY</h4>
                     </a>
@@ -544,7 +512,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>LAYOUTS & COMPOSABLES</summary>
+                    <summary class="labori">LAYOUTS & COMPOSABLES</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/layoutsComposables.html" class="a"
                       target="_blank">
                       <h4>LAYOUTS</h4>
@@ -564,7 +532,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>Animaciones e Iconos </summary>
+                    <summary class="labori">Animaciones e Iconos </summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Animacion&Icono.html" class="a"
                       target="_blank">
                       <h4>Proceso</h4>
@@ -581,7 +549,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>Router</summary>
+                    <summary class="labori">Router</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/routerVuetify.html" class="a"
                       target="_blank">
                       <h4>ROUTER CON VUETIFY</h4>
@@ -598,7 +566,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary></summary>
+                    <summary class="labori"></summary>
                     <a href="" class="a" target="_blank">
                       <h4></h4>
                     </a>
@@ -630,7 +598,7 @@
               <ol>
                 <li class="li">
                   <details class="select">
-                    <summary>Props</summary>
+                    <summary class="labori">Props</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/propsVuetres.html" class="a"
                       target="_blank">
                       <h4>Componentes Padre Hijo</h4>
@@ -647,7 +615,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>Emits</summary>
+                    <summary class="labori">Emits</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/EmitVue.html" class="a" target="_blank">
                       <h4>Emits y Props</h4>
                     </a>
@@ -663,7 +631,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>Props Array</summary>
+                    <summary class="labori">Props Array</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/PrpsArray.html" class="a" target="_blank">
                       <h4>Props Arrays</h4>
                     </a>
@@ -679,7 +647,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>Injection</summary>
+                    <summary class="labori">Injection</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Injection.html" class="a" target="_blank">
                       <h4>Reemplaza a los props y emits</h4>
                     </a>
@@ -695,7 +663,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>PlaceHolder</summary>
+                    <summary class="labori">PlaceHolder</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/ServicePlaceholder.html" class="a"
                       target="_blank">
                       <h4>Uso de Placeholder</h4>
@@ -717,7 +685,7 @@
               <ol>
                 <li class="li">
                   <details class="select">
-                    <summary>login Firebase</summary>
+                    <summary class="labori">login Firebase</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/LoginFirebase.html" class="a"
                       target="_blank">
                       <h4>Autenticar</h4>
@@ -734,7 +702,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>Pinia</summary>
+                    <summary class="labori">Pinia</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/pinia.html" class="a" target="_blank">
                       <h4>Pinia</h4>
                     </a>
@@ -752,7 +720,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>PWA</summary>
+                    <summary class="labori">PWA</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/pwa.html" class="a" target="_blank">
                       <h4>PWA</h4>
                     </a>
@@ -768,7 +736,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>il18n</summary>
+                    <summary class="labori">il18n</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/pwa.html" class="a" target="_blank">
                       <h4>il18n</h4>
                     </a>
@@ -784,7 +752,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary>Plugins</summary>
+                    <summary class="labori">Plugins</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/plugins.html" class="a" target="_blank">
                       <h4>Plugins</h4>
                     </a>
@@ -817,7 +785,7 @@
               <ol>
                 <li class="li">
                   <details class="select">
-                    <summary></summary>
+                    <summary class="labori"></summary>
                     <a href="" class="a" target="_blank">
                       <h4></h4>
                     </a>
@@ -833,7 +801,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary></summary>
+                    <summary class="labori"></summary>
                     <a href="" class="a" target="_blank">
                       <h4></h4>
                     </a>
@@ -849,7 +817,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary></summary>
+                    <summary class="labori"></summary>
                     <a href="" class="a" target="_blank">
                       <h4></h4>
                     </a>
@@ -865,7 +833,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary></summary>
+                    <summary class="labori"></summary>
                     <a href="" class="a" target="_blank">
                       <h4></h4>
                     </a>
@@ -881,7 +849,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary></summary>
+                    <summary class="labori"></summary>
                     <a href="" class="a" target="_blank">
                       <h4></h4>
                     </a>
@@ -903,7 +871,7 @@
               <ol>
                 <li class="li">
                   <details class="select">
-                    <summary></summary>
+                    <summary class="labori"></summary>
                     <a href="" class="a" target="_blank">
                       <h4></h4>
                     </a>
@@ -919,7 +887,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary></summary>
+                    <summary class="labori"></summary>
                     <a href="" class="a" target="_blank">
                       <h4></h4>
                     </a>
@@ -935,7 +903,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary></summary>
+                    <summary class="labori"></summary>
                     <a href="" class="a" target="_blank">
                       <h4></h4>
                     </a>
@@ -951,7 +919,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary></summary>
+                    <summary class="labori"></summary>
                     <a href="" class="a" target="_blank">
                       <h4></h4>
                     </a>
@@ -967,7 +935,7 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary></summary>
+                    <summary class="labori"></summary>
                     <a href="" class="a" target="_blank">
                       <h4></h4>
                     </a>
@@ -1003,11 +971,6 @@ import NavInterno from '../../layouts/NavInterno.vue';
   left: 0;
   width: 101%;
   z-index: 1000
-}
-
-.laboris:hover {
-  background-color: #e0e0e0;
-  cursor: pointer;
 }
 </style>
 

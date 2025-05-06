@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+       body {
+        background-color: bisque;
+      }
+      .img {
+        width: 600px;
+        margin: 4em;
+        border: brown double 6px;
+      }
+
+      .li {
+        margin: 0.5em;
+        padding: 0.5em;
+        border: brown solid 1px;
+        width: 65em;
+      }
+
+      .select {
+        font-size: 1.3em;
+        color: brown;
+        background-color: white;
+      }
+
+      pre {
+        margin-left: 1em;
+        color: black;
+      }
+    </style>
+    <title>ELEMENTOS RÁPIDOS</title>
+  </head>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+ <section id="1">
+      <h2 class="subtitulo">Ejercicios V-FOR</h2>
+      <!-- /////////////////////////////////////// -->
+      <ol>
+              <li class="li">
+          <details class="select">
+             <summary>	Mostrar una lista de nombres</summary>
+            <p>Mostrar una lista de nombres</p>
+            <pre>
+                 &lt;template>
+    &lt;div class="bg-teal-lighten-2 text-white text-center py-5">
+      &lt;h1>ProbatioVue&lt;/h1>
+      &lt;h2>Ejemplo de V-for&lt;/h2>
+      &lt;ul>
+        &lt;li v-for="(nombre, index) in nombres" :key="index">{{ nombre }}&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/template>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+
+let nombres = ['Juan', 'Pedro', 'Maria', 'Jose', 'Luis', 'Ana', 'Laura', 'Carlos', 'Javier', 'Sofia'];
+
+&lt;/script>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>&lt;/style>
+
+            </pre>
+            <img src="/src/assets/image/front/vue3/vfor01.png" alt="vfor01" class="img" />
+                      
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+               <li class="li">
+          <details class="select">
+             <summary></summary>
+            <p></p>
+            <pre>
+              
+            </pre>
+                      <img src="" alt="" class="img" />
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+               <li class="li">
+          <details class="select">
+             <summary></summary>
+            <p></p>
+            <pre>
+              
+            </pre>
+                      <img src="" alt="" class="img" />
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+               <li class="li">
+          <details class="select">
+             <summary></summary>
+            <p></p>
+            <pre>
+              
+            </pre>
+                      <img src="" alt="" class="img" />
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Recorridos Básicos </summary>
+              <div>
+    <h2>V-FOR </h2> 
+    <p>
+    DEL 1 AL 10 separado por guion o espacio <br>
+    iterar las letras de una palabra <br>
+    iterar un array de números o letras<br>
+    iterar un objeto
+  </p>
+    <img src="/src/assets/image/front/vue3/v-for.png" alt="" class="img">
+      <pre>
+      ////////////////////////////////////////////////////////////
+      &lt;template>
+        &lt;div class="bg-teal-lighten-3">
+         &lt;h1>v-for 1438&lt;/h1> 
+         &lt;div>
+          &lt;h2>Números del 1 al 10&lt;/h2>
+        &lt;ul>
+          &lt;li v-for="(num, index) in 10" :key="index">{{ num }}&lt;/li>
+        &lt;/ul>
+      &lt;/div>
+      
+      &lt;div class="uno">
+        &lt;h2>Palabra&lt;/h2>
+        &lt;ul>
+          &lt;li v-for="(letra, index) in 'hola'" :key="index">{{ letra }}&lt;/li>
+        &lt;/ul>
+      &lt;/div>
+      
+      
+        &lt;div class="dos">
+          &lt;h2>Array&lt;/h2>
+          &lt;ul>
+            &lt;li v-for="(num, index) in numeros" :key="index">{{ num }}&lt;/li>
+          &lt;/ul>
+        &lt;/div>
+        &lt;div class="tres">
+          &lt;h2>Objetos&lt;/h2>
+          &lt;ol>
+            &lt;li v-for="(object, index) in objetos" :key="index">{{ object.nombre }} {{ object.apellido }} su edad es {{ object.age }}&lt;/li>
+          &lt;/ol>
+        &lt;/div>
+      &lt;/div>
+      &lt;/template>
+      &lt;!-- ******************************* --> 
+      &lt;script setup>
+      
+      let numeros = [1,2,3,9,8,7,6,5,4]
+      
+      let objetos = [
+        {
+          nombre:"Carlos",
+          apellido: "Cervera",
+          age : 15
+        },
+        {
+          nombre:"Sofia",
+          apellido: "Cobeñas",
+          age : 16
+        },
+        {
+          nombre:"Ingrid",
+          apellido: "Rebeca",
+          age : 17
+        }
+      ]
+      &lt;/script>
+      &lt;!-- ******************************* -->
+      &lt;style scoped>
+      li{
+        margin-left: 2em;
+      }
+      div{
+        display: flex;
+        margin: 2em;
+      }
+      &lt;/style>
+    </div>
+                      <img src="" alt="" class="img" />
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+                <li class="li">
+          <details class="select">
+            <summary>Cards con preguntas</summary>
+            <ol>
+      <li>hacer un card y tener un objeto de preguntas</li>
+      <li>que cada pregunta con su respuesta aparezcan</li>
+      <li>5 preguntas con 3-4 respuestas</li>
+      <li>Que desaparezcan después de 3 segundos las respuestas</li>
+    </ol>
+    <img
+      src="/src/assets/image/front/vue3/OpcionVfor.png"
+      alt="opcionVfor"
+      class="img"
+    />
+    <pre>
+    <div>
+      &lt;template>
+  &lt;h1>Practica  &lt;/h1>
+
+  &lt;div class="div" v-for="(preg, index) in preguntasComputacion" :key="index">
+   &lt;h5> {{ preg.pregunta }}&lt;/h5>
+   &lt;ol>
+    &lt;li v-for="(rpta, index) in preg.opciones" :key="index">{{ rpta }}&lt;/li> &lt;br>&lt;br>
+   &lt;h2 v-show="ver">La respuesta es  {{ preg.respuesta }} &lt;/h2>
+    &lt;v-btn class="bg-teal" @click="res">RESPUESTA&lt;/v-btn>
+   &lt;/ol>
+  &lt;/div>
+
+&lt;/template>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+import { ref } from 'vue';
+
+
+let ver = ref(false)
+let res = ()=>{
+  ver.value = !ver.value
+  setTimeout(() => {
+    ver.value = !ver.value
+  }, 2000);
+}
+
+
+const preguntasComputacion = [
+        {
+            pregunta: "¿Cuál de los siguientes es un lenguaje de programación orientado a objetos?",
+            opciones: [
+                "A) COBOL",
+                "B) C++",
+                "C) Assembly",
+                "D) Fortran"
+            ],
+            respuesta: "B) C++"
+        },
+        {
+            pregunta: "¿Qué es una base de datos relacional?",
+            opciones: [
+                "A) Un sistema para gestionar archivos de texto",
+                "B) Un sistema que utiliza tablas para almacenar datos y establecer relaciones entre ellos",
+                "C) Un programa para crear gráficos y diagramas",
+                "D) Un lenguaje de programación utilizado para desarrollar aplicaciones web"
+            ],
+            respuesta: "B) Un sistema que utiliza tablas para almacenar datos y establecer relaciones entre ellos"
+        },
+        {
+            pregunta: "¿Qué representa 'HTTP' en el contexto de la web?",
+            opciones: [
+                "A) HyperText Transfer Protocol",
+                "B) HyperText Transmission Program",
+                "C) HyperText Transfer Program",
+                "D) HyperText Transmission Protocol"
+            ],
+            respuesta: "A) HyperText Transfer Protocol"
+        },
+        {
+            pregunta: "¿Cuál de los siguientes NO es un sistema operativo?",
+            opciones: [
+                "A) Windows",
+                "B) Linux",
+                "C) Python",
+                "D) macOS"
+            ],
+            respuesta: "C) Python"
+        },
+        {
+            pregunta: "¿Qué significa la sigla 'SQL' en el contexto de bases de datos?",
+            opciones: [
+                "A) Structured Query Language",
+                "B) Simple Query Language",
+                "C) Sequential Query Language",
+                "D) Structured Question Language"
+            ],
+            respuesta: "A) Structured Query Language"
+        }]
+&lt;/script>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>
+
+.div{
+  background-color: blanchedalmond;
+  padding: 4em;
+  border: brown 1px solid;
+  width: 95%;
+  margin: 3em;
+}
+&lt;/style>
+
+    </div>
+  </pre>
+                      <img src="" alt="" class="img" />
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+             <summary></summary>
+            <p></p>
+            <pre>
+              
+            </pre>
+                      <img src="" alt="" class="img" />
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+             <summary></summary>
+            <p></p>
+            <pre>
+              
+            </pre>
+                      <img src="" alt="" class="img" />
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+             <summary></summary>
+            <p></p>
+            <pre>
+              
+            </pre>
+                      <img src="" alt="" class="img" />
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+             <summary></summary>
+            <p></p>
+            <pre>
+              
+            </pre>
+                      <img src="" alt="" class="img" />
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- ////////////////////////////////// -->
+    </section>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+   
+    
+  </body>
+</html>

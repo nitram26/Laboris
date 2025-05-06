@@ -61,3 +61,8 @@ background-color: cadetblue;
   color: brown;
   margin-left: 1em;
 }
+
+.laboris:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}

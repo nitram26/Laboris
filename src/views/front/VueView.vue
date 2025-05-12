@@ -114,23 +114,6 @@
               <ol>
                 <li class="li">
                   <details class="select">
-                    <summary class="labori">V-BIND</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Bind.html" class="a" target="_blank">
-                      <h4>Uso de v-bind</h4>
-                    </a>
-                    <ol>
-                      <li>Como el If y show</li>
-                      <li></li>
-                      <li></li>
-                    </ol>
-                    <img src="../../assets/image/front/vue3/bind1.png " alt=" " class="img1">
-                    <img src="../../assets/image/front/vue3/bind2.png " alt=" " class="img1">
-                    <p><br></p>
-                  </details>
-                </li>
-                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
-                <li class="li">
-                  <details class="select">
                     <summary class="labori">CHECKBOX</summary>
                     <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/SelectCheckbox.html" class="a"
                       target="_blank">
@@ -279,6 +262,25 @@
                     </a>
 
                     <img src="../../assets/image/front/vue3/v-for.png " alt="v-for " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary class="laboris">V-BIND Enlace dinámico</summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Bind.html" class="a" target="_blank">
+                      <h4>Uso de v-bind</h4>
+                    </a>
+                    <p>bind: SIGNIFICA UNIR, CONECTAR, ASOCIAR</p>
+                    <p>v-bind es una directiva de Vue que te permite enlazar dinámicamente atributos a una expresión en
+                      tu modelo de datos. <br><br> En otras palabras, te ayuda a establecer valores de atributos HTML de
+                      manera
+                      reactiva.
+                    </p>
+
+                    <img src="../../assets/image/front/vue3/bind1.png " alt=" " class="img1">
+                    <img src="../../assets/image/front/vue3/bind2.png " alt=" " class="img1">
                     <p><br></p>
                   </details>
                 </li>

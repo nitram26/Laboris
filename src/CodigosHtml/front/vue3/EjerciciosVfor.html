@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/src/assets/image/home/CERVERA.png" type="image/x-icon">
     <style>
        body {
         background-color: bisque;
@@ -70,37 +71,450 @@ let nombres = ['Juan', 'Pedro', 'Maria', 'Jose', 'Luis', 'Ana', 'Laura', 'Carlos
         <!-- ++++++++++++++++++++++++++++++ -->
                <li class="li">
           <details class="select">
-             <summary></summary>
-            <p></p>
+             <summary>	Mostrar una lista de objetos con v-for</summary>
+            <p>Objetos con las propiedades: nombre, edad y ciudad</p>
             <pre>
-              
+   &lt;template>
+    &lt;div class="bg-teal-lighten-2 text-white text-center py-5">
+      &lt;h1>ProbatioVue&lt;/h1>
+      &lt;h2>Ejemplo de V-for&lt;/h2>
+      &lt;ul>
+        &lt;li v-for="(nombre, index) in nombres" :key="index">
+          Mi nombre es :{{ nombre.nombre }} &lt;br>
+          mi edad es :{{ nombre.edad }} &lt;br>
+          mi ciudad es :{{ nombre.ciudad }} &lt;br>&lt;br>
+        &lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/template>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+
+let nombres = [
+  {
+    nombre: 'Juan',
+    edad: 25,
+    ciudad: 'Madrid'
+  },
+  {
+    nombre: 'Ana',
+    edad: 30,
+    ciudad: 'Barcelona'
+  },
+  {
+    nombre: 'Luis',
+    edad: 28,
+    ciudad: 'Valencia'
+  },
+  {
+    nombre: 'María',
+    edad: 22,
+    ciudad: 'Sevilla'
+  },
+  {
+    nombre: 'Pedro',
+    edad: 35,
+    ciudad: 'Bilbao'
+  }
+]
+
+&lt;/script>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>&lt;/style>
+       
             </pre>
-                      <img src="" alt="" class="img" />
+          <img src="/src/assets/image/front/vue3/vfor02.png" alt="vfor02" class="img" />
             <p><br /><br /></p>
           </details>
         </li>
         <!-- ++++++++++++++++++++++++++++++ -->
                <li class="li">
           <details class="select">
-             <summary></summary>
-            <p></p>
+             <summary>Lista de números del 1 al 50</summary>
+            <p>1.	Generar una lista de números del 1 al 50</p>
             <pre>
-              
+&lt;template>
+  &lt;div class="bg-teal-lighten-2 text-white text-center py-5">
+    &lt;h1>ProbatioVue&lt;/h1>
+    &lt;h2>Ejemplo de V-for&lt;/h2>
+    &lt;ul>
+      &lt;li v-for="(num, index) in 50" :key="index">{{ num }} &lt;br />&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/template>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>&lt;/script>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>&lt;/style>
             </pre>
-                      <img src="" alt="" class="img" />
+    <img src="/src/assets/image/front/vue3/vfor03.png" alt="vfor03" class="img" />
             <p><br /><br /></p>
           </details>
         </li>
         <!-- ++++++++++++++++++++++++++++++ -->
                <li class="li">
           <details class="select">
-             <summary></summary>
-            <p></p>
+             <summary>Tabla de productos</summary>
+            <p>Mostrar una tabla de productos</p>
             <pre>
-              
+   &lt;template>
+    &lt;div class="bg-teal-lighten-2 text-white text-center py-5">
+      &lt;h1>ProbatioVue&lt;/h1>
+      &lt;h2>Ejemplo de V-for&lt;/h2>
+      &lt;ul>
+        &lt;li v-for="(unidad, index) in products" :key="index">
+          ID: {{ unidad.id }} &lt;br>
+          PRODUCTO: {{ unidad.name }} &lt;br>
+          PRECIO: {{ unidad.price }} &lt;br>&lt;br>
+
+        &lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/template>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+
+let products = [
+  { id: 1, name: "laptop", price: 10 },
+  { id: 2, name: "Teclado", price: 20 },
+  { id: 3, name: "Monitor", price: 30 },
+];
+
+&lt;/script>
+&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>&lt;/style>
+
             </pre>
-                      <img src="" alt="" class="img" />
+    <img src="/src/assets/image/front/vue3/vfor04.png" alt="vfor04" class="img" />
             <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+            <li class="li">
+          <details class="select">
+             <summary>Lista de tareas con botón para eliminar</summary>
+            <p>Lista de tareas con botón para eliminar</p>
+            <pre>
+    &lt;template>
+      &lt;div class="bg-teal-lighten-2 text-white  py-5">
+        &lt;h1 class="text-center">V-For&lt;/h1>
+        &lt;div class="uno">
+          &lt;ol>
+            &lt;li v-for="task in tasks" :key="task.id">
+              {{ task.text }}
+              &lt;v-btn @click="removeTask(task.id)" class="bg-purple ma-3">Eliminar&lt;/v-btn>
+            &lt;/li>
+          &lt;/ol>
+        &lt;/div>
+      &lt;/div>
+    &lt;/template>
+&lt;!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+import { ref } from 'vue';
+
+const tasks = ref([
+  { id: 1, text: 'Hacer ejercicio' },
+  { id: 2, text: 'Leer un libro' },
+  { id: 3, text: 'Practicar Vue' }
+]);
+
+const removeTask = (id) => {
+  tasks.value = tasks.value.filter(task => task.id !== id);
+};
+&lt;/script>
+&lt;!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>
+ol {
+  margin: 3em;
+
+}
+
+li {
+  margin-left: 40em;
+}
+&lt;/style>
+
+            </pre>
+                        <img src="/src/assets/image/front/vue3/vfor05.png" alt="vfor05" class="img" />
+            <p>.filter(...) es un método de los arreglos que devuelve un nuevo array que incluye solo los elementos que cumplen con cierta condición.<br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+            <li class="li">
+          <details class="select">
+             <summary>Generar opciones para un Select</summary>
+            <p>Un select con nombres de capitales de países</p>
+            <pre>
+    &lt;template>
+      &lt;div class="bg-teal-lighten-2 text-white  py-5">
+        &lt;h1 class="text-center">V-For&lt;/h1>
+        &lt;div class="uno">
+          &lt;select>
+            &lt;option v-for="(city, index) in cities" :key="index">
+              {{ city }}
+            &lt;/option>
+          &lt;/select>
+        &lt;/div>
+      &lt;/div>
+    &lt;/template>
+&lt;!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+import { ref } from 'vue';
+
+const cities = ref(['Elegir una Ciudad', 'Lima', 'Buenos Aires', 'Madrid', 'México']);
+
+&lt;/script>
+&lt;!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>
+ol {
+  margin: 3em;
+}
+
+select {
+  margin-left: 40em;
+  border: 3px solid red;
+  border-radius: 5px;
+  width: 15em;
+  padding: 0.5em;
+}
+&lt;/style>
+
+            </pre>
+                        <img src="/src/assets/image/front/vue3/vfor06.png" alt="vfor06" class="img" />
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+  
+            <li class="li">
+          <details class="select">
+             <summary>Contador dinámico con v-for</summary>
+            <p>Poner en un input un número y que se generen números del 1 al señalado</p>
+            <pre>
+&lt;template>
+  &lt;div class="bg-teal-lighten-2 text-white py-5">
+    &lt;h1 class="text-center">V-For&lt;/h1>
+    &lt;input v-model="count" type="number" min="1" />
+    &lt;ul>
+      &lt;li v-for="n in count" :key="n">Elemento {{ n }}&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/template>
+&lt;!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+  import { ref } from "vue";
+
+  const count = ref(5);
+&lt;/script>
+&lt;!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>
+  ol {
+    margin: 3em;
+  }
+
+  input,
+  li {
+    margin-left: 40em;
+    margin-top: 0.5em;
+    border: 3px solid red;
+    border-radius: 5px;
+    width: 15em;
+    padding: 0.3em;
+  }
+&lt;/style>
+
+            </pre>
+                        <img src="/src/assets/image/front/vue3/vfor07.png" alt="vfor07" class="img" />
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+            <li class="li">
+          <details class="select">
+             <summary>Lista con índice y posición</summary>
+            <p>Un array de nombres, que muestre el nombre y su número o posición</p>
+            <pre>
+    &lt;template>
+      &lt;div class="bg-teal-lighten-2 text-white  py-5">
+        &lt;h1 class="text-center">V-For&lt;/h1>
+        &lt;ul>
+          &lt;li v-for="(elem, index) in lista" :key="index">{{ index + 1 }}.-{{ elem }}&lt;/li>
+        &lt;/ul>
+
+      &lt;/div>
+    &lt;/template>
+&lt;!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+
+let lista = ["Juan", "Pedro", "Maria", "Jose", "Luis", "Ana", "Laura", "Carlos", "Javier", "Sofia"]
+
+&lt;/script>
+&lt;!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>
+ol {
+  margin: 3em;
+}
+
+input,
+li {
+  margin-left: 40em;
+  margin-top: 0.5em;
+  border: 3px solid red;
+  border-radius: 5px;
+  width: 15em;
+  padding: 0.3em;
+  list-style: none;  /* le quita el punto o numero a la lista */
+
+}
+&lt;/style>
+
+            </pre>
+          <img src="/src/assets/image/front/vue3/vfor08.png" alt="vfor08" class="img" />
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+                   <li class="li">
+          <details class="select">
+             <summary>Anidados</summary>
+            <p>Un array de nombres con lista de tareas</p>
+            <pre>
+    &lt;template>
+      &lt;div class="bg-teal-lighten-2 text-white  ">
+        &lt;h1 class="text-center">V-For&lt;/h1>
+        &lt;div class="uno">
+          &lt;ul>
+            &lt;li v-for="(user, index) in users" :key="index">{{ user.name }}
+              &lt;OL>
+                &lt;LI v-for="(tarea, index) in user.todos" :key="index">{{ tarea.title }}&lt;/LI>
+              &lt;/OL>
+            &lt;/li>
+
+          &lt;/ul>
+        &lt;/div>
+
+      &lt;/div>
+    &lt;/template>
+&lt;!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+
+import { ref } from 'vue';
+
+const users = ref([
+  {
+    id: 1,
+    name: 'Sofía',
+    todos: [
+      { id: 1, title: 'Tarea 1' },
+      { id: 2, title: 'Tarea 2' },
+      { id: 3, title: 'Tarea 3' },
+    ],
+  },
+  {
+    id: 2,
+    name: 'Rebeca',
+    todos: [
+      { id: 1, title: 'Tarea A' },
+      { id: 2, title: 'Tarea B' },
+      { id: 3, title: 'Tarea C' },
+    ],
+  },
+]);
+
+
+&lt;/script>
+&lt;!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>
+.uno {
+  padding: 20px;
+  border-radius: 8px;
+  margin-left: 20em;
+  color: white;
+}
+
+ol {
+  padding-left: 20px;
+  border-radius: 8px;
+  padding-bottom: 1em;
+
+}
+&lt;/style>
+
+            </pre>
+                        <img src="/src/assets/image/front/vue3/vfor09.png" alt="vfor09" class="img" />
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+            <li class="li">
+          <details class="select">
+             <summary>Números en orden descendente</summary>
+            <p>Lista de números del 10 al 1</p>
+            <pre>
+    &lt;template>
+      &lt;div class="bg-teal-lighten-2 text-white  ">
+        &lt;h1 class="text-center">V-For&lt;/h1>
+        &lt;div class="uno">
+          &lt;ul>
+            &lt;li v-for="num in Array.from({ length: 10 }, (_, i) => 10 - i)" :key="num">
+              {{ num }}
+            &lt;/li>
+
+          &lt;/ul>
+        &lt;/div>
+
+      &lt;/div>
+    &lt;/template>
+&lt;!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+&lt;script setup>
+
+&lt;/script>
+&lt;!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+&lt;style scoped>
+.uno {
+  padding: 20px;
+  border-radius: 8px;
+  margin-left: 50%;
+  color: white;
+}
+
+ol {
+  padding-left: 20px;
+  border-radius: 8px;
+  padding-bottom: 1em;
+
+}
+&lt;/style>
+
+            </pre>
+          <img src="/src/assets/image/front/vue3/vfor10.png" alt="vfor10" class="img" />
+            <p>
+              Array.from():<br /><br />
+      Es un método que crea un nuevo arreglo a partir de un objeto iterable o con una estructura similar a un array, y opcionalmente, lo puedes llenar con valores usando una función de mapeo.<br /><br />
+
+      { length: 10 }:<br /><br />
+      Se crea un objeto con una propiedad length: 10. Cuando pasas esto a Array.from(), produce un array de 10 elementos, pero vacíos inicialmente: [undefined, undefined, ..., undefined].<br /><br />
+
+      (_, i) => 10 - i:<br /><br />
+      Es una función de mapeo que recibe dos argumentos:<br /><br />
+
+      _: el primer argumento, que corresponde al valor del elemento actual, en este caso undefined. La convención de usar _ es para indicar que no lo vamos a usar, solo nos interesa el índice.<br /><br />
+
+      i: el índice del elemento, que será un número del 0 a 9 en este caso.<br /><br />
+
+      La función devuelve 10 - i, así que:<br /><br />
+
+      Cuando i es 0, devuelve 10 - 0 = 10.<br /><br />
+      Cuando i es 1, devuelve 10 - 1 = 9.<br /><br />
+      ...<br /><br />
+      Cuando i es 9, devuelve 10 - 9 = 1.<br /><br />
+
+      Respecto a la notación (_, i):<br /><br />
+      El guion bajo (_) es solo una convención para indicar que este parámetro se ignora. Es decir, ya no necesitas usar el valor actual del array (que sería undefined en este caso), solo te interesa el índice.<br /><br />
+
+      En resumen:<br /><br />
+      Este código genera un array [10, 9, 8, 7, 6, 5, 4, 3, 2, 1] y hace un bucle sobre esos números para listarlos en la vista.<br /><br />
+            </p>
           </details>
         </li>
         <!-- ++++++++++++++++++++++++++++++ -->
@@ -184,7 +598,7 @@ let nombres = ['Juan', 'Pedro', 'Maria', 'Jose', 'Luis', 'Ana', 'Laura', 'Carlos
       }
       &lt;/style>
     </div>
-                      <img src="" alt="" class="img" />
+                        <img src="/src/assets/image/front/vue3/.png" alt="" class="img" />
             <p><br /><br /></p>
           </details>
         </li>
@@ -298,7 +712,7 @@ const preguntasComputacion = [
 
     </div>
   </pre>
-                      <img src="" alt="" class="img" />
+                        <img src="/src/assets/image/front/vue3/.png" alt="" class="img" />
             <p><br /><br /></p>
           </details>
         </li>
@@ -310,47 +724,12 @@ const preguntasComputacion = [
             <pre>
               
             </pre>
-                      <img src="" alt="" class="img" />
+                        <img src="/src/assets/image/front/vue3/.png" alt="" class="img" />
             <p><br /><br /></p>
           </details>
         </li>
         <!-- ++++++++++++++++++++++++++++++ -->
-        <li class="li">
-          <details class="select">
-             <summary></summary>
-            <p></p>
-            <pre>
-              
-            </pre>
-                      <img src="" alt="" class="img" />
-            <p><br /><br /></p>
-          </details>
-        </li>
-        <!-- ++++++++++++++++++++++++++++++ -->
-        <li class="li">
-          <details class="select">
-             <summary></summary>
-            <p></p>
-            <pre>
-              
-            </pre>
-                      <img src="" alt="" class="img" />
-            <p><br /><br /></p>
-          </details>
-        </li>
-        <!-- ++++++++++++++++++++++++++++++ -->
-        <li class="li">
-          <details class="select">
-             <summary></summary>
-            <p></p>
-            <pre>
-              
-            </pre>
-                      <img src="" alt="" class="img" />
-            <p><br /><br /></p>
-          </details>
-        </li>
-        <!-- ++++++++++++++++++++++++++++++ -->
+
       </ol>
       <!-- ////////////////////////////////// -->
     </section>

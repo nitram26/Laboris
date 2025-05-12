@@ -1,7 +1,43 @@
-&lt;template> &lt;div class="bg-teal-lighten-2 text-white text-center py-5">
-&lt;h1>ProbatioVue&lt;/h1> &lt;h2>Ejemplo de V-for&lt;/h2> &lt;ul> &lt;li
-v-for="(nombre, index) in nombres" :key="index">{{ nombre }}&lt;/li> &lt;/ul>
-&lt;/div> &lt;/template> &lt;!-- +++++++++++++++++++++++++++++++++++++ -->
-&lt;script setup> let nombres = ['Juan', 'Pedro', 'Maria', 'Jose', 'Luis',
-'Ana', 'Laura', 'Carlos', 'Javier', 'Sofia']; &lt;/script> &lt;!--
-+++++++++++++++++++++++++++++++++++++ --> &lt;style scoped>&lt;/style>
+<template>
+  <div class="bg-teal-lighten-2 text-white">
+    <h1 class="text-center">V-Bind</h1>
+    <div class="uno">
+      <h3 :class="{ activo: active, inactivo: !active }">Cambia de Formato</h3>
+
+      <v-btn @click="active = !active" class="bg-purple">Botón Formato</v-btn>
+    </div>
+  </div>
+</template>
+<!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+<script setup>
+  import { ref } from "vue";
+
+  const active = ref(true);
+</script>
+<!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+<style scoped>
+  .uno {
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: 40%;
+    color: white;
+  }
+
+  ol {
+    padding-left: 20px;
+    border-radius: 8px;
+    padding-bottom: 1em;
+  }
+
+  .activo {
+    color: #ff0000;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .inactivo {
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+  }
+</style>

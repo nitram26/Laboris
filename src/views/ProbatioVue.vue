@@ -1,17 +1,38 @@
-   <template>
-    <div class="bg-teal-lighten-2 text-white text-center py-5">
-      <h1>ProbatioVue</h1>
-      <h2>Ejemplo de V-for</h2>
-      <ul>
-        <li v-for="(nombre, index) in nombres" :key="index">{{ nombre }}</li>
-      </ul>
-    </div>
-  </template>
-<!-- +++++++++++++++++++++++++++++++++++++ -->
-<script setup>
+<template>
+  <div class="bg-teal-lighten-2 text-white  ">
+    <h1 class="text-center">V-Bind</h1>
+    <div class="uno">
+      <h3 :class="{ tres: active, dos: !active }">Cambia de Formato</h3>
 
-let nombres = ['Juan', 'Pedro', 'Maria', 'Jose', 'Luis', 'Ana', 'Laura', 'Carlos', 'Javier', 'Sofia'];
+      <v-btn @click="active = !active" class="bg-purple">Botón Formato</v-btn>
+    </div>
+  </div>
+</template>
+<!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+<script setup>
+import { ref } from 'vue';
+
+const active = ref(true);
 
 </script>
-<!-- +++++++++++++++++++++++++++++++++++++ -->
-<style scoped></style>
+<!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+<style scoped>
+.uno {
+  padding: 20px;
+  border-radius: 8px;
+  margin-left: 40%;
+  color: white;
+}
+
+.tres {
+  color: #ff0000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dos {
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+}
+</style>

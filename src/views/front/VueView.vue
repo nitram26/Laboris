@@ -6,7 +6,7 @@
               <h4>INICIO</h4>
             </template>
             <template #title2>
-              <h4>COMPONENTES</h4>
+              <h4>DIRECTIVAS</h4>
             </template>
             <template #title3>
               <h4>PROCESSUS</h4>
@@ -70,23 +70,6 @@
                       <li></li>
                     </ol>
                     <img src="../../assets/image/front/vue3/snippet.png " alt=" " class="img1">
-                    <p><br></p>
-                  </details>
-                </li>
-                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
-
-                <li class="li">
-                  <details class="select">
-                    <summary class="labori">V-MODEL</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Model.html" class="a" target="_blank">
-                      <h4>Condiciones Reactivas</h4>
-                    </a>
-                    <ol>
-                      <li>Necesita usar el Ref</li>
-                      <li></li>
-                      <li></li>
-                    </ol>
-                    <img src="../../assets/image/front/vue3/model.png " alt=" " class="img1">
                     <p><br></p>
                   </details>
                 </li>
@@ -285,40 +268,24 @@
                   </details>
                 </li>
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
-                <li class="li">
-                  <details class="select">
-                    <summary class="labori"></summary>
-                    <a href="" class="a" target="_blank">
-                      <h4></h4>
-                    </a>
-                    <ol>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ol>
-                    <img src="" alt=" " class="img1">
-                    <p><br></p>
-                  </details>
-                </li>
-                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
-
-
               </ol>
             </v-col>
+            <!-- ////////////////////////////////////////////////// -->
             <v-col cols="6">
               <ol>
+
                 <li class="li">
                   <details class="select">
-                    <summary class="labori"></summary>
-                    <a href="" class="a" target="_blank">
-                      <h4></h4>
+                    <summary class="laboris">V-MODEL</summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Model.html" class="a" target="_blank">
+                      <h4>Condiciones Reactivas</h4>
                     </a>
                     <ol>
-                      <li></li>
-                      <li></li>
-                      <li></li>
+                      <li>Necesita usar el Ref</li>
+                      <li>El v model relaciona un elemento del template con otro del script</li>
+                      <li>También puede manejar listas de valores y objetos completos.</li>
                     </ol>
-                    <img src="" alt=" " class="img1">
+                    <img src="../../assets/image/front/vue3/model.png " alt=" " class="img1">
                     <p><br></p>
                   </details>
                 </li>

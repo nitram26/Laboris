@@ -2,7 +2,8 @@
   <div class="bg-teal-lighten-2 text-white">
     <h1 class="text-center">V-Bind</h1>
     <div class="uno">
-      <h3 :class="{ activo: active, inactivo: !active }">Cambia de Formato</h3>
+      <h3 v-show="active==true" class="activo">Cambia de Formato</h3>
+      <h3 v-show="active==false" class="inactivo">Cambia de Formato</h3>
 
       <v-btn @click="active = !active" class="bg-purple">Botón Formato</v-btn>
     </div>

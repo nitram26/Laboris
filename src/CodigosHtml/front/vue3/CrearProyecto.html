@@ -7,6 +7,10 @@
       body {
         background-color: bisque;
       }
+      h1,
+      h2 {
+        color: brown;
+      }
     </style>
     <title>ELEMENTOS RÁPIDOS</title>
   </head>
@@ -89,7 +93,73 @@
         })
 
       </pre>
+
+      <h2>VUE ROUTER</h2>
+
+      <pre>
+        INSTALL VUE-ROUTER
+           <h2>   PASO 1</h2>
+              npm install vue-router
+              SINO:
+              npm install vue-router@4
+
+                  <h2>PASO 2</h2>
+              CREAR CARPETA ROUTER Y INDEX.JS
+              import { createRouter, createWebHistory } from 'vue-router'
+              import HomeView from '../views/HomeView.vue'
+
+
+              const routes = [
+                {
+                  path: '/',
+                  name: 'Home',
+                  component: HomeView
+                },
+
+              ]
+
+              const router = createRouter({
+                history: createWebHistory(),
+                routes,
+              })
+
+              export default router
+
+
+            <h2>  PASO 3</h2>
+              Importar el router en main.js
+              Edita src/main.js para incluir el router:
+
+              import { createApp } from 'vue'
+              import App from './App.vue'
+              import router from './router'
+
+              const app = createApp(App)
+              app.use(router)
+              app.mount('#app')
+
+            <h2>  PASO 4</h2>
+              Crear las vistas si no existen
+              Ejemplo: src/views/HomeView.vue 
+              Crear carpeta views y el archivo Homeview.vue
+
+
+             <h2> PASO 5</h2>
+              Asegúrate de que tu App.vue tenga <router-view /> para mostrar las vistas según la ruta: Modifica tu App.vue para incluir la vista del router:
+
+
+              &lt;template>
+                &lt;div>
+                  &lt;nav>
+                    &lt;router-link to="/">Home&lt;/router-link> |
+                  &lt;/nav>
+                  &lt;router-view />
+                &lt;/div>
+              &lt;/template>
+
+      </pre>
     </div>
+    <!-- //////////////////////////////////////////////// -->
     <img src="/src/assets/image/front/vue3/viteConfig.png" alt="viteConfig" />
     <img src="/src/assets/image/front/vue3/viteConfig1.png" alt="viteConfig1" />
   </body>

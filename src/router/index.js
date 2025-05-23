@@ -5,6 +5,7 @@ import HtmlView from '../views/front/HtmlView.vue';
 import VueView from '../views/front/VueView.vue';
 import IndexOffice from '../views/Office/IndexOffice.vue';
 import ProbatioVue from '../views/ProbatioVue.vue'; 
+import JsView from '../views/front/JsView.vue';
 const routes = [
   {
     path: '/',
@@ -36,6 +37,21 @@ const routes = [
     name: 'ProbatioVue',
     component: ProbatioVue
   },
+  {
+    path: '/jsView',
+    name: 'JsView',
+    component: JsView
+  },
+  // {
+  //   path: '/',
+  //   name: '',
+  //   component: 
+  // },
+  // {
+  //   path: '/',
+  //   name: '',
+  //   component: 
+  // },
   // {
   //   path: '/',
   //   name: '',

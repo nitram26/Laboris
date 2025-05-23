@@ -1,15 +1,17 @@
 <template>
   <div id="section1">
-    <MainLayout>
-      <template #main>
-        <h2>Home Front || INITIUM</h2>
+    <NavInterno>
+      <template #main>JAVASCRIPT || INITIUM</template>
+      <template #title1>
+        <h4>INICIO</h4>
       </template>
-      <template #image1> <a href="/htmlView" class="lat">HTML</a> </template>
-      <template #image2> <a href="/jsView" class="lat">JAVASCRIPT</a> </template>
-      <template #image3> <a href="/" class="lat">VUE2</a> </template>
-      <template #image4> <a href="/vueView" class="lat">VUE3</a> </template>
-      <template #image5> <a href="/" class="lat"></a> </template>
-    </MainLayout>
+      <template #title2>
+        <h4>OPTIONS</h4>
+      </template>
+      <template #title3>
+        <h4>PROCESSUS</h4>
+      </template>
+    </NavInterno>
     <!-- fin de navegador derecho -->
   </div>
   <!-- *************************************************************** -->
@@ -18,9 +20,44 @@
       <ol>
         <li class="li">
           <details class="select">
-            <summary class="labori"></summary>
-            <a href="" class="a" target="_blank">
-              <h4></h4>
+            <summary class="laboris">Referencias</summary>
+
+            <h4>DOCUMENTACIÓN</h4>
+            <OL>
+              <li> <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN MOZILLA</a></li>
+              <li><a href="https://www.w3schools.com/" target="_blank">W3 School</a></li>
+              <li><a href="https://eloquentjavascript.net/Eloquent_JavaScript_small.pdf" target="_blank">Eloquent
+                  JavaScript</a></li>
+              <li><a href="https://google.github.io/styleguide/jsguide.html">Guía de estilos JS</a> <br>Nota: Ya no se
+                actualiza, se recomienda migrar a TypeScript</li>
+            </OL>
+
+            <p><br></p>
+          </details>
+        </li>
+        <!-- ****************************************** -->
+        <li class="li">
+          <details class="select">
+            <summary class="laboris">Instalación</summary>
+            <a href="https://nodejs.org/en/download" class="a" target="_blank">
+              <h4>Node JS</h4>
+            </a>
+            <ol>
+              <li>Instalar la versión estable de Node o actualizarla</li>
+              <li>Tener un editor de código</li>
+              <li><a href="https://code.visualstudio.com/">VSCode</a></li>
+              <li></li>
+            </ol>
+            <img src="../assets/image " alt=" " class="img1">
+            <p><br></p>
+          </details>
+        </li>
+        <!-- ****************************************** -->
+        <li class="li">
+          <details class="select">
+            <summary class="laboris">Funciones</summary>
+            <a href="http://127.0.0.1:5502/src/CodigosHtml/front/js/funciones.html" class="a" target="_blank">
+              <h4>Ejercicios JS</h4>
             </a>
             <img src="../assets/image " alt=" " class="img1">
             <p><br></p>
@@ -29,9 +66,9 @@
         <!-- ****************************************** -->
         <li class="li">
           <details class="select">
-            <summary class="labori"></summary>
-            <a href="" class="a" target="_blank">
-              <h4></h4>
+            <summary class="laboris">IF_ELSE</summary>
+            <a href="http://127.0.0.1:5502/src/CodigosHtml/front/js/if.html" class="a" target="_blank">
+              <h4>Ejercicios JS</h4>
             </a>
             <img src="../assets/image " alt=" " class="img1">
             <p><br></p>
@@ -40,31 +77,9 @@
         <!-- ****************************************** -->
         <li class="li">
           <details class="select">
-            <summary class="labori"></summary>
-            <a href="" class="a" target="_blank">
-              <h4></h4>
-            </a>
-            <img src="../assets/image " alt=" " class="img1">
-            <p><br></p>
-          </details>
-        </li>
-        <!-- ****************************************** -->
-        <li class="li">
-          <details class="select">
-            <summary class="labori"></summary>
-            <a href="" class="a" target="_blank">
-              <h4></h4>
-            </a>
-            <img src="../assets/image " alt=" " class="img1">
-            <p><br></p>
-          </details>
-        </li>
-        <!-- ****************************************** -->
-        <li class="li">
-          <details class="select">
-            <summary class="labori"></summary>
-            <a href="" class="a" target="_blank">
-              <h4></h4>
+            <summary class="laboris">Operador Ternario</summary>
+            <a href="http://127.0.0.1:5502/src/CodigosHtml/front/js/operadorTernario.html" class="a" target="_blank">
+              <h4>Ejercicios JS</h4>
             </a>
             <img src="../assets/image " alt=" " class="img1">
             <p><br></p>
@@ -78,9 +93,31 @@
       <ol>
         <li class="li">
           <details class="select">
+            <summary class="laboris">FOR</summary>
+            <a href="http://127.0.0.1:5502/src/CodigosHtml/front/js/for.html" class="a" target="_blank">
+              <h4>Ejercicios JS</h4>
+            </a>
+            <img src="../assets/image " alt=" " class="img1">
+            <p><br></p>
+          </details>
+        </li>
+        <!-- ****************************************** -->
+        <li class="li">
+          <details class="select">
+            <summary class="laboriS">WHILE</summary>
+            <a href="http://127.0.0.1:5502/src/CodigosHtml/front/js/while.html" class="a" target="_blank">
+              <h4>Ejercicios JS</h4>
+            </a>
+            <img src="../assets/image " alt=" " class="img1">
+            <p><br></p>
+          </details>
+        </li>
+        <!-- ****************************************** -->
+        <li class="li">
+          <details class="select">
             <summary class="labori"></summary>
             <a href="" class="a" target="_blank">
-              <h4></h4>
+              <h4>Ejercicios JS</h4>
             </a>
             <img src="../assets/image " alt=" " class="img1">
             <p><br></p>
@@ -109,35 +146,9 @@
           </details>
         </li>
         <!-- ****************************************** -->
-        <li class="li">
-          <details class="select">
-            <summary class="labori"></summary>
-            <a href="" class="a" target="_blank">
-              <h4></h4>
-            </a>
-            <img src="../assets/image " alt=" " class="img1">
-            <p><br></p>
-          </details>
-        </li>
-        <!-- ****************************************** -->
-        <li class="li">
-          <details class="select">
-            <summary class="labori"></summary>
-            <a href="" class="a" target="_blank">
-              <h4></h4>
-            </a>
-            <img src="../assets/image " alt=" " class="img1">
-            <p><br></p>
-          </details>
-        </li>
-        <!-- ****************************************** -->
-
       </ol>
     </v-col>
   </v-row>
-
-
-
   <!-- ///////////////////////////////////////////////// -->
   <div id="section2" class="mt-1">
     <v-row class="mt-1 text-center">
@@ -404,7 +415,7 @@
 </template>
 <!-- ///////////////////////////////////////////////////////////// -->
 <script setup>
-import MainLayout from '../../layouts/MainLayout.vue';
+import NavInterno from '../../layouts/NavInterno.vue';
 
 
 

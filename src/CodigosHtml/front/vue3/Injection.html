@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-  body{background-color:bisque;}
-  .img{
-    width: 800px;
-    margin: 4em;
-  }
-  </style>
-  <title>ELEMENTOS RÁPIDOS</title>
-</head>
-<body>
-  <h2>	INJECTION </h2>
-<ol>	
-<li>Se usa para traer elementos de una página a otra</li>	
-<li>EL Padre envia los datos usa el provide</li>	
-<li>el hijo los recibe con inject</li>	
-<li></li>	
-<li>	Padre: Se importa el hijo, se crea la variable y se envía con provide	</li>
-<li> Primero se pone el nombre de envio entre comillas simples</li>
-<li> y a continuación la variable que se envia, sin comillas</li>
-<li>Ejemplo: provide('envio', num) </li>
-<li>	Hijo: se recibe con el inject 	</li>
-<li> Ejemplo : let producto = inject('envio')</li>
-<li>Se muestra la variable producto</li>
-<li>	Para cambiar se crea una función en el hijo con un botón 	</li>
-<li>	Y el valor que se quiere cambiar. Listo 	</li>
-</ol>		
-<img src="/src/assets/image/injection.png" alt="injection" class="img">
-  <pre>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: bisque;
+      }
+      .img {
+        width: 800px;
+        margin: 4em;
+      }
+    </style>
+    <title>ELEMENTOS RÁPIDOS</title>
+  </head>
+  <body>
+    <h2>INJECTION</h2>
+    <ol>
+      <li>Se usa para traer elementos de una página a otra</li>
+      <li>EL Padre envia los datos usa el provide</li>
+      <li>el hijo los recibe con inject</li>
+      <li></li>
+      <li>
+        Padre: Se importa el hijo, se crea la variable y se envía con provide
+      </li>
+      <li>Primero se pone el nombre de envio entre comillas simples</li>
+      <li>y a continuación la variable que se envia, sin comillas</li>
+      <li>Ejemplo: provide('envio', num)</li>
+      <li>Hijo: se recibe con el inject</li>
+      <li>Ejemplo : let producto = inject('envio')</li>
+      <li>Se muestra la variable producto</li>
+      <li>Para cambiar se crea una función en el hijo con un botón</li>
+      <li>Y el valor que se quiere cambiar. Listo</li>
+    </ol>
+    <img
+      src="/src/assets/image/front/vue3/injection.png"
+      alt="injection"
+      class="img"
+    />
+    <pre>
     <div>
     <h2>PADRE</h2>
 
@@ -83,6 +91,5 @@ provide('cambio', canal)
   &lt;/style>
     </div>
   </pre>
-</body>
+  </body>
 </html>
-    

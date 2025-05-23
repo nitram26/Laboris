@@ -292,14 +292,14 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary class="labori"></summary>
-                    <a href="" class="a" target="_blank">
-                      <h4></h4>
+                    <summary class="laboris">INJECTION</summary>
+                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Injection.html" class="a" target="_blank">
+                      <h4>Reemplaza a PROPS Y EMITS</h4>
                     </a>
                     <ol>
-                      <li></li>
-                      <li></li>
-                      <li></li>
+                      <li>Se usa para traer elementos de una página a otra</li>
+                      <li>Se envía con provide</li>
+                      <li>Se recibe con injection</li>
                     </ol>
                     <img src="" alt=" " class="img1">
                     <p><br></p>

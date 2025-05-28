@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/src/assets/image/home/CERVERA.png"
+      type="image/x-icon"
+    />
+    <style>
+      body {
+        background-color: bisque;
+      }
+      .img {
+        width: 600px;
+        margin: 4em;
+        border: brown double 6px;
+      }
+
+      .li {
+        margin: 0.5em;
+        padding: 0.5em;
+        border: brown solid 1px;
+        width: 65em;
+      }
+
+      .select {
+        font-size: 1.3em;
+        color: brown;
+        background-color: white;
+      }
+
+      pre {
+        margin-left: 1em;
+        color: black;
+      }
+    </style>
+    <title>ELEMENTOS RÁPIDOS</title>
+  </head>
+  <body>
+    <h1>DATO TIPO NUMBER</h1>
+    <section id="1">
+      <h2 class="subtitulo">MÉTODOS</h2>
+      <!-- /////////////////////////////////////// -->
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>toFixed()</summary>
+            <script>
+              let num = 7.2458;
+              console.log(num);
+              console.log(num.toFixed(3));
+            </script>
+            <p>
+              Veremos por consola que limita el numero de decimales y redondea
+              subiendo al 5 a 6 en el penúltimo número<br /><br /><br />
+              También agrega ceros si le decimos que tenga más decimales de los
+              que la variable posee.
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>parseInt y parseFloat</summary>
+            <p>
+              [la variable va dentro del paréntesis, no se emplea el punto].
+              Convierte string a number
+            </p>
+            <ol>
+              <li>parseInt(): Devuelve la parte entera de un número</li>
+              <li>parseFloat(): devuelve el número parte entera y decimal</li>
+              <li></li>
+            </ol>
+            <script>
+              let num1 = 7.654;
+              console.log(parseInt(num1));
+              console.log(parseFloat(num1));
+            </script>
+            <img
+              src="/src/assets/image/front/js/parse.png"
+              alt="img"
+              class="img"
+            />
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- ////////////////////////////////// -->
+    </section>
+  </body>
+</html>

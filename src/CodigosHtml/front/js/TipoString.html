@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/src/assets/image/home/CERVERA.png"
+      type="image/x-icon"
+    />
+    <style>
+      body {
+        background-color: bisque;
+      }
+      .img {
+        width: 600px;
+        margin: 4em;
+        border: brown double 6px;
+      }
+
+      .li {
+        margin: 0.5em;
+        padding: 0.5em;
+        border: brown solid 1px;
+        width: 65em;
+      }
+
+      .select {
+        font-size: 1.3em;
+        color: brown;
+        background-color: white;
+      }
+
+      pre {
+        margin-left: 1em;
+        color: black;
+      }
+    </style>
+    <title>ELEMENTOS RÁPIDOS</title>
+  </head>
+  <body>
+    <h1>Tipos de Datos</h1>
+    <section id="1">
+      <h2 class="subtitulo">String</h2>
+      <!-- /////////////////////////////////////// -->
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>cadena de Texto</summary>
+            <ol>
+              <li>Esta encerrado entre comillas simples o dobles (" ", ' ')</li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>length</summary>
+            <!-- //////////////////////// -->
+            <script>
+              let nombre = "Carlos";
+              console.log(nombre.length);
+            </script>
+            <!-- //////////////////////// -->
+            <p>Por consola mostrara el número 6<br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>toLowerCase() toUpperCase()</summary>
+            <script>
+              let objeto1 = "mesa";
+              let objeto2 = "SILLA";
+
+              console.log(objeto1.toUpperCase());
+              console.log(objeto2.toLowerCase());
+            </script>
+            <p>Veremos mesa en mayúsculas y silla en minúsculas<br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>includes()</summary>
+            <script>
+              let cadena =
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic molestias repellendus, deserunt suscipit sit commodi eos dolorum ut aspernatur. Quia tempore incidunt consectetur voluptates aliquid eligendi molestiae pariatur blanditiis neque!";
+
+              console.log(cadena.includes("amet"));
+            </script>
+            <p>mostrara por consola => true<br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>trim()</summary>
+            <script>
+              let nombre1 = " Sofía ";
+              console.log(nombre1.length);
+              console.log(nombre1.trim().length);
+            </script>
+            <p>
+              En el primero dará 7 por tener espacio antes y después y en
+              segundo dará 5<br /><br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>split()</summary>
+            <ol>
+              <li>Es posible separarlo por espacio en blanco, coma, etc.</li>
+              <li></li>
+            </ol>
+            <script>
+              let cadena1 =
+                "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio a quaerat libero eaque, aspernatur rem voluptatem! Magnam mollitia nulla voluptas dolores tenetur recusandae deserunt, maxime quidem minus natus numquam labore.";
+
+              console.log(cadena1.split(" "));
+              console.log(cadena1.split(","));
+            </script>
+            <p>
+              En el primero formará un array con 30 elementos, y en el segundo
+              un array con 4 elementos<br /><br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- ////////////////////////////////// -->
+    </section>
+  </body>
+</html>

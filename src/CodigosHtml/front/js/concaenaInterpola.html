@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/src/assets/image/home/CERVERA.png"
+      type="image/x-icon"
+    />
+    <style>
+      body {
+        background-color: bisque;
+      }
+      .img {
+        width: 600px;
+        margin: 4em;
+        border: brown double 6px;
+      }
+
+      .li {
+        margin: 0.5em;
+        padding: 0.5em;
+        border: brown solid 1px;
+        width: 65em;
+      }
+
+      .select {
+        font-size: 1.3em;
+        color: brown;
+        background-color: white;
+      }
+
+      pre {
+        margin-left: 1em;
+        color: black;
+      }
+    </style>
+    <title>ELEMENTOS RÁPIDOS</title>
+  </head>
+  <body>
+    <h1>Concatenación e Interpolación</h1>
+    <section id="1">
+      <h2 class="subtitulo"></h2>
+      <!-- /////////////////////////////////////// -->
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>Uso del template string</summary>
+            <ol>
+              <li>comillas invertidas alt+96 ``</li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+            <script>
+              let nombre = "Carlos";
+              let apellido = "Cervera";
+              let saludo = `Hola como estás ${nombre} ${apellido}`;
+              console.log(saludo);
+            </script>
+            <p>
+              muestra por consola el saludo con nombre y apellido<br /><br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Uso en Formato</summary>
+            <p>Respeta indentación, saltos, etc.</p>
+            <script>
+              let ol = `
+            <ol>
+              <li>Primavera</li>
+              <li>Verano</li>
+              <li>Otoño</li>
+              <li>Invierno</li>
+            </ol>
+              `;
+              console.log(ol);
+            </script>
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p><br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- ////////////////////////////////// -->
+    </section>
+  </body>
+</html>

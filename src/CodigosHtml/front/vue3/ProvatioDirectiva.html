@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/src/assets/image/home/CERVERA.png"
+      type="image/x-icon"
+    />
     <style>
       body {
         background-color: bisque;
       }
-
       .img {
         width: 600px;
         margin: 4em;
@@ -34,109 +38,40 @@
     </style>
     <title>ELEMENTOS RÁPIDOS</title>
   </head>
-
   <body>
-    <h1 class="bg-teal-lighten-2">Interpolar Textos</h1>
+    <h1></h1>
     <section id="1">
       <h2 class="subtitulo"></h2>
       <!-- /////////////////////////////////////// -->
       <ol>
         <li class="li">
           <details class="select">
-            <summary>
-              Declara una variable mensaje en el script setup y muéstrala en el
-              template utilizando interpolación de texto.
-            </summary>
-            <p></p>
+            <summary>Crear Proyecto</summary>
             <pre>
-              &lt;template> 
-                &lt;div class="bg-teal-lighten-2 text-white text-center py-5">
-                &lt;h1>ProbatioVue&lt;/h1>
-                &lt;h2>{{ mensaje }}&lt;/h2> 
-                &lt;/div> 
-                &lt;/template>
-              &lt;!-- ++++++++++++++++++++++++++++++++++++ --> 
-              &lt;script setup> 
-                let mensaje= "Buenos Días!" 
-              &lt;/script> 
-              &lt;!-- +++++++++++++++++++++++++++++++++++++ -->
-              &lt;style scoped>&lt;/style>
-            </pre>
-            <img
-              src="/src/assets/image/front/vue3/inter01.png"
-              alt="inter01"
-              class="img"
-            />
-            <p>
-              <br />
-              <br />
-            </p>
-          </details>
-        </li>
-        <!-- ++++++++++++++++++++++++++++++ -->
-        <li class="li">
-          <details class="select">
-            <summary>
-              Crea una variable nombre, asigna un valor y muestra un saludo
-              personalizado en el template usando interpolación.
-            </summary>
-            <pre>
-    &lt;template>
-        &lt;div class="bg-teal-lighten-2 text-white text-center py-5">
-          &lt;h1>ProbatioVue&lt;/h1>
-          &lt;h2>{{ mensaje }}&lt;/h2>
-        &lt;/div>
-    &lt;/template>
-    &lt;!-- +++++++++++++++++++++++++++++++++++++ -->
-    &lt;script setup>
-        let nombre = "Carlos M";
-        let mensaje = "Hola " + nombre + ", bienvenido a ProbatioVue";
-    &lt;/script>
-      &lt;!-- +++++++++++++++++++++++++++++++++++++ -->
-    &lt;style scoped>&lt;/style></pre
+            CREAR PROYECTO
+1.	Crear proyecto	
+    a.	Cada año actualizar versión NODE
+    b.	Node -v //  node –versión
+
+2.	Crear una carpeta llevarla a VSCode
+3.	En la terminal : npm create vite@latest
+4.	Seguir las indicaciones
+
+5.	VUETIFY
+    a.	npm install vuetify
+    b.	npm install vite-plugin-vuetify 
+    c.	actualizar el MAIN.JS Y EL VITECONFIG
+
+6.	ROUTER
+    a.	npm install vue-router@4
+    b.	crear carpeta router
+    c.	crear archivo index.js
+    d.	importar el router en el main
+    e.	crear la carpeta view
+    f.	crear el primer archivo: HomeView.vue
+
+          </pre
             >
-
-            <img
-              src="/src/assets/image/front/vue3/inter02.png"
-              alt="inter02"
-              class="img"
-            />
-          </details>
-        </li>
-        <!-- ++++++++++++++++++++++++++++++ -->
-        <li class="li">
-          <details class="select">
-            <summary>
-              Declara dos variables numéricas y utiliza interpolación para
-              mostrar el resultado de una operación matemática en el template
-            </summary>
-            <pre>
-  NOTA : LAS COMILLAS INVERTIDAS SE HACEN CON ALT+96 
-&lt;template>
-  &lt;div class="bg-teal-lighten-2 text-white text-center py-5">
-    &lt;h1>ProbatioVue&lt;/h1>
-    &lt;h2>{{ mensaje }}&lt;/h2>
-  &lt;/div>
-&lt;/template>
-&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
-&lt;script setup>
-  let num1 = 10;
-  let num2 = 20;
-  let mensaje = `El resultado de la suma ${num1} + ${num2} es: ${num1 + num2}`;
-&lt;/script>
-&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
-&lt;style scoped>&lt;/style>
-
-            </pre>
-            <img
-              src="/src/assets/image/front/vue3/inter03.png"
-              alt="inter03"
-              class="img"
-            />
-            <p>
-              <br />
-              <br />
-            </p>
           </details>
         </li>
         <!-- ++++++++++++++++++++++++++++++ -->
@@ -385,43 +320,14 @@ let precio = ref(computed(() => {
         <!-- ++++++++++++++++++++++++++++++ -->
         <li class="li">
           <details class="select">
-            <summary>
-              Declara una variable color, asígnale un valor true y úsala para
-              definir el color de un texto dentro del template con
-              interpolación. Usando v-show y un botón que haga el cambio de
-              color.
-            </summary>
-            <pre>
-&lt;template>
-&lt;div class="bg-teal-lighten-2 text-white text-center py-5">
-&lt;h1>ProbatioVue&lt;/h1>
-&lt;h2 v-show="color === true" class="text-red">EL color es rojo&lt;/h2>
-&lt;h2 v-show="color === false" class="text-purple">EL color es purpura&lt;/h2>
-
-&lt;v-btn @click="color = !color" class="bg-purple">Color&lt;/v-btn>
-&lt;/div>
-&lt;/template>
-&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
-&lt;script setup>
-import { ref } from 'vue';
-
-let color = ref(true)
-&lt;/script>
-&lt;!-- +++++++++++++++++++++++++++++++++++++ -->
-&lt;style scoped>&lt;/style>
-
-            </pre>
-            <img
-              src="/src/assets/image/front/vue3/inter10.png"
-              alt="inter10"
-              class="img"
-            />
+            <summary></summary>
             <p>
               <br />
               <br />
             </p>
           </details>
         </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
       </ol>
       <!-- ////////////////////////////////// -->
     </section>

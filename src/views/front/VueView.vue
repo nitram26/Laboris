@@ -24,7 +24,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="laboris">Crear Proyecto</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/CrearProyecto.html" class="a"
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/CrearProyecto.html" class="a"
                       target="_blank">
                       <h4>Crear Proyecto con Vuetify,Vite y Cli</h4>
                     </a>
@@ -41,7 +41,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="laboris">LLamar un Componente </summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/RelacionarComponentes.html" class="a"
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/RelacionarComponentes.html" class="a"
                       target="_blank">
                       <h4></h4>
                     </a>
@@ -58,7 +58,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="labori">Crear Snippets</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Snippet.html" class="a" target="_blank">
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/Snippet.html" class="a" target="_blank">
                       <h4>Crear un Snippet</h4>
                     </a>
                     <ol>
@@ -90,20 +90,36 @@
                   </details>
                 </li>
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary class="labori"></summary>
+                    <a href="" class="a" target="_blank">
+                      <h4></h4>
+                    </a>
+                    <ol>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3 " alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
               </ol>
             </v-col>
             <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
             <v-col cols="6">
               <ol>
+
                 <li class="li">
                   <details class="select">
-                    <summary class="labori">CHECKBOX</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/SelectCheckbox.html" class="a"
-                      target="_blank">
-                      <h4>CON VUETIFY y CSS</h4>
+                    <summary class="labori"></summary>
+                    <a href="" class="a" target="_blank">
+                      <h4></h4>
                     </a>
                     <ol>
-                      <li>Revisar</li>
+                      <li></li>
                       <li></li>
                       <li></li>
                     </ol>
@@ -114,34 +130,48 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary class="labori">SELECT</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/SelectNuevo.html" class="a"
-                      target="_blank">
-                      <h4>Realizado con vuetify</h4>
+                    <summary class="labori"></summary>
+                    <a href="" class="a" target="_blank">
+                      <h4></h4>
                     </a>
                     <ol>
-                      <li>Revisar</li>
+                      <li></li>
                       <li></li>
                       <li></li>
                     </ol>
-                    <img src="../../assets/image/front/vue3/select&Ckeckbox.png " alt=" " class="img1">
+                    <img src="../../assets/image/front/vue3 " alt=" " class="img1">
                     <p><br></p>
                   </details>
                 </li>
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary class="labori">CONDICIONAL TERNARIO</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/CondicionalTernario.html" class="a"
-                      target="_blank">
-                      <h4>TERNARIO</h4>
+                    <summary class="labori"></summary>
+                    <a href="" class="a" target="_blank">
+                      <h4></h4>
                     </a>
                     <ol>
-                      <li>Simplificación del if y show</li>
+                      <li></li>
                       <li></li>
                       <li></li>
                     </ol>
-                    <img src="../../assets/image/front/vue3/CondicionalTernario.PNG " alt=" " class="img1">
+                    <img src="../../assets/image/front/vue3 " alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary class="labori"></summary>
+                    <a href="" class="a" target="_blank">
+                      <h4></h4>
+                    </a>
+                    <ol>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3 " alt=" " class="img1">
                     <p><br></p>
                   </details>
                 </li>
@@ -181,7 +211,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="laboris">Interpolar Textos</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/EjerciciosInterpolar.html" class="a"
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/EjerciciosInterpolar.html" class="a"
                       target="_blank">
                       <h4>Ejercicios</h4>
                     </a>
@@ -199,7 +229,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="laboris">V-IF Renderizado Condicional</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/EjerciciosVif.html" class="a"
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/EjerciciosVif.html" class="a"
                       target="_blank">
                       <h4>EJERCICIOS</h4>
                     </a>
@@ -216,7 +246,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="laboris">V-SHOW Visibilidad condicional</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/EjerciciosVShow.html" class="a"
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/EjerciciosVShow.html" class="a"
                       target="_blank">
                       <h4>EJERCICIOS</h4>
                     </a>
@@ -234,7 +264,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="laboris">V_FOR recorrido de arrays</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/EjerciciosVfor.html" class="a"
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/EjerciciosVfor.html" class="a"
                       target="_blank">
                       <h4>Ejercicios</h4>
                       <ol>
@@ -252,7 +282,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="laboris">V-BIND Enlace dinámico</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Bind.html" class="a" target="_blank">
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/Bind.html" class="a" target="_blank">
                       <h4>Uso de v-bind</h4>
                     </a>
                     <p>bind: SIGNIFICA UNIR, CONECTAR, ASOCIAR</p>
@@ -268,16 +298,10 @@
                   </details>
                 </li>
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
-              </ol>
-            </v-col>
-            <!-- ////////////////////////////////////////////////// -->
-            <v-col cols="6">
-              <ol>
-
                 <li class="li">
                   <details class="select">
-                    <summary class="laboris">V-MODEL</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Model.html" class="a" target="_blank">
+                    <summary class="laboris">V-MODEL Reactivas bidireccionales</summary>
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/Model.html" class="a" target="_blank">
                       <h4>Condiciones Reactivas</h4>
                     </a>
                     <ol>
@@ -292,8 +316,8 @@
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
                 <li class="li">
                   <details class="select">
-                    <summary class="laboris">INJECTION</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Injection.html" class="a" target="_blank">
+                    <summary class="laboris">INJECTION Enlace de datos entre páginas</summary>
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/Injection.html" class="a" target="_blank">
                       <h4>Reemplaza a PROPS Y EMITS</h4>
                     </a>
                     <ol>
@@ -306,18 +330,60 @@
                   </details>
                 </li>
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+              </ol>
+            </v-col>
+            <!-- ////////////////////////////////////////////////// -->
+            <v-col cols="6">
+              <ol>
+
+
                 <li class="li">
                   <details class="select">
-                    <summary class="labori"></summary>
-                    <a href="" class="a" target="_blank">
-                      <h4></h4>
+                    <summary class="labori">CHECKBOX</summary>
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/SelectCheckbox.html" class="a"
+                      target="_blank">
+                      <h4>CON VUETIFY y CSS</h4>
                     </a>
                     <ol>
-                      <li></li>
+                      <li>Revisar</li>
                       <li></li>
                       <li></li>
                     </ol>
-                    <img src="" alt=" " class="img1">
+                    <img src="../../assets/image/front/vue3 " alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary class="labori">SELECT</summary>
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/SelectNuevo.html" class="a"
+                      target="_blank">
+                      <h4>Realizado con vuetify</h4>
+                    </a>
+                    <ol>
+                      <li>Revisar</li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3/select&Ckeckbox.png " alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary class="labori">CONDICIONAL TERNARIO</summary>
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/CondicionalTernario.html" class="a"
+                      target="_blank">
+                      <h4>TERNARIO</h4>
+                    </a>
+                    <ol>
+                      <li>Simplificación del if y show</li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="../../assets/image/front/vue3/CondicionalTernario.PNG " alt=" " class="img1">
                     <p><br></p>
                   </details>
                 </li>
@@ -354,6 +420,36 @@
                   </details>
                 </li>
                 <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary class="labori"></summary>
+                    <a href="" class="a" target="_blank">
+                      <h4></h4>
+                    </a>
+                    <ol>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ol>
+                    <img src="" alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                <li class="li">
+                  <details class="select">
+                    <summary class="laboris">Probatio</summary>
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/ProvatioDirectiva.html" class="a"
+                      target="_blank">
+                      <h4>Repaso</h4>
+                    </a>
+
+                    <img src="" alt=" " class="img1">
+                    <p><br></p>
+                  </details>
+                </li>
+                <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+
 
               </ol>
             </v-col>
@@ -374,7 +470,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="labori">Contador</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Contador.html" class="a" target="_blank">
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/Contador.html" class="a" target="_blank">
                       <h4>Contador </h4>
                     </a>
                     <ol>
@@ -390,7 +486,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="labori">Reactividad</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/ReactividadBasica.html" class="a"
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/ReactividadBasica.html" class="a"
                       target="_blank">
                       <h4>Básica</h4>
                     </a>
@@ -407,7 +503,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="labori">Practica Uno</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/PracticaUno.html" class="a"
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/PracticaUno.html" class="a"
                       target="_blank">
                       <h4>Practica Básica</h4>
                     </a>
@@ -463,7 +559,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="labori">Rutas</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Enrutado.html" class="a" target="_blank">
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/Enrutado.html" class="a" target="_blank">
                       <h4>USANDO VUETIFY</h4>
                     </a>
                     <ol>
@@ -482,7 +578,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="labori">LAYOUTS & COMPOSABLES</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/layoutsComposables.html" class="a"
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/layoutsComposables.html" class="a"
                       target="_blank">
                       <h4>LAYOUTS</h4>
                     </a>
@@ -502,7 +598,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="labori">Animaciones e Iconos </summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Animacion&Icono.html" class="a"
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/Animacion&Icono.html" class="a"
                       target="_blank">
                       <h4>Proceso</h4>
                     </a>
@@ -519,7 +615,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="labori">Router</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/routerVuetify.html" class="a"
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/routerVuetify.html" class="a"
                       target="_blank">
                       <h4>ROUTER CON VUETIFY</h4>
                     </a>
@@ -568,7 +664,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="labori">Props</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/propsVuetres.html" class="a"
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/propsVuetres.html" class="a"
                       target="_blank">
                       <h4>Componentes Padre Hijo</h4>
                     </a>
@@ -585,7 +681,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="labori">Emits</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/EmitVue.html" class="a" target="_blank">
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/EmitVue.html" class="a" target="_blank">
                       <h4>Emits y Props</h4>
                     </a>
                     <ol>
@@ -601,7 +697,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="labori">Props Array</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/PrpsArray.html" class="a" target="_blank">
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/PrpsArray.html" class="a" target="_blank">
                       <h4>Props Arrays</h4>
                     </a>
                     <ol>
@@ -617,7 +713,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="labori">Injection</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/Injection.html" class="a" target="_blank">
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/Injection.html" class="a" target="_blank">
                       <h4>Reemplaza a los props y emits</h4>
                     </a>
                     <ol>
@@ -633,7 +729,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="labori">PlaceHolder</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/ServicePlaceholder.html" class="a"
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/ServicePlaceholder.html" class="a"
                       target="_blank">
                       <h4>Uso de Placeholder</h4>
                     </a>
@@ -655,7 +751,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="labori">login Firebase</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/LoginFirebase.html" class="a"
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/LoginFirebase.html" class="a"
                       target="_blank">
                       <h4>Autenticar</h4>
                     </a>
@@ -672,7 +768,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="labori">Pinia</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/pinia.html" class="a" target="_blank">
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/pinia.html" class="a" target="_blank">
                       <h4>Pinia</h4>
                     </a>
                     <ol>
@@ -690,7 +786,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="labori">PWA</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/pwa.html" class="a" target="_blank">
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/pwa.html" class="a" target="_blank">
                       <h4>PWA</h4>
                     </a>
                     <ol>
@@ -706,7 +802,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="labori">il18n</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/pwa.html" class="a" target="_blank">
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/pwa.html" class="a" target="_blank">
                       <h4>il18n</h4>
                     </a>
                     <ol>
@@ -722,7 +818,7 @@
                 <li class="li">
                   <details class="select">
                     <summary class="labori">Plugins</summary>
-                    <a href="http://127.0.0.1:5502/src/CodigosHtml/front/vue3/plugins.html" class="a" target="_blank">
+                    <a href="http://127.0.0.1:5503/src/CodigosHtml/front/vue3/plugins.html" class="a" target="_blank">
                       <h4>Plugins</h4>
                     </a>
                     <ol>

@@ -192,7 +192,7 @@
           <li class="li">
             <details class="select">
               <summary class="laboris">Funciones</summary>
-              <a href="http://127.0.0.1:5502/src/CodigosHtml/front/js/funciones.html" class="a" target="_blank">
+              <a href="http://127.0.0.1:5503/src/CodigosHtml/front/js/funciones.html" class="a" target="_blank">
                 <h4>Ejercicios JS</h4>
               </a>
               <img src="../assets/image " alt=" " class="img1">
@@ -203,7 +203,7 @@
           <li class="li">
             <details class="select">
               <summary class="laboris">IF_ELSE</summary>
-              <a href="http://127.0.0.1:5502/src/CodigosHtml/front/js/if.html" class="a" target="_blank">
+              <a href="http://127.0.0.1:5503/src/CodigosHtml/front/js/if.html" class="a" target="_blank">
                 <h4>Ejercicios JS</h4>
               </a>
               <img src="../assets/image " alt=" " class="img1">
@@ -214,7 +214,7 @@
           <li class="li">
             <details class="select">
               <summary class="laboris">Operador Ternario</summary>
-              <a href="http://127.0.0.1:5502/src/CodigosHtml/front/js/operadorTernario.html" class="a" target="_blank">
+              <a href="http://127.0.0.1:5503/src/CodigosHtml/front/js/operadorTernario.html" class="a" target="_blank">
                 <h4>Ejercicios JS</h4>
               </a>
               <img src="../assets/image " alt=" " class="img1">
@@ -225,7 +225,7 @@
           <li class="li">
             <details class="select">
               <summary class="laboris">FOR</summary>
-              <a href="http://127.0.0.1:5502/src/CodigosHtml/front/js/for.html" class="a" target="_blank">
+              <a href="http://127.0.0.1:5503/src/CodigosHtml/front/js/for.html" class="a" target="_blank">
                 <h4>Ejercicios JS</h4>
               </a>
               <img src="../assets/image " alt=" " class="img1">
@@ -236,7 +236,7 @@
           <li class="li">
             <details class="select">
               <summary class="laboriS">WHILE</summary>
-              <a href="http://127.0.0.1:5502/src/CodigosHtml/front/js/while.html" class="a" target="_blank">
+              <a href="http://127.0.0.1:5503/src/CodigosHtml/front/js/while.html" class="a" target="_blank">
                 <h4>Ejercicios JS</h4>
               </a>
               <img src="../assets/image " alt=" " class="img1">

@@ -21,7 +21,7 @@
         <li class="li">
           <details class="select">
             <summary>HTML </summary>
-            <a href="http://127.0.0.1:5502/src/CodigosHtml/home/ElementosRapidos.html" class="a" target="_blank">
+            <a href="http://127.0.0.1:5503/src/CodigosHtml/home/ElementosRapidos.html" class="a" target="_blank">
               <h4>Estructura de Código</h4>
             </a>
             <ol>
@@ -36,7 +36,7 @@
         <li class="li">
           <details class="select">
             <summary>Estructura y Navegador a Páginas</summary>
-            <a href="http://127.0.0.1:5502/src/CodigosHtml/home/NavPaginas.html" class="a" target="_blank">
+            <a href="http://127.0.0.1:5503/src/CodigosHtml/home/NavPaginas.html" class="a" target="_blank">
               <h4>Para redirigir a otras páginas</h4>
             </a>
             <ol>
@@ -52,7 +52,7 @@
         <li class="li">
           <details class="select">
             <summary>Estructura de Página y Nav Interno</summary>
-            <a href="http://127.0.0.1:5502/src/CodigosHtml/home/NavDentroDePagina.html" class="a" target="_blank">
+            <a href="http://127.0.0.1:5503/src/CodigosHtml/home/NavDentroDePagina.html" class="a" target="_blank">
               <h4>Estructura y Nav Interno</h4>
             </a>
             <ol>
@@ -69,7 +69,7 @@
         <li class="li">
           <details class="select">
             <summary>Subir proyecto a GitHub </summary>
-            <a href="http://127.0.0.1:5502/src/CodigosHtml/home/SubirGithub.html" class="a" target="_blank">
+            <a href="http://127.0.0.1:5503/src/CodigosHtml/home/SubirGithub.html" class="a" target="_blank">
               <h4>Proyecto en GitHub</h4>
             </a>
             <img src="../assets/image/home/gitHub.png " alt="gitHub " class="img1">
@@ -146,7 +146,7 @@
         <li class="li">
           <details class="select">
             <summary>Barra de Nav. Página Principal</summary>
-            <a href="http://127.0.0.1:5502/src/CodigosHtml/home/PaginaPrincipal.html" class="a" target="_blank">
+            <a href="http://127.0.0.1:5503/src/CodigosHtml/home/PaginaPrincipal.html" class="a" target="_blank">
               <h4>Barra de navegación principal</h4>
             </a>
 
@@ -158,7 +158,7 @@
         <li class="li">
           <details class="select">
             <summary>MainLayout para Nav Lateral a Páginas</summary>
-            <a href="http://127.0.0.1:5502/src/CodigosHtml/home/MainLayout.html" class="a" target="_blank">
+            <a href="http://127.0.0.1:5503/src/CodigosHtml/home/MainLayout.html" class="a" target="_blank">
               <h4>Navegador lateral con enlaces a Páginas</h4>
             </a>
             <img src="../assets/image/home/navPagina.png " alt=" " class="img1">
@@ -170,7 +170,7 @@
         <li class="li">
           <details class="select">
             <summary>layout NavInterno</summary>
-            <a href="http://127.0.0.1:5502/src/CodigosHtml/home/NavDentroDePagina.html" class="a" target="_blank">
+            <a href="http://127.0.0.1:5503/src/CodigosHtml/home/NavDentroDePagina.html" class="a" target="_blank">
               <h4>Layout para Navegar dentro de la página</h4>
             </a>
             <ol>
@@ -187,7 +187,7 @@
         <li class="li">
           <details class="select">
             <summary>Menu Primario</summary>
-            <a href="http://127.0.0.1:5502/src/CodigosHtml/home/MenuPrimario.html" class="a" target="_blank">
+            <a href="http://127.0.0.1:5503/src/CodigosHtml/home/MenuPrimario.html" class="a" target="_blank">
               <h4>Barra de Navegación Lateral Principal</h4>
             </a>
             <img src="../assets/image/home/menuPrimario.png " alt=" " class="img1">
@@ -198,7 +198,7 @@
         <li class="li">
           <details class="select">
             <summary>Secundario con Tarjetas</summary>
-            <a href="http://127.0.0.1:5502/src/CodigosHtml/home/secundarioYTarjetas.html" class="a" target="_blank">
+            <a href="http://127.0.0.1:5503/src/CodigosHtml/home/secundarioYTarjetas.html" class="a" target="_blank">
               <h4>Tarjetas</h4>
             </a>
             <ol>
@@ -214,7 +214,7 @@
         <li class="li">
           <details class="select">
             <summary>Menu Secundario</summary>
-            <a href="http://127.0.0.1:5502/src/CodigosHtml/home/MenuSecundario.html" class="a" target="_blank">
+            <a href="http://127.0.0.1:5503/src/CodigosHtml/home/MenuSecundario.html" class="a" target="_blank">
               <h4>Lateral de Navegación Interna</h4>
             </a>
             <ol>
@@ -231,7 +231,7 @@
           <details class="select">
             <summary>Tarjetas v-for</summary>
 
-            <a href="http://127.0.0.1:5502/src/CodigosHtml/home/TarjetaVfor.html" class="a" target="_blank">
+            <a href="http://127.0.0.1:5503/src/CodigosHtml/home/TarjetaVfor.html" class="a" target="_blank">
               <h4>Uso de layouts</h4>
             </a>
             <ol>
@@ -249,7 +249,7 @@
         <li class="li">
           <details class="select">
             <summary>nav Interno</summary>
-            <a href="http://127.0.0.1:5502/src/CodigosHtml/home/NavInterno.html" class="a" target="_blank">
+            <a href="http://127.0.0.1:5503/src/CodigosHtml/home/NavInterno.html" class="a" target="_blank">
               <h4>MODELO DE NAV INTERNO Y V-FOR
               </h4>
             </a>
@@ -266,7 +266,7 @@
         <li class="li">
           <details class="select">
             <summary>IA Developers</summary>
-            <a href="http://127.0.0.1:5502/src/CodigosHtml/home/IADeveloper.html" class="a" target="_blank">
+            <a href="http://127.0.0.1:5503/src/CodigosHtml/home/IADeveloper.html" class="a" target="_blank">
               <h4>Uso de IAs</h4>
             </a>
             <ol>
@@ -304,7 +304,7 @@
           <li class="li">
             <details class="select">
               <summary>NVM</summary>
-              <a href="http://127.0.0.1:5502/src/CodigosHtml/home/ManagerNvm.html" class="a" target="_blank">
+              <a href="http://127.0.0.1:5503/src/CodigosHtml/home/ManagerNvm.html" class="a" target="_blank">
                 <h4>NVM</h4>
               </a>
               <img src="../assets/image/home/nvm.png " alt="nvm " class="img1">
@@ -332,7 +332,7 @@
           <li class="li">
             <details class="select">
               <summary>Tutoriales</summary>
-              <a href="http://127.0.0.1:5502/src/CodigosHtml/home/EnlacesReferencias.html#developer" class="a"
+              <a href="http://127.0.0.1:5503/src/CodigosHtml/home/EnlacesReferencias.html#developer" class="a"
                 target="_blank">
                 <h4>Enlaces a tutoriales</h4>
               </a>
@@ -344,7 +344,7 @@
           <li class="li">
             <details class="select">
               <summary>Emmet</summary>
-              <a href="http://127.0.0.1:5502/src/CodigosHtml/home/Emmet.html" class="a" target="_blank">
+              <a href="http://127.0.0.1:5503/src/CodigosHtml/home/Emmet.html" class="a" target="_blank">
                 <h4></h4>
               </a>
               <img src="../assets/image/home/emmet.png " alt=" emmet" class="img1">
@@ -449,7 +449,7 @@
           <li class="li">
             <details class="select">
               <summary>Memento</summary>
-              <a href="http://127.0.0.1:5502/src/CodigosHtml/home/ProcesoHora.html" class="a" target="_blank">
+              <a href="http://127.0.0.1:5503/src/CodigosHtml/home/ProcesoHora.html" class="a" target="_blank">
                 <h4>Recordar cada tiempo</h4>
               </a>
               <img src="../assets/image/home/relojDeArena.png " alt=" relojDeArena" class="img1">
@@ -460,8 +460,8 @@
           <li class="li">
             <details class="select">
               <summary>Recordaris</summary>
-              <a href="http://127.0.0.1:5502/src/CodigosHtml/home/Recordaris.html" class="a" target="_blank">
-                <h4></h4>
+              <a href="http://127.0.0.1:5503/src/CodigosHtml/home/Recordaris.html" class="a" target="_blank">
+                <h4>Boda de Plata</h4>
               </a>
               <img src="../assets/image/home/25 AÑOS.jpeg " alt=" 25 AÑOS" class="img1">
               <p><br></p>

@@ -31,22 +31,65 @@
       <!-- /////////////////////////////////////// -->
       <section id="1">
      <ol>
+      <li>
+        <details class="select">
+          <summary>TIPOS DE FUNCIONES</summary>
+          <ol>
+            <li class="int">Función Declarada</li>
+            <p>Tiene la forma : <br> function nombreDeFunction ( ) { <br>
+            <p>  //código de la función </p>
+            <p>  return valor; <br>
+            } <br><br>Se llama usando: nombreDeFunction () </p>
+            <li class="int">¿Por qué es importante return? <br>
+              Permite que la función devuelva un resultado que puedas usar después. <br>
+              La función deja de ejecutarse en el momento en que encuentra una instrucción return. <br>
+              Sin return, la función devuelve automáticamente undefined. <br><br>
+            console.log es una función que imprime en la consola del navegador. <br>
+            console.log no devuelve un valor, solo muestra información en la consola. <br>
+            </li>
+            <li class="int">Función Expresada o Anónima
+            <p>
+            Tiene la forma: <br> const nombreDeFunction = function ( ) { <br>
+            <p>  //código de la función </p>
+            } <br><br>
+            Se llama usando: nombreDeFunction () <br>
+            </p></li>
+            <li class="int">Con Parámetros
+            <p>
+            Tiene la forma: <br> function nombreDeFunction (parametro1, parametro2) { <br>
+            } <br><br>
+            Se llama usando: nombreDeFunction (valor1, valor2) <br><br> 
+            Se usa también en el formato de función Anónima <br><br>
+            Para asignar valores por defecto a los parámetros, se puede hacer de la siguiente manera: <br>
+            function nombreDeFunction (parametro1 = valorPorDefecto1, parametro2 = valorPorDefecto2) { <br>
+            } <br><br>
+            </li>
+         
+          </ol>
+
+        </details>
+      </li>
       <li>  <details class="select">
-        <summary>FUNCTIONS</summary>
+        <summary>FUNCTIONS Ejercicios</summary>
         <ol>
+          <li class="int">Crea una función que reciba dos números y retorne su suma</li>
+          <li class="int">Crea una función que reciba un número y retorne si es par o impar</li>
+          <li class="int">Crea una función que reciba un texto y retorne su longitud</li>
+          <li class="int">Crea una función que reciba un texto y retorne el texto en mayúsculas y minúsculas</li>
+       
+          <li class="int">Crea una función que reciba un número y retorne si es positivo, negativo o cero</li>
+          <li class="int">Crea una función que reciba dos números y retorne el mayor de los dos</li>
+          <li class="int">Crea una función que reciba un arreglo de números y retorne la suma de todos sus elementos</li>
+          <li class="int">Crea una función que reciba un arreglo de números y retorne el promedio de sus elementos</li>
           <li class="int" >Calcular el precio final de un artículo, conociendo el precio inicial y el porcentaje de descuento es de 15%</li>
-          <li class="int" >Pide al usuario dos números. Posteriormente muestra por pantalla el resultado de sumarlos, restarlos, multiplicarlos, dividirlos, hacer la potencia del primero elevado al segundo (**) y el resto que resulte de dividir el primero entre el segundo (%)</li>
           <li class="int" >Diseña el programa que dado el precio de venta de un artículo calcule su precio antes de impuestos (IGV 19%)</li>
           <li class="int" >Calcula la longitud de la circunferencia y el área del círculo dado el radio</li>
-          <li class="int" >Escribe un programa que calcule el área y el perímetro de un triángulo rectángulo, dados los dos catetos</li>
           <li class="int" >Calcula cuántos dígitos tiene un número</li>
           <li class="int" >Escribe una función que reciba un array de números y retorne el número más grande</li>
-          <li class="int" >Crea una función que reciba un array y retorne el número más pequeño</li>
           <li class="int" >Escribe una función llamada <b>númeroAleatorio</b> que reciba 2 números como parámetro y retorne un número al azar comprendido entre ambos</li>
-          <li class="int" >Escribe una función llamada <b>filtrarLargas</b> que reciba un arreglo de palabras y un número n, y retorne un nuevo arreglo con las palabras que tengan más de n letras</li>
           <li class="int" >Escribe una función llamada <b>factorial</b> que reciba un número y retorne su factorial</li>
           <li class="int" >Crea una función que cuente cuántas vocales hay en una cadena de texto</li>
-          <li class="int" >Escribe una función llamada <b>calcularPromedio</b> que reciba un arreglo de números y retorne su promedio</li>
+
           <li class="int" >Escribe una función llamada <b>contarPalabras</b> que reciba una frase y retorne cuántas palabras tiene</li>
           <li class="int" >Escribe una función llamada <b>ordenarArreglo</b> que reciba un arreglo de números y lo ordene de menor a mayor</li>
           <li class="int" >Escribe una función llamada <b>eliminarDuplicados</b> que reciba un arreglo y retorne otro sin elementos repetidos</li>
@@ -54,5 +97,526 @@
       </ol>
       
       </details></li>
+    </ol>
+    <section id="2">
+      <h2 class="subtitulo">Ejercicios Funciones</h2>
+      <!-- /////////////////////////////////////// -->
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>Crea una función que reciba dos números y retorne su suma</summary>
+            <p>let sum = function(a, b) { <br>
+              return a + b; <br>
+            } <br><br>
+            
+            let result = sum(5, 3); <br>
+            console.log(result);<br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Crea una función que reciba un número y retorne si es par o impar</summary>
+            <p>const resto =function(a) {	<br>
+              if (a>0) {	<br>
+                return a%2 === 0 ? 'par' : 'impar';	<br>
+                  <br>
+              } else {	<br>
+                return 'número inválido';	<br>
+              }	<br>
+            }	<br>
+              <br>
+            let result = resto(7);	<br>
+            console.log(result);	<br>
+            <br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Crea una función que reciba un texto y retorne su longitud</summary>
+            <p>const text =function(palabra) {	<br>
+              <br>
+              return palabra.length;	<br>
+               <br>
+             }	<br>
+               <br>
+             let result = text('Carlos');	<br>
+             console.log(result);	<br>
+            const text =function(palabra) {	<br>
+              <br>
+              return palabra.length;	<br>
+               <br>
+             }	<br>
+               <br>
+             let result = text('Carlos');	<br>
+             console.log(result);	<br>
+            <br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Crea una función que reciba un texto y retorne el texto en mayúsculas y minúsculas</summary>
+            <p>const palabras = function(palabra) {	<br>
+              <br>
+              return (palabra.toUpperCase() + ' ' + palabra.toLowerCase() );	<br>
+               <br>
+             }	<br>
+               <br>
+             let result = palabras('Carlos');	<br>
+             console.log(result);	<br>
+            const palabras = function(palabra) {	<br>
+              <br>
+              return (palabra.toUpperCase() + ' ' + palabra.toLowerCase() );	<br>
+               <br>
+             }	<br>
+               <br>
+             let result = palabras('Carlos');	<br>
+             console.log(result);	<br>
+            <br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Crea una función que reciba un número y retorne si es positivo, negativo o cero</summary>
+            <p>const par = function(num1) {	<br>
+              if (num1!= 0) {	<br>
+                let res = num1 > 0 ? 'positivo' : 'negativo'	<br>
+                return res;	<br>
+              } else {	<br>
+                return 'El número es Cero';	<br>
+              }	<br>
+                <br>
+            }	<br>
+              <br>
+            let result = par( 0);	<br>
+            console.log(result);	<br>
+            <br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Crea una función que reciba dos números y retorne el mayor de los dos
+            </summary>
+            <p>let result = function (x, y) { 	<br>
+              <br>
+              if (x > y) {	<br>
+                return `${x} es mayor que ${y}`;	<br>
+              } else {	<br>
+                return `${y} es mayor que ${x}`;	<br>
+              }	<br>
+              <br>
+            }	<br>
+              let res = result(9, 90);	<br>
+              console.log(res); 	<br>
+            <br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Crea una función que reciba un arreglo de números y retorne la suma de todos sus elementos
+            </summary>
+            <p>SOLUCION 1	<br>
+              <br>
+            function sumar(números) {	<br>
+              let suma = 0;	<br>
+              for (let numero of números) {	<br>
+                suma += numero;	<br>
+              }	<br>
+              return suma;	<br>
+            }	<br>
+              <br>
+              <br>
+            const array = [1, 2, 3, 4, 5];	<br>
+            console.log(sumar(array)); 	<br>
+              <br>
+              <br>
+            SOLUCIÓN 2	<br>
+            function sumarArreglo(numeros) {	<br>
+              return numeros.reduce((acumulador, valor) => acumulador + valor, 0);	<br>
+            }	<br>
+              <br>
+            const array1 = [1, 2, 3, 4, 5];	<br>
+            console.log(sumarArreglo(array1)); 	<br>
+            <br /><br />/*	<br>
+            array.reduce(funcion, valorInicial)	<br>
+            funcion: Una función que toma dos argumentos:	<br>
+            acumulador (el valor acumulado en las iteraciones)	<br>
+            elemento actual (el elemento en la posición actual del array)	<br>
+            valorInicial (opcional): Un valor inicial para el acumulador. Si no se proporciona, el primer elemento del array se usa como valor inicial y la iteración empieza desde el segundo elemento.	<br>
+            ¿Qué devuelve?	<br>
+            reduce devuelve un único valor, que es el resultado final tras aplicar la función a todo el array.	<br>
+              <br>
+            Ejemplo sencillo: sumar todos los números en un array	<br>
+            Supongamos que tienes este array:	<br>
+              <br>
+            js	<br>
+            const numeros = [1, 2, 3, 4, 5];	<br>
+            Y quieres sumar todos los números. Puedes usar reduce así:	<br>
+              <br>
+            js	<br>
+            const suma = numeros.reduce((acumulador, valorActual) => {	<br>
+              return acumulador + valorActual;	<br>
+            }, 0);	<br>
+            ¿Qué pasa aquí?	<br>
+              <br>
+            El acumulador empieza con el valor inicial 0 (que pasamos como segundo argumento a reduce).	<br>
+            Para cada elemento en el array, la función se ejecuta:	<br>
+            En la primera iteración: acumulador es 0, valorActual es 1	<br>
+            Devuelve 0 + 1 = 1	<br>
+            En la segunda: acumulador es 1, valorActual es 2	<br>
+            Devuelve 1 + 2 = 3	<br>
+            En la tercera: acumulador es 3, valorActual es 3	<br>
+            Devuelve 3 + 3 = 6	<br>
+            Y así sucesivamente hasta recorrer todo el array.	<br>
+            Al final, suma tendrá el valor 15.	<br>
+              <br>
+            */	<br>
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Crea una función que reciba un arreglo de números y retorne el promedio de sus elementos
+            </summary>
+            <p>let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];	<br>
+              <br>
+            const promedio = function(num) {	<br>
+              if (num.length === 0) {	<br>
+                return 0; // Para evitar división por cero si está vacío	<br>
+              }	<br>
+              const suma = num.reduce((acumulador, valor) => acumulador + valor, 0);	<br>
+              const promedio = suma / num.length;	<br>
+              console.log(num.length);	<br>
+                <br>
+              return suma, promedio;	<br>
+            }	<br>
+              <br>
+            <br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Calcular el precio final de un artículo, conociendo el precio inicial y el porcentaje de descuento es de 15%
+            </summary>
+            <p>SOLUCIÓN 1	<br>
+              let articulo = 27.90	<br>
+                <br>
+              const precio = function (articulo) {	<br>
+                let igv = 0.18	<br>
+                let precio1 = articulo * igv	<br>
+                let precio2 = articulo + precio1	<br>
+                return precio2.toFixed(2)	<br>
+                <br>
+              }	<br>
+              let producto = precio(articulo)	<br>
+              console.log(producto)	<br>
+                <br>
+                <br>
+              SOLUCIÓN 2	<br>
+                <br>
+              let simple = articulo * 1.18	<br>
+              console.log(simple.toFixed(2))	<br>
+              <br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Diseña el programa que dado el precio de venta de un artículo calcule su precio antes de impuestos (IGV 19%)</summary>
+            <p>SOLUCIÓN 1	<br>
+              let articulo1 = 120	<br>
+                <br>
+              const precio = function (articulo1) {	<br>
+               let precio = articulo1/1.2	<br>
+                return precio.toFixed(2)	<br>
+                <br>
+              }	<br>
+              let producto = precio(articulo1)	<br>
+              console.log(producto)	<br>
+                <br>
+              //SOLUCIÓN 2	<br>
+              let simple = articulo1 / 1.2	<br>
+              console.log(simple.toFixed(2))	<br>
+              <br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Calcula la longitud de la circunferencia y el área del círculo dado el radio</summary>
+            <p>const area = function (num1) {	<br>
+              <br>
+            let longitud = Math.PI * 2 * num1	<br>
+            let area1 = Math.PI * Math.pow(num1, 2);	<br>
+            return {	<br>
+              longitud: longitud,	<br>
+              area1: area1	<br>
+            };	<br>
+          }	<br>
+          let result = area(10)	<br>
+          let long = (`Longitud: ${result.longitud}`);	<br>
+          console.log(long);	<br>
+            <br>
+          let areaFinal = (`Area: ${result.area1}`);	<br>
+          console.log(areaFinal);	<br>
+          <br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Calcula cuántos dígitos tiene un número</summary>
+            <p>const digit = function (num1) {	<br>
+              let cadena = num1.toString();	<br>
+              let contar = cadena.length;	<br>
+            return contar	<br>
+            }	<br>
+              <br>
+            let result = digit(1234567890);	<br>
+            console.log(result); 	<br>
+            <br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Escribe una función que reciba un array de números y retorne el número más grande</summary>
+            <p>function obtenerNumMax(arr) {	<br>
+              if (arr.length === 0) {	<br>
+                return `El array está vacío`; 	<br>
+              }	<br>
+              return Math.max(...arr);	<br>
+            }	<br>
+            let numero = [18, 25, 63, 84, 75, 98, 14, 12, 88];	<br>
+            console.log(obtenerNumMax(numero)); 	<br>
+            <br /><br />/*	<br>
+            ¿Para qué sirve el operador spread? [...array] es una sintaxis de JavaScript que permite expandir o descomponer un array en sus elementos individuales. Es útil en varias situaciones:	<br>
+            Para copiar arrays de forma sencilla:	<br>
+              <br>
+            js	<br>
+            const arrayOriginal = [1, 2, 3];	<br>
+            const copiaArray = [...arrayOriginal];	<br>
+            // copiaArray es una copia independiente de arrayOriginal	<br>
+            Para combinar arrays:	<br>
+              <br>
+            js	<br>
+            const array1 = [1, 2, 3];	<br>
+            const array2 = [4, 5, 6];	<br>
+            const combinado = [...array1, ...array2]; // [1, 2, 3, 4, 5, 6]	<br>
+            Para pasar los elementos de un array como argumentos de una función:	<br>
+              <br>
+            js	<br>
+            const numeros = [5, 10, 15];	<br>
+            console.log(Math.max(...numeros)); // 15	<br>
+            */	<br>
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Escribe una función llamada númeroAleatorio que reciba 2 números como parámetro y retorne un número al azar comprendido entre ambos</summary>
+            <p>const numAleatorio = function(min, max) {	<br>
+              if (min > max) {	<br>
+                [min, max] = [max, min];	<br>
+              }	<br>
+              return Math.floor(Math.random() * (max - min + 1)) + min;	<br>
+            }	<br>
+              <br>
+            let result = numAleatorio(1, 100);	<br>
+            console.log(`Número aleatorio entre 1 e 100: ${result}`);	<br>
+            <br /><br />/*
+            [min, max] = [max, min]; <br>
+            Es una desestructuración de arrays en JavaScript. Es una forma muy elegante y sencilla de intercambiar o asignar valores entre variables sin necesidad de usar una variable temporal.
+            */</p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Escribe una función llamada factorial que reciba un número y retorne su factorial
+            </summary>
+            <p>const factorial = function (n) {	<br>
+              if (typeof n !== 'number' || n < 0 || !Number.isInteger(n)) {	<br>
+                return 'Por favor, ingresa un número entero no negativo.';	<br>
+              }	<br>
+              if (n === 0 || n === 1) {	<br>
+                return 1;	<br>
+              }	<br>
+              return n * factorial(n - 1);	<br>
+            }	<br>
+              <br>
+            let sol = factorial(5)	<br>
+            console.log(sol); 	<br>
+            <br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Crea una función que cuente cuántas vocales hay en una cadena de texto</summary>
+            <p>const contarVocales =function (cadena) {	<br>
+              const vocales = 'aeiouAEIOU'; 	<br>
+              let contador = 0;	<br>
+              <br>
+              for (let caracter of cadena) {	<br>
+                if (vocales.includes(caracter)) {	<br>
+                  contador++;	<br>
+                }	<br>
+              }	<br>
+              <br>
+              return contador;	<br>
+            }	<br>
+              <br>
+            let sol = contarVocales("Hola Mundo");	<br>
+            console.log(`La cadena tiene ${sol} vocales.`); 	<br>
+            <br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Escribe una función llamada contarPalabras que reciba una frase y retorne cuántas palabras tiene</summary>
+            <p>function contarPalabras(frase) {	<br>
+              <br>
+              const palabras = frase.trim().split(/\s+/);	<br>
+              return frase.trim() === '' ? 0 : palabras.length;	<br>
+            }	<br>
+              <br>
+            console.log(contarPalabras("Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quo sint laudantium soluta ut quis assumenda dignissimos dolorem debitis corrupti officiis sunt magni obcaecati nesciunt, minus ullam officia, quidem vero. ")); 	<br>
+            function contarPalabras(frase) <br>
+            <br /><br />/*	<br>
+            trim para eliminar espacios al principio y al final	<br>
+            split en espacios para separar las palabras	<br>
+            Si la frase está vacía, cuenta como 0 palabras	<br>
+             <br>
+            La expresión (/\s+/) es una expresión regular en JavaScript que se usa para buscar uno o más caracteres de espacio en blanco en una cadena.	<br>
+             <br>
+             <br>
+           /.../: Los slash delimitan la expresión regular en JavaScript.	<br>
+           \s: Es un metacaracter que representa cualquier carácter de espacio en blanco. Incluye espacios, tabulaciones, saltos de línea, etc.	<br>
+           +: Es un cuantificador que indica "uno o más" del elemento anterior. En este caso, uno o más espacios en blanco consecutivos.	<br>
+           Entonces, \s+ significa "uno o más caracteres de espacio en blanco en fila".	<br>
+             <br>
+           ¿Por qué lo usamos en split()?	<br>
+             <br>
+           En la función split(/\s+/), la expresión regular indica que queremos dividir la cadena en cada grupo de espacios en blanco, sin importar cuántos haya en cada separación. Esto ayuda a:	<br>
+             <br>
+           Eliminar espacios extra (si hay varios espacios seguidos).	<br>
+           Obtener solo las palabras sin espacios vacíos entre ellas.	<br>
+            */	<br>
+           </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Escribe una función llamada ordenarArreglo que reciba un arreglo de números y lo ordene de menor a mayor</summary>
+            <p>const ordenarArreglo =function (arreglo) {	<br>
+              <br>
+              return arreglo.sort((a, b) => a - b);	<br>
+            }	<br>
+              <br>
+            let sol = ordenarArreglo([5, 3, 8, 1, 2]);	<br>
+            console.log(sol);	<br>
+            <br /><br />/*
+            Usamos la función de comparación para ordenar números correctamente
+          
+             La expresión (a, b) => a - b es una función anónima en JavaScript, conocida como función flecha. Esta función se usa como función de comparación en el método sort() para ordenar números correctamente.
+          
+          Aquí te lo explico paso a paso:
+          
+          1. La sintaxis (a, b) => a - b
+          (a, b): indica que la función recibe dos parámetros, llamados a y b. En el contexto de sort(), estos representan dos elementos del arreglo que se están comparando en cada paso.
+          
+          =>: es la flecha que indica que lo que sigue es el cuerpo o la expresión de la función.
+          
+          a - b: es la expresión que se evalúa y que determina el orden.
+          
+          2. Cómo funciona en sort()
+          La función de comparación debe devolver:
+          
+          Un número negativo si a debe ir antes que b.
+          Cero, si son iguales.
+          Un número positivo si a debe ir después que b.
+          Al usar a - b:
+          
+          Si a es menor que b, la resta a - b será negativa → a antes que b.
+          Si a y b son iguales, la resta será 0 → su orden no cambia.
+          Si a es mayor que b, la resta será positiva → a después de b.
+          Ejemplo con números
+          Supón que tienes el arreglo: [3, 1, 4, 2]
+          
+          Al ordenar con:
+          
+          js
+          arreglo.sort((a, b) => a - b);
+          El proceso será:
+          
+          Compara 3 y 1: 3 - 1 = 2 (positivo) → 3 después de 1.
+          Compara 3 y 4: 3 - 4 = -1 (negativo) → 3 antes de 4.
+          Y así sucesivamente, hasta que el arreglo quede ordenado: [1, 2, 3, 4].
+          */
+          </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Escribe una función llamada eliminarDuplicados que reciba un arreglo y retorne otro sin elementos repetidos
+            </summary>
+            <p>const eliminarDuplicados =function (arreglo) {	<br>
+              <br>
+              const sinDuplicados = Array.from(new Set(arreglo));	<br>
+              return sinDuplicados;	<br>
+            }	<br>
+              <br>
+            let sol = eliminarDuplicados([1, 2, 3, 4, 5, 1, 2, 3, 4, 5]);	<br>
+            console.log(sol); 	<br>
+            <br /><br />/*
+            Usamos un Set, que automáticamente elimina duplicados
+            new Set(arreglo): crea un conjunto (Set) con los elementos del arreglo, y un conjunto no permite duplicados.
+            Array.from(...): convierte el conjunto de vuelta a un arreglo normal.
+            
+            */</p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Escribe una función que determine si un número es primo</summary>
+            <p>const esPrimo =function (numero) {	<br>
+              if (numero <= 1 || !Number.isInteger(numero)) {	<br>
+                return false;	<br>
+              }	<br>
+              for (let i = 2; i < numero; i++) {	<br>
+                if (numero % i === 0) {	<br>
+                  return false;	<br>
+                }	<br>
+              }	<br>
+              return true;	<br>
+            }	<br>
+              <br>
+            let sol = esPrimo(7);	<br>
+            console.log(sol);	<br>
+              <br>
+            /*	<br>
+            Los números menores o iguales a 1, o no enteros, no son primos	<br>
+             Si encuentra un divisor, no es primo	<br>
+            Si no encontró divisores, es primo	<br>
+            */	<br>
+            <br /><br /></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- ////////////////////////////////// -->
 </body>
 </html>

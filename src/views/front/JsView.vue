@@ -193,9 +193,15 @@
             <details class="select">
               <summary class="laboris">Funciones</summary>
               <a href="http://127.0.0.1:5503/src/CodigosHtml/front/js/funciones.html" class="a" target="_blank">
-                <h4>Ejercicios JS</h4>
+                <h4>Teoría y Ejercicios JS</h4>
               </a>
-              <img src="../assets/image " alt=" " class="img1">
+              <ol>
+                <li>Funciones Declaradas </li>
+                <li>Funciones Anónimas</li>
+                <li>Funciones con Parámetros</li>
+                <li>Return</li>
+              </ol>
+              <!-- <img src="../assets/image " alt=" " class="img1"> -->
               <p><br></p>
             </details>
           </li>

@@ -181,7 +181,7 @@
   <div id="section2" class="mt-1">
     <v-row class="mt-1 text-center">
       <v-col cols="12">
-        <h2 class="bg-pink-darken-4 pa-4"> DIRECTIVAS </h2>
+        <h2 class="bg-pink-darken-4 pa-4"> DIRECTIVAS Y DATOS COMPLEJOS</h2>
       </v-col>
     </v-row>
 
@@ -189,23 +189,6 @@
     <v-row>
       <v-col cols="6">
         <ol>
-          <li class="li">
-            <details class="select">
-              <summary class="laboris">Funciones</summary>
-              <a href="http://127.0.0.1:5503/src/CodigosHtml/front/js/funciones.html" class="a" target="_blank">
-                <h4>Teoría y Ejercicios JS</h4>
-              </a>
-              <ol>
-                <li>Funciones Declaradas </li>
-                <li>Funciones Anónimas</li>
-                <li>Funciones con Parámetros</li>
-                <li>Return</li>
-              </ol>
-              <!-- <img src="../assets/image " alt=" " class="img1"> -->
-              <p><br></p>
-            </details>
-          </li>
-          <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
           <li class="li">
             <details class="select">
               <summary class="laboris">IF_ELSE</summary>
@@ -261,60 +244,32 @@
             </details>
           </li>
           <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
-          <li class="li">
-            <details class="select">
-              <summary class="labori"></summary>
-              <a href="" class="a" target="_blank">
-                <h4></h4>
-              </a>
-              <img src="../assets/image " alt=" " class="img1">
-              <p><br></p>
-            </details>
-          </li>
-          <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
-          <li class="li">
-            <details class="select">
-              <summary class="labori"></summary>
-              <a href="" class="a" target="_blank">
-                <h4></h4>
-              </a>
-              <img src="../assets/image " alt=" " class="img1">
-              <p><br></p>
-            </details>
-          </li>
-          <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
-          <li class="li">
-            <details class="select">
-              <summary class="labori"></summary>
-              <a href="" class="a" target="_blank">
-                <h4></h4>
-              </a>
-              <img src="../assets/image " alt=" " class="img1">
-              <p><br></p>
-            </details>
-          </li>
-          <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
-          <li class="li">
-            <details class="select">
-              <summary class="labori"></summary>
-              <a href="" class="a" target="_blank">
-                <h4></h4>
-              </a>
-              <img src="../assets/image " alt=" " class="img1">
-              <p><br></p>
-            </details>
-          </li>
-          <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
-
         </ol>
       </v-col>
       <v-col cols="6">
         <ol>
           <li class="li">
             <details class="select">
-              <summary class="labori"></summary>
-              <a href="" class="a" target="_blank">
-                <h4></h4>
+              <summary class="laboris">Funciones</summary>
+              <a href="http://127.0.0.1:5503/src/CodigosHtml/front/js/funciones.html" class="a" target="_blank">
+                <h4>Teoría y Ejercicios JS</h4>
+              </a>
+              <ol>
+                <li>Funciones Declaradas </li>
+                <li>Funciones Anónimas</li>
+                <li>Funciones con Parámetros</li>
+                <li>Return</li>
+              </ol>
+              <!-- <img src="../assets/image " alt=" " class="img1"> -->
+              <p><br></p>
+            </details>
+          </li>
+          <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+          <li class="li">
+            <details class="select">
+              <summary class="labori">Arrays</summary>
+              <a href="http://127.0.0.1:5503/src/CodigosHtml/front/js/arrays.html" class="a" target="_blank">
+                <h4>Tipo de dato complejo</h4>
               </a>
               <img src="../assets/image " alt=" " class="img1">
               <p><br></p>
@@ -325,18 +280,9 @@
             <details class="select">
               <summary class="labori"></summary>
               <a href="" class="a" target="_blank">
-                <h4></h4>
-              </a>
-              <img src="../assets/image " alt=" " class="img1">
-              <p><br></p>
-            </details>
-          </li>
-          <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
-          <li class="li">
-            <details class="select">
-              <summary class="labori"></summary>
-              <a href="" class="a" target="_blank">
-                <h4></h4>
+                <h4>
+
+                </h4>
               </a>
               <img src="../assets/image " alt=" " class="img1">
               <p><br></p>

@@ -16,9 +16,9 @@ background-color: cadetblue;
   border: 1px solid brown;
   width: 100%;
   margin-left: 1em;
-  margin-top: 0.3em;
   font-size: 1em;
   padding-left: 0.5em;
+  border-radius: 0.7em;
 }
 
 .cita{
@@ -31,20 +31,15 @@ background-color: cadetblue;
 .select{
   width: 95%;
   margin: 0.3em;
-  font-size: 1em;
+  font-size: 1.3em;
   padding-left: 0.5em;
-  border: 1px solid brown;
   border-radius: 0.5em;
-  background-color: bisque;
 }
 
 .select>ol>li{
   margin-left: 1em;
-  padding: 0.5em;
 }
-.select>
-
-.a {
+.select>.a {
   text-decoration: none;
   color: brown;
   font-size: 1.5em;
@@ -57,7 +52,6 @@ background-color: cadetblue;
 
 .summary{
   font-size: 1.5em;
-  color: brown;
   margin-left: 1em;
 }
 

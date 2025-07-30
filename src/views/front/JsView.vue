@@ -267,7 +267,7 @@
           <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
           <li class="li">
             <details class="select">
-              <summary class="labori">Arrays</summary>
+              <summary class="laboris">Arrays</summary>
               <a href="http://127.0.0.1:5503/src/CodigosHtml/front/js/arrays.html" class="a" target="_blank">
                 <h4>Tipo de dato complejo</h4>
               </a>
@@ -278,7 +278,7 @@
           <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
           <li class="li">
             <details class="select">
-              <summary class="labori"></summary>
+              <summary class="laboris"></summary>
               <a href="" class="a" target="_blank">
                 <h4>
 

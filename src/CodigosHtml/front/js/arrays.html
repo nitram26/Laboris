@@ -39,6 +39,101 @@
       <h2 class="subtitulo">Arrays</h2>
       <!-- /////////////////////////////////////// -->
       <p>Teoría y Ejercicios</p>
+    <details class="select">
+      <summary>¿Qué es un Array en JavaScript?</summary>
+        <p> 
+Un array (o arreglo) es una estructura de datos que permite almacenar múltiples valores en una sola variable. Estos valores pueden ser de cualquier tipo: números, cadenas, objetos, funciones, incluso otros arrays.<br>
+<br>
+<code>js<br>
+let frutas = ["manzana", "banana", "naranja"];<br>
+</code><br>
+<br>
+En este ejemplo, <code>frutas</code> es un array que contiene tres elementos de tipo string.<br>
+<br>
+<br>
+ Características clave de los Arrays<br>
+<br>
+- Ordenados: Los elementos se almacenan en un orden específico y se accede a ellos mediante índices numéricos (empezando desde 0).<br>
+- Dinámicos: Puedes agregar, eliminar o modificar elementos fácilmente.<br>
+- Heterogéneos: Pueden contener distintos tipos de datos en un mismo array.<br>
+- Basados en objetos: Técnicamente, los arrays son objetos especiales con propiedades y métodos específicos.<br>
+<br>
+<br>
+  Acceso y manipulación<br>
+<br>
+# Acceder a elementos<br>
+<code>js<br>
+console.log(frutas[0]); // "manzana"<br>
+</code><br>
+<br>
+# Modificar elementos<br>
+<code>js<br>
+frutas[1] = "pera"; // ["manzana", "pera", "naranja"]<br>
+</code><br>
+<br>
+# Añadir elementos<br>
+<code>js<br>
+frutas.push("kiwi"); // ["manzana", "pera", "naranja", "kiwi"]<br>
+</code><br>
+<br>
+# Eliminar el último elemento<br>
+<code>js<br>
+frutas.pop(); // ["manzana", "pera", "naranja"]<br>
+</code><br>
+<br>
+<br>
+ 🛠️ Métodos comunes<br>
+<br>
+<table>
+<tr><th>Método</th><th>Descripción</th></tr>
+<tr><td><code>push()</code></td><td>Añade uno o más elementos al final</td></tr>
+<tr><td><code>pop()</code></td><td>Elimina el último elemento</td></tr>
+<tr><td><code>shift()</code></td><td>Elimina el primer elemento</td></tr>
+<tr><td><code>unshift()</code></td><td>Añade elementos al inicio</td></tr>
+<tr><td><code>splice()</code></td><td>Añade, elimina o reemplaza elementos</td></tr>
+<tr><td><code>slice()</code></td><td>Extrae una parte del array sin modificarlo</td></tr>
+<tr><td><code>forEach()</code></td><td>Ejecuta una función por cada elemento</td></tr>
+<tr><td><code>map()</code></td><td>Crea un nuevo array con los resultados de una función aplicada a cada elemento</td></tr>
+<tr><td><code>filter()</code></td><td>Crea un nuevo array con los elementos que cumplen una condición</td></tr>
+<tr><td><code>reduce()</code></td><td>Reduce el array a un solo valor acumulado</td></tr>
+</table>
+<br>
+<br>
+ 🧪 Ejemplo práctico<br>
+<br>
+<code>js<br>
+let numeros = [1, 2, 3, 4, 5];<br>
+<br>
+// Doblar cada número<br>
+let dobles = numeros.map(n => n * 2); // [2, 4, 6, 8, 10]<br>
+<br>
+// Filtrar números mayores a 3<br>
+let mayores = numeros.filter(n => n > 3); // [4, 5]<br>
+<br>
+// Sumar todos los números<br>
+let suma = numeros.reduce((acc, n) => acc + n, 0); // 15<br>
+</code><br>
+<br>
+<br>
+ 🧩 Tipos especiales de arrays<br>
+<br>
+- Array multidimensional: Arrays dentro de arrays.<br>
+  <code>js<br>
+  let matriz = [[1, 2], [3, 4]];<br>
+  console.log(matriz[1][0]); // 3<br>
+  </code><br>
+  <br>
+- Array vacío:<br>
+  <code>js<br>
+  let vacio = [];<br>
+  </code><br>
+  
+
+
+
+</p>
+    </details>
+    
       <h4>Ejercicios</h4>
       <ol>
         <li class="li">

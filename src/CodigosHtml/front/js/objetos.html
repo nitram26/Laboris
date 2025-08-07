@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/src/assets/image/home/CERVERA.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../../style.css" />
+    <style>
+      .img {
+        width: 600px;
+        margin: 4em;
+        border: brown double 6px;
+      }
+
+      .li {
+        margin: 0.5em;
+        padding: 0.5em;
+        border: brown solid 1px;
+        width: 65em;
+      }
+
+      .select {
+        font-size: 1.3em;
+        color: brown;
+        background-color: white;
+      }
+
+      pre {
+        margin-left: 1em;
+        color: black;
+      }
+
+      .text {
+        color: black;
+      }
+    </style>
+    <title>ELEMENTOS RÁPIDOS</title>
+  </head>
+  <body>
+    <h1></h1>
+    <section id="1">
+      <h2 class="subtitulo">Objetos</h2>
+      <!-- /////////////////////////////////////// -->
+
+      <details class="select">
+        <summary>Teoria</summary>
+        <p class="text">
+          ## 🧠 ¿Qué es un Objeto en JavaScript?
+          <br />
+          <br />
+          Un objeto es una estructura de datos que permite almacenar información
+          en forma de pares clave-valor. Es ideal para representar entidades con
+          propiedades y comportamientos.
+          <br />
+          <br />
+          js
+          <br />
+          let persona = {
+          <br />
+          nombre: "Ana",
+          <br />
+          edad: 28,
+          <br />
+          profesion: "Ingeniera"
+          <br />
+          };
+          <br />
+
+          Aquí, `persona` es un objeto con tres propiedades: `nombre`, `edad` y
+          `profesion`.
+          <br />
+          <br />
+
+          ## 📌 Características fundamentales
+          <br />
+          <br />
+          - Claves únicas: Cada propiedad tiene un nombre único (la clave).
+          <br />
+          - Valores flexibles: Los valores pueden ser cualquier tipo de dato:
+          strings, números, arrays, funciones, otros objetos, etc.
+          <br />
+          - No ordenados: A diferencia de los arrays, los objetos no garantizan
+          un orden específico de sus propiedades.
+          <br />
+          - Mutables: Puedes agregar, modificar o eliminar propiedades en
+          cualquier momento.
+          <br />
+          <br />
+
+          ## 🔍 Acceso y manipulación
+          <br />
+          <br />
+          ### Acceder a propiedades
+          <br />
+          <br />
+          js
+          <br />
+          console.log(persona.nombre); // "Ana"
+          <br />
+          console.log(persona["edad"]); // 28
+          <br />
+          <br />
+
+          ### Modificar propiedades
+          <br />
+          <br />
+          js
+          <br />
+          persona.edad = 29;
+          <br />
+          <br />
+
+          ### Añadir nuevas propiedades
+          <br />
+          <br />
+          js
+          <br />
+          persona.ciudad = "Lima";
+          <br />
+          <br />
+          <br />
+          ### Eliminar propiedades
+          <br />
+          <br />
+          js
+          <br />
+          delete persona.profesion;
+          <br />
+          <br />
+
+          ## 🛠️ Métodos útiles y técnicas
+          <br />
+          <br />
+          | Técnica / Método | Descripción |
+          <br />
+          |--|--|
+          <br />
+          | `Object.keys(obj)` | Devuelve un array con las claves del objeto |
+          <br />
+          | `Object.values(obj)` | Devuelve un array con los valores del objeto
+          |
+          <br />
+          | `Object.entries(obj)` | Devuelve un array de pares `[clave, valor]`
+          |
+          <br />
+          | `hasOwnProperty("clave")`| Verifica si el objeto tiene esa propiedad
+          |
+          <br />
+          | `for...in` | Itera sobre las claves del objeto |
+          <br />
+          <br />
+          ### Ejemplo:
+          <br />
+          <br />
+          js
+          <br />
+          for (let clave in persona) {
+          <br />
+          console.log(clave + ": " + persona[clave]);
+          <br />
+          }
+          <br />
+          <br />
+
+          ## 🧩 Objetos anidados y métodos
+          <br />
+          <br />
+          Los objetos pueden contener otros objetos o funciones:
+          <br />
+          <br />
+          js
+          <br />
+          let usuario = {
+          <br />
+          nombre: "Luis",
+          <br />
+          direccion: {
+          <br />
+          ciudad: "Cusco",
+          <br />
+          pais: "Perú"
+          <br />
+          },
+          <br />
+          saludar: function() {
+          <br />
+          return "Hola, soy " + this.nombre;
+          <br />
+          }
+          <br />
+          };
+          <br />
+          <br />
+          console.log(usuario.direccion.ciudad); // "Cusco"
+          <br />
+          console.log(usuario.saludar()); // "Hola, soy Luis"
+          <br />
+          <br />
+          ## 🧪 Comparación con arrays
+          <br />
+          <br />
+          | Característica | Array | Objeto |
+          <br />
+          |--|--|--|
+          <br />
+          | Acceso | Por índice numérico | Por clave |
+          <br />
+          | Orden | Mantiene orden | No garantiza orden |
+          <br />
+          | Ideal para | Listas de elementos similares | Entidades con
+          propiedades |
+          <br />
+          | Iteración común | `for`, `forEach`, `map` | `for...in`,
+          `Object.entries()` |
+          <br />
+          <br />
+        </p>
+      </details>
+
+      <!-- ++++++++++++++++++++++++++++++ -->
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>
+              Crea un objeto llamado auto con las propiedades marca, modelo y
+              año.
+            </summary>
+            <p>let auto = { marca: "Toyota", modelo: "Corolla", año: 2020 };</p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Dado el objeto persona, muestra en consola su nombre.
+            </summary>
+            <p>
+              let persona = { nombre: "Carlos", edad: 35 };
+              <br />
+              console.log(persona.nombre); // "Carlos"
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Cambia la edad de persona a 36.</summary>
+            <p>
+              <br />
+              persona.edad = 36;
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Agrega la propiedad ocupacion con el valor "Doctor" al objeto
+              persona.
+            </summary>
+            <p>persona.ocupacion = "Doctor";</p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Elimina la propiedad modelo del objeto auto.</summary>
+            <p>delete auto.modelo;</p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Usa for...in para mostrar todas las propiedades y valores del
+              objeto libro.
+            </summary>
+            <p>
+              let libro = { titulo: "1984", autor: "George Orwell", paginas: 328
+              };
+            </p>
+
+            <br />
+            <br />
+            for (let clave in libro) { console.log(clave + ": " + libro[clave]);
+            }
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Crea un objeto usuario con una propiedad nombre y un método
+              saludar que devuelva "Hola, soy [nombre]".
+            </summary>
+            <p>
+              let usuario = { nombre: "Lucía", saludar: function() { return
+              "Hola, soy " + this.nombre; } }; console.log(usuario.saludar());
+              <br />
+              <br />
+              // "Hola, soy Lucía"
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Crea un objeto estudiante con una propiedad nombre y una propiedad
+              direccion que sea otro objeto con ciudad y pais.
+            </summary>
+            <p>
+              let estudiante = { nombre: "Miguel", direccion: { ciudad:
+              "Arequipa", pais: "Perú" } };
+              <br />
+              <br />
+              console.log(estudiante.direccion.ciudad); // "Arequipa"
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Usa Object.keys() y Object.values() para obtener las claves y
+              valores del objeto animal.
+            </summary>
+            <p>
+              let animal = { especie: "Perro", edad: 5 };
+              <br />
+              <br />
+              console.log(Object.keys(animal)); // ["especie", "edad"]
+              <br />
+              console.log(Object.values(animal)); // ["Perro", 5]
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Escribe una función que reciba un objeto y devuelva cuántas
+              propiedades tiene.
+            </summary>
+            <p>
+              function contarPropiedades(obj) { return Object.keys(obj).length;
+              }
+              <br />
+              <br />
+              let producto = { nombre: "Laptop", precio: 1500, disponible: true
+              };
+              <br />
+              <br />
+              console.log(contarPropiedades(producto)); // 3
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- ////////////////////////////////// -->
+    </section>
+  </body>
+</html>

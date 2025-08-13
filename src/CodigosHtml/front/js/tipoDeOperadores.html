@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/src/assets/image/home/CERVERA.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../../style.css" />
+    <style>
+      pre {
+        margin-left: 1em;
+        color: black;
+      }
+    </style>
+    <title>ELEMENTOS RÁPIDOS</title>
+  </head>
+  <body>
+    <h1>TIPO DE OPERADORES</h1>
+    <section id="1">
+      <h2 class="subtitulo">Aritméticos</h2>
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>Teoría</summary>
+            <p>
+              - +, -, *, /, %, ** (potencia)
+              <br />
+              - Uso: operaciones numéricas básicas y potencias.
+              <br />
+              - Nota: el operador + también realiza concatenación de cadenas si
+              alguno de los operandos es una cadena.
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Buenas prácticas y consejos</summary>
+            <p>
+              - Evita usar ==/!=; prefiere ===/!== para evitar coerción
+              inesperada.
+              <br />
+              - Usa el encadenamiento opcional y nullish coalescing para manejar
+              valores ausentes de forma segura.
+              <br />
+              - Sé consciente de la coerción de tipos en + (si una cadena está
+              presente, podría convertir números a texto).
+              <br />
+              - Mantén las expresiones lógicas simples; para condiciones
+              complejas, usa funciones auxiliares para claridad.
+              <br />
+              - Aprovecha el destructuring y spread para escribir código más
+              limpio y mantenible.
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <h2 class="cita">Ejercicios</h2>
+      <!-- /////////////////////////////////////// -->
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>
+              Escribe una función que reciba dos números y retorne su suma,
+              resta, multiplicación y división como un objeto {suma, resta,
+              mult, div}.
+            </summary>
+            <p>
+              function operaciones(a, b) {
+              <br />
+              return { suma: a + b, resta: a - b, mult: a * b, div: a / b }; }
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Calcula la potencia de un número base elevado a un exponente sin
+              usar Math.pow.
+            </summary>
+            <p>
+              function potencia(base, exp) { return base ** exp; }
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Dada una hora en horas y minutos, devuelve los minutos totales
+              desde la medianoche.
+            </summary>
+            <p>
+              function minutosTotales(h, m) { return h * 60 + m; }
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Parsea una cadena con formato "X+Y" y devuelve la suma.
+            </summary>
+            <p>
+              function parseSuma(str) {
+              <br />
+              const [a, b] = str.split('+').map(Number);
+              <br />
+              return a + b; }
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Calcula el residuo de dividir un número entre otro (mod).
+            </summary>
+            <p>
+              function residuo(a, b) { return a % b; }
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- ////////////////////////////////// -->
+    </section>
+    <!-- ///////////////////////////////////////// -->
+    <section id="2">
+      <h2 class="subtitulo">Asignación</h2>
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>Teoría</summary>
+            <p>
+              - =, +=, -=, *=, /=, %=, **=
+              <br />
+              - Uso: asignar o combinar valor actual con uno nuevo.
+              <br />
+              - Ejemplos:
+              <br />
+              - let a = 5;
+              <br />
+              - a += 3; // a = 8
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <h2 class="cita">Ejercicios</h2>
+      <!-- /////////////////////////////////////// -->
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>
+              Dado una variable a = 5, aplica diferentes operadores de
+              asignación para obtener a = 15.
+            </summary>
+            <p>
+              let a = 5;
+              <br />
+              a += 5;
+              <br />
+              a *= 3; // ahora a es 15
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Usa += para combinar dos strings.</summary>
+            <p>
+              let s = "Hola";
+              <br />
+              s += " mundo"; // "Hola mundo"
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Usa operadores de asignación para intercambiar valores entre x e y
+              sin usar temporales.
+            </summary>
+            <p>
+              let x = 2, y = 3;
+              <br />
+              [x, y] = [y, x]; // x=3, y=2
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              A partir de una nota numérica n, actualiza n sumando 10% (n += n *
+              0.1).
+            </summary>
+            <p>
+              let n = 70;
+              <br />
+              n += n * 0.1; // 77
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Incrementa un contador solo si ya tiene valor (post-incremento).
+            </summary>
+            <p>
+              let c = 0;
+              <br />
+              c++; // 1
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- ////////////////////////////////// -->
+    </section>
+    <!-- ///////////////////////////////////////// -->
+    <section id="3">
+      <h2 class="subtitulo">Comparación</h2>
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>Teoría</summary>
+            <p>
+              - ==, ===, !=, !==, >, <, >=, <= -
+              <br />
+              Diferencias clave: - == y !=
+              <br />
+              realizan coerción de tipos (no recomendado en código moderno). -
+              <br />
+              === y !== comparan valor y tipo sin coerción.
+              <br />
+              - Consejos: usa siempre === y !== para evitar sorpresas.
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <h2 class="cita">Ejercicios</h2>
+      <!-- /////////////////////////////////////// -->
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>
+              Escribe una función que compare dos números y devuelva true si son
+              iguales en valor y tipo.
+            </summary>
+            <p>
+              function iguales(a, b) { return a === b; }
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Dado dos variables, devuelve si una es mayor o igual que la otra.
+            </summary>
+            <p>
+              function rango(a, b) { return a >= b; }
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Compara dos cadenas sin importar mayúsculas/minúsculas y devuelve
+              true si son iguales.
+            </summary>
+            <p>
+              function igualesIgnorandoCaso(a, b) { return
+              String(a).toLowerCase() === String(b).toLowerCase(); }
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Verifica si un valor es distinto de null y distinto de undefined.
+            </summary>
+            <p>
+              function existe(v) { return v !== null && v !== undefined; }
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Devuelve true si un array tiene exactamente 3 elementos.
+            </summary>
+            <p>
+              function tresElementos(arr) { return Array.isArray(arr) &&
+              arr.length === 3; }
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- ////////////////////////////////// -->
+    </section>
+    <!-- ///////////////////////////////////////// -->
+    <section id="4">
+      <h2 class="subtitulo">Lógicos</h2>
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>Teoría</summary>
+            <p>
+              - && (AND), || (OR), ! (NOT)
+              <br />
+              - Cortocircuito: evalúan de izquierda a derecha y detienen cuando
+              el resultado ya se conoce.
+              <br />
+              - Utilidad: condiciones en if, render condicional, defaults.
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <h2 class="cita">Ejercicios</h2>
+
+      <!-- /////////////////////////////////////// -->
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>
+              Dado un usuario, devuelve true si está activo y tiene rol "admin".
+            </summary>
+            <p>
+              function puedeAcceder(usuario) { return !!usuario?.activo &&
+              usuario?.rol === "admin"; }
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Usa AND para evaluar si un número está en rango [10,20].
+            </summary>
+            <p>
+              function enRango(n) { return n >= 10 && n <= 20; }
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Devuelve el valor por defecto de una variable booleana usando OR.
+            </summary>
+            <p>
+              const valor = usuarioActivo || true; // si usuarioActivo es falsy,
+              toma true
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Combina NOT para invertir una condición.</summary>
+            <p>
+              function noEsMenorEdad(edad) { return !(edad < 18); }
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Verifica que al menos una de dos condiciones se cumpla.
+            </summary>
+            <p>
+              function puedeVerificar(a, b) { return a > 0 || b > 0; }
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- ////////////////////////////////// -->
+    </section>
+    <!-- ///////////////////////////////////////// -->
+    <section id="5">
+      <h2 class="subtitulo">Condicional (ternario)</h2>
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>Teoría</summary>
+            <p>
+              - ? :
+              <br />
+              <br />
+              - Sintaxis: condition ? exprIfTrue : exprIfFalse
+              <br />
+              - Uso: seleccionar entre dos expresiones en una sola línea.
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <h2 class="cita">Ejercicios</h2>
+
+      <!-- /////////////////////////////////////// -->
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>
+              Usa ternario para asignar “mayor” o “menor” según una comparación.
+            </summary>
+            <p>const res = a > b ? "mayor" : "menor";</p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Asigna un mensaje según si el usuario está activo.
+            </summary>
+            <p>
+              const msg = activo ? "Usuario activo" : "Usuario inactivo";
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Retorna el precio con descuento si una bandera está true.
+            </summary>
+            <p>
+              function precioFinal(precio, descuento, aplicar) { return aplicar
+              ? precio * (1 - descuento) : precio; }
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Elige entre dos configuraciones según modo oscuro.
+            </summary>
+            <p>
+              const tema = oscuro ? "oscuro" : "claro";
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Calcula si un número es par o impar y devuelve cadena
+              correspondiente.
+            </summary>
+            <p>
+              function parImpar(n) { return (n % 2 === 0) ? "par" : "impar"; }
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- ////////////////////////////////// -->
+    </section>
+    <!-- ///////////////////////////////////////// -->
+    <section id="6">
+      <h2 class="subtitulo">Tipo y verificación</h2>
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>Teoría</summary>
+            <p>
+              - typeof
+              <br />
+              - instanceof
+              <br />
+              <br />
+              - Usados para comprobar tipos en tiempo de ejecución.
+              <br />
+              <br />
+              - Ejemplos:
+              <br />
+              - typeof 123 -> "number"
+              <br />
+              - typeof "abc" -> "string"
+              <br />
+              - obj instanceof Array
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <h2 class="cita">Ejercicios</h2>
+
+      <!-- /////////////////////////////////////// -->
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>
+              Escribe una función que identifique si un valor es un arreglo.
+            </summary>
+            <p>function esArreglo(v) { return Array.isArray(v); }</p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Verifica si una variable es de tipo “number”.</summary>
+            <p>
+              function esNumero(v) { return typeof v === "number"; }
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Distingue entre una instancia de Date y otros objetos.
+            </summary>
+            <p>
+              function esDate(v) { return v instanceof Date; }
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Comprueba si una función es nativa o no.</summary>
+            <p>
+              function esFuncion(v) { return typeof v === "function"; }
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Dado un objeto, verifica si es una instancia de una clase Persona.
+            </summary>
+            <p>
+              class Persona {}
+              <br />
+              function esPersona(v) { return v instanceof Persona; }
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- ////////////////////////////////// -->
+    </section>
+    <!-- ///////////////////////////////////////// -->
+    <section id="7">
+      <h2 class="subtitulo">
+        Desestructuración y spread/rest
+        <br />
+        (operadores relacionados, no estrictamente “operadores”)
+      </h2>
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>Teoría</summary>
+            <p>
+              - Desestructuración: const {a, b} = obj;
+              <br />
+              - Spread: ... para copiar/expandir objetos o arrays.
+              <br />
+              - Rest: ... para acumular argumentos o elementos.
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <h2 class="cita">Ejercicios</h2>
+
+      <!-- /////////////////////////////////////// -->
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>
+              Extrae propiedades de un objeto y crea un nuevo objeto con una
+              propiedad adicional.
+            </summary>
+            <p>
+              const { a, b, ...rest } = obj;
+              <br />
+              const nuevo = { a, b, extra: 1, ...rest };
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Combina dos objetos usando spread.</summary>
+            <p>
+              const combo = { ...obj1, ...obj2 };
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Extrae elementos de un array y cambia su orden con destructuring.
+            </summary>
+            <p>
+              const [primero, segundo, ...rest] = arr;
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Usa rest parameters para sumar n números.</summary>
+            <p>
+              function sumar(...nums) { return nums.reduce((a, b) => a + b, 0);
+              }
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Copia un objeto y modifica una propiedad sin mutar el original.
+            </summary>
+            <p>
+              const copia = { ...original }; copia.prop = nuevoValor;
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- ////////////////////////////////// -->
+    </section>
+    <!-- ///////////////////////////////////////// -->
+    <section id="8">
+      <h2 class="subtitulo">Operador de encadenamiento opcional</h2>
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>Teoría</summary>
+            <p>
+              - ?. (optional chaining)
+              <br />
+              <br />
+              - Uso: acceder a propiedades de objetos que pueden ser
+              null/undefined sin lanzar errores.
+              <br />
+              - Ejemplo: user?.address?.city
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <h2 class="cita">Ejercicios</h2>
+
+      <!-- /////////////////////////////////////// -->
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>
+              Accede a datos anidados de un usuario sin provocar errores si
+              alguno es undefined.
+            </summary>
+            <p>const ciudad = usuario?.direcciones?.[0]?.ciudad;</p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Usa ?? para asignar un valor por defecto si es null/undefined.
+            </summary>
+            <p>
+              const nombre = usuario?.nombre ?? "Invitado";
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Combina ?. y ?? en un ejemplo práctico.</summary>
+            <p>
+              const pais = usuario?.direccion?.pais ?? "Desconocido";
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Evita errores al acceder a propiedades de objetos opcionales.
+            </summary>
+            <p>
+              const telefono = usuario?.contacto?.telefono ?? "No disponible";
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Implementa una función segura que devuelve el grado de acceso si
+              existe, o "guest".
+            </summary>
+            <p>
+              function rolAcceso(u) { return u?.rol ?? "guest"; }
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- ////////////////////////////////// -->
+    </section>
+    <!-- ///////////////////////////////////////// -->
+    <section id="9">
+      <h2 class="subtitulo">Operador de nullish coalescing</h2>
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>Teoría</summary>
+            <p>
+              - ??
+              <br />
+              <br />
+              - Devuelve el operando de la derecha solo si el de la izquierda es
+              null o undefined.
+              <br />
+              - Ejemplo: const name = user?.name ?? "Invitado";
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <h2 class="cita">Ejercicios</h2>
+
+      <!-- /////////////////////////////////////// -->
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>Dado dos enteros, devuelve su AND bit a bit.</summary>
+            <p>
+              function yBit(a, b) { return a & b; }
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Invierte los bits de un entero de 8 bits.</summary>
+            <p>
+              function invertir8(v) { return (~v) & 0xff; }
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Desplaza a la izquierda y derecha para obtener un nuevo valor.
+            </summary>
+            <p>
+              function desplazar(v) { return (v << 1) | (v >>> 7); }
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Comprueba si un número tiene un bit específico encendido (por
+              ejemplo, bit 2).
+            </summary>
+            <p>
+              function tieneBit(n, pos) { return (n & (1 << pos)) !== 0; }
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Suma dos números sin usar el operador + (solo bit a bit).
+            </summary>
+            <p>
+              function sumaBit(a, b) {
+              <br />
+              while (b !== 0) {
+              <br />
+              const carry = a & b;
+              <br />
+              a = a ^ b;
+              <br />
+              b = carry << 1;
+              <br />
+              }
+              <br />
+              return a; }
+
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- ////////////////////////////////// -->
+    </section>
+    <!-- ///////////////////////////////////////// -->
+    <section id="10">
+       <h2 class="subtitulo"></h2>Operador de uso de corchetes dinámicos (computed property)</h2>
+        <li class="li">
+          <details class="select">
+            <summary>Teoría</summary>
+            <p>
+ En JavaScript, el concepto de “corchetes dinámicos” (computed properties) se refiere a la capacidad de definir propiedades de un objeto usando una expresión entre corchetes, de modo que el nombre de la propiedad se calcule en tiempo de ejecución. Esto se logra principalmente en dos contextos: <br>
+
+Creación de objetos con propiedades computadas (computed property names) <br>
+Se utiliza la sintaxis de corchetes [] dentro de la definición de un objeto. <br>
+La expresión dentro de los corchetes se evalúa y su valor se usa como la clave de la propiedad. <br>
+Útil para construir objetos dinámicamente o cuando el nombre de la propiedad depende de variables.
+              <br><br>
+             
+Ejemplos:<br>
+<br>
+Usando una variable para el nombre de la propiedad<br>
+const prop = "nombre";<br>
+const obj = {<br>
+[prop]: "Ana"<br>
+};<br>
+// obj = { nombre: "Ana" }<br>
+<br>
+Propiedades calculadas con expresiones<br>
+const i = 1;<br>
+const obj = {<br>
+["prop" + i]: "valor"<br>
+};<br>
+// obj = { prop1: "valor" }<br>
+<br>
+Acceso dinámico a propiedades (propiedad computada al acceder)<br>
+Aunque comúnmente se habla de propiedades computadas al crear objetos, también es posible leer o escribir propiedades usando una clave calculada con bracket notation:<br>
+const clave = "edad";<br>
+const persona = { edad: 30 };<br>
+persona[clave]; // 30<br>
+persona[clave] = 31; // edad ahora es 31<br>
+Notas útiles:<br>
+<br>
+Las corchetes dinámicas permiten nombres de propiedades que no son constantes, facilitando patrones como mapeos, tablas de hash simples, o construcción de objetos a partir de datos externos.<br>
+En objetos literales, la sintaxis [expr] solo está disponible para propiedades computadas en ES6+.<br>
+Ejemplos prácticos simples:<br>
+<br>
+Crear un objeto con propiedades cuyo nombre se toma de variables.<br>
+Construir un contador de frecuencias: contar cuántas veces aparece cada palabra en un arreglo.<br>
+Crear un objeto a partir de dos arreglos: claves y valores.<br>
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <h2 class="cita">Ejercicios</h2>
+  <ol>
+        <li class="li">
+          <details class="select">
+            <summary>Crea un objeto persona donde la propiedad cuyo nombre está en la variable clave tenga un valor "Hola". Usa la variable clave = "saludo".</summary>
+            const clave = "saludo"; <br>
+const persona = { [clave]: "Hola" }; <br>
+console.log(persona.saludo); // "Hola"
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Dadas las claves ['apple', 'banana', 'cherry'], crea un objeto dict donde cada clave tenga como valor su longitud (número de caracteres).</summary>
+            <p>
+              const keys = ['apple', 'banana', 'cherry']; <br>
+const dict = {}; <br>
+for (const k of keys) { <br>
+dict[k] = k.length; <br><br>
+}
+console.log(dict); // { apple: 5, banana: 6, cherry: 6 }
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Dada la lista de palabras ['manzana', 'manzana', 'pera', 'manzana', 'pera'], crea un objeto frec que cuente cuántas veces aparece cada palabra usando propiedades computadas.</summary>
+            <p>
+              const palabras = ['manzana', 'manzana', 'pera', 'manzana', 'pera']; <br>
+const frec = {}; <br>
+for (const w of palabras) { <br>
+frec[w] = (frec[w] || 0) + 1; <br><br>
+}
+console.log(frec); // { manzana: 3, pera: 2 } <br>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Dado un array de números numbers = [2, 4, 6], crea un objeto obj donde cada clave es "num" seguido del número (por ejemplo, "num2") y el valor es ese mismo número al cuadrado.</summary>
+            <p>
+              const numbers = [2, 4, 6]; <br>
+const obj = {};<br>
+for (const n of numbers) {<br>
+obj[num${n}] = n * n;<br><br>
+}
+console.log(obj); // { num2: 4, num4: 16, num6: 36 }
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Crea un objeto con propiedades dinámicas para los meses del año (enero, febrero, marzo) y asigna a cada una el número de días típico de ese mes (28, 28, 31). Usa un arreglo de nombres de meses y un bucle para construir el objeto con propiedades computadas.</summary>
+            <p>
+              const meses = ["enero", "febrero", "marzo"];     <br />
+const dias = [31, 28, 31];     <br />
+const calendario = {};     <br />
+for (let i = 0; i < meses.length; i++) {     <br />
+calendario[meses[i]] = dias[i];     <br />     <br />
+}
+console.log(calendario); // { enero: 31, febrero: 28, marzo: 31 }
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- /////////////////////////////////////// -->
+     
+    </section>
+    <!-- ///////////////////////////////////////// -->
+ <section id="11">
+      <h2 class="subtitulo"></h2>
+      <!-- /////////////////////////////////////// -->
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- ////////////////////////////////// -->
+ </section>
+  
+
+    <!-- ///////////////////////////////////////// -->
+  </body>
+</html>

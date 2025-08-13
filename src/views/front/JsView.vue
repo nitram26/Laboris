@@ -132,7 +132,7 @@
         <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
         <li class="li">
           <details class="select">
-            <summary class="labori"></summary>
+            <summary class="laboris"></summary>
             <a href="" class="a" target="_blank">
               <h4></h4>
             </a>
@@ -143,7 +143,7 @@
         <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
         <li class="li">
           <details class="select">
-            <summary class="labori"></summary>
+            <summary class="laboris"></summary>
             <a href="" class="a" target="_blank">
               <h4></h4>
             </a>
@@ -154,7 +154,7 @@
         <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
         <li class="li">
           <details class="select">
-            <summary class="labori"></summary>
+            <summary class="laboris"></summary>
             <a href="" class="a" target="_blank">
               <h4></h4>
             </a>
@@ -165,7 +165,7 @@
         <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
         <li class="li">
           <details class="select">
-            <summary class="labori"></summary>
+            <summary class="laboris"></summary>
             <a href="" class="a" target="_blank">
               <h4></h4>
             </a>
@@ -235,7 +235,7 @@
           <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
           <li class="li">
             <details class="select">
-              <summary class="labori"></summary>
+              <summary class="laboris"></summary>
               <a href="" class="a" target="_blank">
                 <h4></h4>
               </a>
@@ -291,8 +291,8 @@
           <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
           <li class="li">
             <details class="select">
-              <summary class="labori"></summary>
-              <a href="" class="a" target="_blank">
+              <summary class="laboris">Tipo de Operadores</summary>
+              <a href="http://127.0.0.1:5503/src/CodigosHtml/front/js/tipoDeOperadores.html" class="a" target="_blank">
                 <h4></h4>
               </a>
               <img src="../assets/image " alt=" " class="img1">
@@ -302,7 +302,7 @@
           <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
           <li class="li">
             <details class="select">
-              <summary class="labori"></summary>
+              <summary class="laboris"></summary>
               <a href="" class="a" target="_blank">
                 <h4></h4>
               </a>
@@ -311,6 +311,7 @@
             </details>
           </li>
           <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+
 
         </ol>
       </v-col>
@@ -329,7 +330,7 @@
         <ol>
           <li class="li">
             <details class="select">
-              <summary class="labori"></summary>
+              <summary class="laboris"></summary>
               <a href="" class="a" target="_blank">
                 <h4></h4>
               </a>
@@ -340,7 +341,7 @@
           <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
           <li class="li">
             <details class="select">
-              <summary class="labori"></summary>
+              <summary class="laboris"></summary>
               <a href="" class="a" target="_blank">
                 <h4></h4>
               </a>
@@ -351,7 +352,7 @@
           <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
           <li class="li">
             <details class="select">
-              <summary class="labori"></summary>
+              <summary class="laboris"></summary>
               <a href="" class="a" target="_blank">
                 <h4></h4>
               </a>
@@ -362,7 +363,7 @@
           <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
           <li class="li">
             <details class="select">
-              <summary class="labori"></summary>
+              <summary class="laboris"></summary>
               <a href="" class="a" target="_blank">
                 <h4></h4>
               </a>
@@ -373,7 +374,7 @@
           <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
           <li class="li">
             <details class="select">
-              <summary class="labori"></summary>
+              <summary class="laboris"></summary>
               <a href="" class="a" target="_blank">
                 <h4></h4>
               </a>
@@ -389,7 +390,7 @@
         <ol>
           <li class="li">
             <details class="select">
-              <summary class="labori"></summary>
+              <summary class="laboris"></summary>
               <a href="" class="a" target="_blank">
                 <h4></h4>
               </a>
@@ -400,7 +401,7 @@
           <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
           <li class="li">
             <details class="select">
-              <summary class="labori"></summary>
+              <summary class="laboris"></summary>
               <a href="" class="a" target="_blank">
                 <h4></h4>
               </a>
@@ -411,7 +412,7 @@
           <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
           <li class="li">
             <details class="select">
-              <summary class="labori"></summary>
+              <summary class="laboris"></summary>
               <a href="" class="a" target="_blank">
                 <h4></h4>
               </a>
@@ -422,7 +423,7 @@
           <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
           <li class="li">
             <details class="select">
-              <summary class="labori"></summary>
+              <summary class="laboris"></summary>
               <a href="" class="a" target="_blank">
                 <h4></h4>
               </a>
@@ -433,7 +434,7 @@
           <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
           <li class="li">
             <details class="select">
-              <summary class="labori"></summary>
+              <summary class="laboris"></summary>
               <a href="" class="a" target="_blank">
                 <h4></h4>
               </a>

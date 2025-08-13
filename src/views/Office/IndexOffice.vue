@@ -23,11 +23,11 @@
               <h4>Para VUE</h4>
             </a>
             <ol>
-              <l>MOVER LA PANTALLA => windows+shift+flechas
-              </l>
-              <l>ACOMODAR PANTALLAS =>windows+z / LUEGO USAR NÚMEROS O FLECHAS</l>
-              <l>OFFICE => CTRL+SHIFT+Windows+ALT</l>
-              <l>DICTADO POR VOZ => Windows+H (VSCode y Word)</l>
+              <li>MOVER LA PANTALLA => windows+shift+flechas
+              </li>
+              <li>ACOMODAR PANTALLAS =>windows+z / LUEGO USAR NÚMEROS O FLECHAS</li>
+              <li>OFFICE => CTRL+SHIFT+Windows+ALT</li>
+              <li>DICTADO POR VOZ => Windows+H (VSCode y Word)</li>
               <l></l>
             </ol>
             <img src="../assets/image " alt=" " class="img1">

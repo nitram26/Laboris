@@ -1,60 +1,309 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../style.css">
-  <title>JAVASCRIPT</title>
-<style>
-  body{
-    background-color: antiquewhite;
-  }
-  li{
-    border: brown 1px solid;
-    width: 50em;
-    margin: 0.5em;
-    padding: 0.3em;
-  }
-
-  .int{
-    width: 45em;
-  }
-</style>
-</head>
-<body>
-  <header class="header">
-    <span class="span1">JAVASCRIPT</span>
-    <a href="#alInicio"><img src="../media/CERVERA.png" alt="" class="img"></a>
-      </header>
-      <h1 class="h1">Ejercicios <br></h1>
-    <i>  <h4>Soluciones en CodigosHtml/ front/ js <br>Más ejercicios en image/ js traidos de Pseint</h4></i>
-      <!-- /////////////////////////////////////// -->
-      <section id="1">
-     <ol>
-    
-      <li>  <details class="select">
-        <summary>IF</summary>
-       <ol>
-<li class="int" > **  Pide al usuario que ingrese, el valor de dos números. Posteriormente el usuario tendrá que elegir qué operación quiere que se realice entre ellos según un menú que muestre las opciones: <br>
-
-   1-Suma<br>
-   2-Resta<br>
-   3-Multiplicación.<br>
-   4-División. Si intenta dividir entre O habrá que indicarlo con un mensaje.</li>
-<li class="int" > **  Un artículo determinado sigue la siguiente política de descuentos:<br>
-  - 15% si se compran 1000 o más de 1000 unidades.<br>
-  - 10% si se compran entre 500 y 999 unidades.<br>
-  - 5% si se compran entre 200 y 499 unidades.<br>
-  Calcula el coste final de un pedido dado el precio de artículo y las unidades de compra.</li>
-
-<li class="int" > **Para determinar la tarifa de un gimnasio se tiene en cuenta la siguiente tabla: <br>
-   Indica cuánto tendrá que pagar el usuario según sus preferencias:  <br>
-   TURNO/ HORAS	    1	  2	   3 <br>
-   MAÑANAS = T1	    20	30	40 <br>
-   TARDES	 = T2     25	35	45</li>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/src/assets/image/home/CERVERA.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../../style.css" />
+    <title>ELEMENTOS RÁPIDOS</title>
+  </head>
+  <body>
+    <h1>IF</h1>
+    <section id="1">
+      <h2 class="subtitulo">Teoría</h2>
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>Conceptos Fundamentales</summary>
+            <p>
+              En JavaScript, if es una estructura de control de flujo que
+              permite ejecutar un bloque de código solo cuando se cumple una
+              condición.
+              <br />
+              Es la forma más básica de tomar decisiones en un programa.
+              <br />
+              <br />
+              Fundamento
+              <br />
+              <br />
+              Sintaxis:
+              <br />
+              if (condicion) {
+              <br />
+              // código que se ejecuta si la condición es verdadera
+              <br />
+              }
+              <br />
+              Condición: una expresión que se evalúa a truthy (verdadero) o
+              falsy (falso).
+              <br />
+              Puedes usar else para ejecutar un bloque alternativo si la
+              condición es falsa:
+              <br />
+              if (condicion) {
+              <br />
+              // verdadero
+              <br />
+              } else {
+              <br />
+              // falso
+              <br />
+              }
+              <br />
+              También puedes usar else if para verificar múltiples condiciones
+              en serie:
+              <br />
+              if (condicion1) {
+              <br />
+              // verdadero1
+              <br />
+              } else if (condicion2) {
+              <br />
+              // verdadero2
+              <br />
+              } else {
+              <br />
+              // ninguno de los anteriores
+              <br />
+              }
+              <br />
+              <br />
+              Notas útiles
+              <br />
+              <br />
+              Valores truthy/falsy comunes:
+              <br />
+              falsy: false, 0, "", null, undefined, NaN
+              <br />
+              truthy: casi todo lo demás (incluye objetos, arrays, string vacía
+              es falsy, así que "" no es truthy)
+              <br />
+              Los operadores de comparación habituales (== vs ===) y los
+              operadores lógicos (&&, ||, !) suelen combinarse dentro de la
+              condición.
+              <br />
+              <br />
+              Ejemplos rápidos
+              <br />
+              <br />
+              if simple:
+              <br />
+              if (edad >= 18) { console.log("Eres mayor de edad"); }
+              <br />
+              <br />
+              con else:
+              <br />
+              if (temperatura > 30) {
+              <br />
+              console.log("Hace calor");
+              <br />
+              } else {
+              <br />
+              console.log("Hace fresco");
+              <br />
+              }
+              <br />
+              <br />
+              con else if:
+              <br />
+              if (nota >= 90) {
+              <br />
+              console.log("A");
+              <br />
+              } else if (nota >= 80) {
+              <br />
+              console.log("B");
+              <br />
+              } else {
+              <br />
+              console.log("Necesita mejorar");
+              <br />
+              }
+            </p>
+          </details>
         </li>
-       </ol>
-      </details></li>
-</body>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+
+      <!-- /////////////////////////////////////// -->
+      <h2 class="subtitulo">Ejercicios</h2>
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>
+              Escribe un programa que lea una edad (variable edad) y:
+              <br />
+              si la edad es 18 o más, muestre "Bienvenido, puedes inscribirte".
+              <br />
+              si es menor de 18, muestre "Lo siento, necesitas ser mayor de
+              edad".
+            </summary>
+
+            <p>
+              const edad = 20;
+              <br />
+              if (edad >= 18) {
+              <br />
+              console.log("Bienvenido, puedes inscribirte");
+              <br />
+              } else {
+              <br />
+              console.log("Lo siento, necesitas ser mayor de edad"); }
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Dado un número n, usa if/else para:
+              <br />
+
+              si n es positivo, imprime "positivo"; si es negativo, imprime
+              "negativo"; si es 0, imprime "cero".
+            </summary>
+            <p>
+              const n = -5;
+              <br />
+              if (n > 0) {
+              <br />
+              console.log("positivo");
+              <br />
+              } else if (n < 0) {
+              <br />
+              console.log("negativo");
+              <br />
+              } else { console.log("cero"); }
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Dada una variable contraseña y verifica si coincide con la cadena
+              "secreto123".
+              <br />
+
+              Si coincide: imprime "Acceso concedido".
+              <br />
+              Si no coincide: imprime "Acceso denegado".
+            </summary>
+            <p>
+              const contrasena = "secreto123";
+              <br />
+              if (contrasena === "secreto123") {
+              <br />
+              console.log("Acceso concedido");
+              <br />
+              } else {
+              <br />
+              console.log("Acceso denegado"); }
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Dado una cantidad de productos cantidad:
+              <br />
+              si cantidad >= 10, aplica un descuento del 15% e imprime el precio
+              con descuento (asume precioUnitario = 9.99).
+              <br />
+              si cantidad < 10, imprime el precio total sin descuento.
+            </summary>
+            <p>
+              const cantidad = 12;
+              <br />
+              const precioUnitario = 9.99;
+              <br />
+              if (cantidad >= 10) {
+              <br />
+              const total = cantidad * precioUnitario;
+              <br />
+              const conDescuento = total * 0.85;
+              <br />
+              console.log("Total con descuento:", conDescuento.toFixed(2));
+              <br />
+              } else {
+              <br />
+              console.log("Total:", (cantidad * precioUnitario).toFixed(2)); }
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Dado una edad, imprime:
+              <br />
+              <br />
+
+              "Infancia" si 0 <= edad < 12
+              <br />
+              "Adolescencia" si 12 <= edad < 18
+              <br />
+              "Adulto" si 18 <= edad < 65
+              <br />
+              "Mayor" si edad >= 65
+              <br />
+              Si la edad no es válida (menor que 0), imprime "Edad inválida".
+            </summary>
+            <p>
+              const edad = 25;
+              <br />
+              if (edad < 0) {
+              <br />
+              console.log("Edad inválida");
+              <br />
+              } else if (edad < 12) {
+              <br />
+              console.log("Infancia");
+              <br />
+              } else if (edad < 18) {
+              <br />
+              console.log("Adolescencia");
+              <br />
+              } else if (edad < 65) {
+              <br />
+              console.log("Adulto");
+              <br />
+              } else {
+              <br />
+              console.log("Mayor");
+              <br />
+              }
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- ////////////////////////////////// -->
+    </section>
+  </body>
 </html>

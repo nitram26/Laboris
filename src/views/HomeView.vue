@@ -68,7 +68,7 @@
         <!-- ****************************** -->
         <li class="li">
           <details class="select">
-            <summary>Subir proyecto a GitHub </summary>
+            <summary> GitHub </summary>
             <a href="http://127.0.0.1:5503/src/CodigosHtml/home/SubirGithub.html" class="a" target="_blank">
               <h4>Proyecto en GitHub</h4>
             </a>

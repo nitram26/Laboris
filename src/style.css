@@ -1,6 +1,6 @@
 body{
-background-color: cadetblue;
- 
+background-color: antiquewhite;
+margin-left: 1em;
 }
 
 .img{
@@ -14,7 +14,7 @@ background-color: cadetblue;
 
 .li{
   border: 1px solid brown;
-  width: 100%;
+  width: 90%;
   margin-left: 1em;
   font-size: 1em;
   padding-left: 0.5em;
@@ -26,7 +26,6 @@ background-color: cadetblue;
   color: brown;
   font-style: italic;
   font-size: 1.5em;
-
 }
 
 .select{
@@ -57,6 +56,6 @@ background-color: cadetblue;
 }
 
 .laboris:hover {
-  background-color: #e0e0e0;
   cursor: pointer;
+  color: brown;
 }

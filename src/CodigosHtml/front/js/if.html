@@ -135,26 +135,23 @@
         <li class="li">
           <details class="select">
             <summary>
-              Escribe un programa que lea una edad (variable edad) y:
-              <br />
-              si la edad es 18 o más, muestre "Bienvenido, puedes inscribirte".
-              <br />
-              si es menor de 18, muestre "Lo siento, necesitas ser mayor de
-              edad".
+       Una atracción solo permite el acceso si la persona cumple **todas** estas condiciones: <br><br>
+
+- Tiene al menos 12 años  <br>
+- Mide más de 1.40 metros  <br>
+- No tiene problemas cardíacos (`tieneProblemasCardiacos = false`)
             </summary>
 
             <p>
-              const edad = 20;
-              <br />
-              if (edad >= 18) {
-              <br />
-              console.log("Bienvenido, puedes inscribirte");
-              <br />
-              } else {
-              <br />
-              console.log("Lo siento, necesitas ser mayor de edad"); }
-              <br />
-              <br />
+   let edad = 13;<br>
+let altura = 1.45;<br>
+let tieneProblemasCardiacos = false;<br><br>
+
+if (edad >= 12 && altura > 1.40 && !tieneProblemasCardiacos) {<br>
+  console.log("¡Puedes subir a la atracción!");<br>
+} else {<br>
+  console.log("No cumples con los requisitos para subir.");
+}
             </p>
           </details>
         </li>
@@ -162,54 +159,54 @@
         <li class="li">
           <details class="select">
             <summary>
-              Dado un número n, usa if/else para:
-              <br />
+            Escribe un programa que reciba una hora (en formato 24 horas) y determine si corresponde a: <br><br>
 
-              si n es positivo, imprime "positivo"; si es negativo, imprime
-              "negativo"; si es 0, imprime "cero".
+- Mañana (6 a 11)  <br>
+- Tarde (12 a 17)  <br>
+- Noche (18 a 23)  <br>
+- Madrugada (0 a 5)
             </summary>
-            <p>
-              const n = -5;
-              <br />
-              if (n > 0) {
-              <br />
-              console.log("positivo");
-              <br />
-              } else if (n < 0) {
-              <br />
-              console.log("negativo");
-              <br />
-              } else { console.log("cero"); }
-              <br />
-              <br />
-            </p>
+           <p>let hora = 14;
+
+if (hora >= 6 && hora <= 11) {<br>
+  console.log("Es mañana");<br>
+} else if (hora >= 12 && hora <= 17) {<br>
+  console.log("Es tarde");<br>
+} else if (hora >= 18 && hora <= 23) {<br>
+  console.log("Es noche");<br>
+} else if (hora >= 0 && hora <= 5) {<br>
+  console.log("Es madrugada");<br>
+} else {<br>
+  console.log("Hora inválida");
+}</p>
           </details>
         </li>
         <!-- ++++++++++++++++++++++++++++++ -->
         <li class="li">
           <details class="select">
             <summary>
-              Dada una variable contraseña y verifica si coincide con la cadena
-              "secreto123".
-              <br />
+           Crea un programa que reciba una calificación (número entre 0 y 100) y muestre el tipo de nota según la siguiente escala: <br><br>
 
-              Si coincide: imprime "Acceso concedido".
-              <br />
-              Si no coincide: imprime "Acceso denegado".
-            </summary>
-            <p>
-              const contrasena = "secreto123";
-              <br />
-              if (contrasena === "secreto123") {
-              <br />
-              console.log("Acceso concedido");
-              <br />
-              } else {
-              <br />
-              console.log("Acceso denegado"); }
-              <br />
-              <br />
-            </p>
+- 90 a 100: Excelente  <br>
+- 70 a 89: Aprobado  <br>
+- 50 a 69: Regular  <br>
+- Menos de 50: Reprobado<br>
+            </p></summary>
+
+            <p>let nota = 85; <br> <br>
+
+if (nota >= 90 && nota <= 100) { <br>
+  console.log("Excelente"); <br>
+} else if (nota >= 70 && nota < 90) { <br>
+  console.log("Aprobado"); <br>
+} else if (nota >= 50 && nota < 70) { <br>
+  console.log("Regular"); <br>
+} else if (nota >= 0 && nota < 50) { <br>
+  console.log("Reprobado"); <br>
+} else { <br>
+  console.log("Nota inválida"); <br>
+}</p>
+
           </details>
         </li>
         <!-- ++++++++++++++++++++++++++++++ -->
@@ -248,19 +245,21 @@
         <li class="li">
           <details class="select">
             <summary>
-              Dado una edad, imprime:
-              <br />
-              <br />
+          
+                Dado una edad, imprime:
+                <br />
+                <br />
 
-              "Infancia" si 0 <= edad < 12
-              <br />
-              "Adolescencia" si 12 <= edad < 18
-              <br />
-              "Adulto" si 18 <= edad < 65
-              <br />
-              "Mayor" si edad >= 65
-              <br />
-              Si la edad no es válida (menor que 0), imprime "Edad inválida".
+                "Infancia" si 0 <= edad < 12
+                <br />
+                "Adolescencia" si 12 <= edad < 18
+                <br />
+                "Adulto" si 18 <= edad < 65
+                <br />
+                "Mayor" si edad >= 65
+                <br />
+                Si la edad no es válida (menor que 0), imprime "Edad inválida".
+          
             </summary>
             <p>
               const edad = 25;

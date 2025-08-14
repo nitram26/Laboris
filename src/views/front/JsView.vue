@@ -195,7 +195,7 @@
               <a href="http://127.0.0.1:5503/src/CodigosHtml/front/js/if.html" class="a" target="_blank">
                 <h4>Ejercicios JS</h4>
               </a>
-              <img src="../assets/image " alt=" " class="img1">
+              <img src="../../assets/image/front/js/if250814.png " alt="if250814" class="img1">
               <p><br></p>
             </details>
           </li>

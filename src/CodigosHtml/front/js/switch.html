@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/src/assets/image/home/CERVERA.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../../style.css" />
+    <title>ELEMENTOS RÁPIDOS</title>
+  </head>
+  <body>
+    <h1></h1>
+    <section id="1">
+      <h2 class="subtitulo">Switch</h2>
+      <ul>
+         <li class="li">
+          <details class="select">
+            <summary>Teoría</summary>
+            <p>
+            switch es una estructura de control que permite ejecutar diferentes bloques de código según el valor de una expresión. <br>
+Es útil cuando tienes múltiples condiciones que derivan de la misma variable o expresión.
+            </p>
+            switch (expresión) {<br>
+  case valor1:<br>
+    // código a ejecutar si expresión === valor1<br>
+    break;<br>
+  case valor2:<br>
+    // código a ejecutar si expresión === valor2<br>
+    break;<br>
+  case valorN:<br>
+    // código a ejecutar si expresión === valorN<br>
+    break;<br>
+  default:<br>
+    // código a ejecutar si ninguno de los casos coincide <br>
+}
+    <br><br>
+    expresion: normalmente una variable o una expresión cuyo valor se compara con los case. <br>
+case valor: cada una de las posibles coincidencias. La comparación utiliza estrict equality (===). <br>
+break: detiene la ejecución y salta fuera del switch. Si se omite, se ejecutarán los siguientes case (caída o “fall-through”). <br>
+default: opcional. Se ejecuta si ninguna coincidencia se cumple. <br> <br>
+
+          </details>
+        </li>
+      </ul> <br><hr><br>
+      <!-- /////////////////////////////////////// -->
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>Dado un puntaje numérico score, imprime la categoría de rendimiento:</summary>
+            <p>
+                "Excelente" para score >= 90 <br>
+"Bueno" para score >= 75<br>
+"Regular" para score >= 60<br>
+"Bajo" para cualquier otro valor<br>
+              <br />
+              <br />
+            </p>
+            <p>const score = /* valor numérico */;<br>
+switch (true) {<br>
+  case score >= 90:<br>
+    console.log('Excelente');<br>
+    break;<br>
+  case score >= 75:<br>
+    console.log('Bueno');<br>
+    break;<br>
+  case score >= 60:<br>
+    console.log('Regular');<br>
+    break;<br>
+  default:<br>
+    console.log('Bajo');<br>
+}</p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Damos una variable comando que puede ser 'iniciar', 'parar', 'reiniciar' o 'status'. Ejecuta la función correspondiente para cada comando. Si no es ninguno de esos, imprime 'Comando desconocido'.</summary>
+            <p>
+                const comando = /* valor de comando */;<br>
+const accionar = {<br>
+  iniciar: () => console.log('Arrancando...'),<br>
+  parar: () => console.log('Parando...'),<br>
+  reiniciar: () => console.log('Reiniciando...'),<br>
+  status: () => console.log('Estado: OK')<br>
+}[comando];<br><br>
+
+if (accionar) accionar();<br>
+else console.log('Comando desconocido');
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Tenemos una variable código que puede ser 'A1', 'B2', 'C3' o cualquier otro. Por cada código, imprime el tipo de carnet:</summary>
+            <p>'A1' o 'A2' → "Carnet A" <br>
+'B1' o 'B2' → "Carnet B"<br>
+'C1' o 'C2' → "Carnet C"<br>
+Cualquier otro → "Carnet desconocido"<br>
+              <br />
+              <br />
+            </p>
+            <p>
+                const código = /* valor de código */; <br>
+switch (código) {<br>
+  case 'A1':<br>
+  case 'A2':<br>
+    console.log('Carnet A');<br>
+    break;<br>
+  case 'B1':<br>
+  case 'B2':<br>
+    console.log('Carnet B');<br>
+    break;<br>
+  case 'C1':<br>
+  case 'C2':<br>
+    console.log('Carnet C');<br>
+    break;<br>
+  default:<br>
+    console.log('Carnet desconocido');
+}
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Dado una variable estado que puede ser 'pendiente', 'en proceso', 'completado' o 'fallido', imprime un mensaje de estado:</summary>
+            <p>'pendiente' → "El proceso aún no ha comenzado." <br>
+'en proceso' → "El proceso está en curso."<br>
+'completado' → "Proceso finalizado con éxito."<br>
+'fallido' → "El proceso ha fallado."<br>
+Cualquier otro valor → "Estado no reconocido."
+              <br />
+              <br />
+            </p>
+            <p>
+    const estado = /* valor de estado */; <br>
+switch (estado) {<br>
+  case 'pendiente':<br>
+    console.log('El proceso aún no ha comenzado.');<br>
+    break;<br>
+  case 'en proceso':<br>
+    console.log('El proceso está en curso.');<br>
+    break;<br>
+  case 'completado':<br>
+    console.log('Proceso finalizado con éxito.');<br>
+    break;<br>
+  case 'fallido':<br>
+    console.log('El proceso ha fallado.');<br>
+    break;<br>
+  default:<br>
+    console.log('Estado no reconocido.');
+}
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>Una variable opcion puede tomar valores 'crear', 'editar', 'eliminar', 'ver'. Imprime una acción correspondiente:</summary>
+            <p>'crear' → "Creando elemento..." <br />
+'editar' → "Editando elemento..."<br />
+'eliminar' → "Eliminando elemento..."<br />
+'ver' → "Mostrando elementos..."<br />
+Cualquier otro → "Opción inválida. Intenta: crear, editar, eliminar, ver."
+              <br />
+              <br />
+            </p>
+            <p>
+                const opcion = /* valor de opción */; <br>
+switch (opcion) {<br>
+  case 'crear':<br>
+    console.log('Creando elemento...');<br>
+    break;<br>
+  case 'editar':<br>
+    console.log('Editando elemento...');<br>
+    break;<br>
+  case 'eliminar':<br>
+    console.log('Eliminando elemento...');<br>
+    break;<br>
+  case 'ver':<br>
+    console.log('Mostrando elementos...');<br>
+    break;<br>
+  default:<br>
+    console.log('Opción inválida. Intenta: crear, editar, eliminar, ver.');
+}
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p>
+              <br />
+              <br />
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- ////////////////////////////////// -->
+    </section>
+  </body>
+</html>

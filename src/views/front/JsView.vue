@@ -181,7 +181,7 @@
   <div id="section2" class="mt-1">
     <v-row class="mt-1 text-center">
       <v-col cols="12">
-        <h2 class="bg-pink-darken-4 pa-4"> DIRECTIVAS Y DATOS COMPLEJOS</h2>
+        <h2 class="bg-pink-darken-4 pa-4"> DIRECTIVAS, DATOS COMPLEJOS y ESTRUCTURAS DE CONTROL</h2>
       </v-col>
     </v-row>
 
@@ -211,6 +211,17 @@
             </details>
           </li>
           <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+                  <li class="li">
+            <details class="select">
+              <summary class="laboris">Switch</summary>
+              <a href="http://127.0.0.1:5503/src/CodigosHtml/front/js/switch.html" class="a" target="_blank">
+                <h4>Teoría y Ejercicios</h4>
+              </a>
+              <img src="../assets/image " alt=" " class="img1">
+              <p><br></p>
+            </details>
+          </li>
+          <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
           <li class="li">
             <details class="select">
               <summary class="laboris">FOR</summary>
@@ -233,17 +244,7 @@
             </details>
           </li>
           <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
-          <li class="li">
-            <details class="select">
-              <summary class="laboris"></summary>
-              <a href="" class="a" target="_blank">
-                <h4></h4>
-              </a>
-              <img src="../assets/image " alt=" " class="img1">
-              <p><br></p>
-            </details>
-          </li>
-          <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
+   
         </ol>
       </v-col>
       <v-col cols="6">
@@ -293,7 +294,7 @@
             <details class="select">
               <summary class="laboris">Tipo de Operadores</summary>
               <a href="http://127.0.0.1:5503/src/CodigosHtml/front/js/tipoDeOperadores.html" class="a" target="_blank">
-                <h4></h4>
+                <h4>Teoría y Ejercicios</h4>
               </a>
               <img src="../assets/image " alt=" " class="img1">
               <p><br></p>

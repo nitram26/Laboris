@@ -1,51 +1,157 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../style.css">
-  <title>JAVASCRIPT</title>
-<style>
-  body{
-    background-color: antiquewhite;
-  }
-  li{
-    border: brown 1px solid;
-    width: 50em;
-    margin: 0.5em;
-    padding: 0.3em;
-  }
-
-  .int{
-    width: 45em;
-  }
-</style>
-</head>
-<body>
-  <header class="header">
-    <span class="span1">JAVASCRIPT</span>
-    <a href="#alInicio"><img src="../media/CERVERA.png" alt="" class="img"></a>
-      </header>
-      <h1 class="h1">Ejercicios <br></h1>
-    <i>  <h4>Soluciones en CodigosHtml/ front/ js <br>Más ejercicios en image/ js traidos de Pseint</h4></i>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/src/assets/image/home/CERVERA.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../../style.css" />
+    <title>ELEMENTOS RÁPIDOS</title>
+  </head>
+  <body>
+    <h1></h1>
+    <section id="1">
+      <h2 class="subtitulo">Operador Ternario</h2>
       <!-- /////////////////////////////////////// -->
-      <section id="1">
-     <ol>
-  
-      <li>  <details class="select">
-        <summary>OPERADOR TERNARIO</summary>
-        <ol>
-          <li class="int" >Indica si un número dado es positivo o negativo. (El cero se considerará positivo).</li>
-          <li class="int" >Indica si un número entero dado es par o impar. (Entendemos el cero como par).</li>
-          <li class="int" >Determina si una letra dada es vocal o no. (escriba solo en minúscula y sin tildes).</li>
-          <li class="int" >Determina si un número dado es a la vez múltiplo de 2 y 3, o solo es múltiplo de 2, o solo es múltiplo de 3 o es múltiplo de otro número.</li>
-          <li class="int" >Determinar cuál es el menor de tres números dados.</li>
-          <li class="int" >Calcula el sueldo de un trabajador dado su sueldo base (5,600) y sabiendo que si ha trabajado más de 40 horas cobrará un 20% más.</li>
-          <li class="int" >Indica la calificación de un alumno (SOBRESALIENTE 20-18, NOTABLE 17-15, APROBADO 15-11, SUSPENSO 10-0) según su calificación numérica.</li>
-      </ol>
-        <p><br><br></p>
-      </details></li>
-      <!-- ************************************************************ -->
+      <ol>
+        <li class="li">
+          <details class="select">
+            <summary>
+              Indica si un número dado es positivo o negativo. (El cero se
+              considerará positivo).
+            </summary>
+            <p>
+           let num = -874	<br>
+	<br>
+let num1 = (num >0 )? 'positivo' : 'negativo'	<br>
+	<br>
+console.log(num1);	<br>
 
-</body>
+
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Indica si un número entero dado es par o impar. (Entendemos el
+              cero como par).
+            </summary>
+            <p>let num = -874	<br>
+	<br>
+let num1 = (num % 2 === 0 )? 'par' : 'impar'	<br>
+	<br>
+console.log(num1);	<br>
+	<br>
+</p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Determina si una letra dada es vocal o no. (escriba solo en
+              minúscula y sin tildes).
+            </summary>
+            <p>let letra = 'u'	<br>
+	<br>
+let letras = (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u')? 'vocal' : 'consonante'	<br>
+	<br>
+console.log(letras);	<br>
+
+	<br>
+</p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Determina si un número dado es a la vez múltiplo de 2 y 3, o solo
+              es múltiplo de 2, o solo es múltiplo de 3 o es múltiplo de otro
+              número.
+            </summary>
+            <p>
+              let num = 30	<br>
+	<br>
+let num1 = (num%2===0 && num%3===0)? 'múltiplo de 2 y 3': (num%3 === 0)? 'múltiplo de 3' : (num % 2 === 0)? ' múltiplo de 2' : ' num invalidado'	<br>
+	<br>
+console.log(num1);	<br>
+
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Determinar cuál es el menor de tres números dados.
+            </summary>
+            <p>let num = 3	<br>
+let num1 = 82	<br>
+let num2 = 17	<br>
+	<br>
+let num3 = (num > num1 && num > num2)?`Num es el mayor igual a: ${num}`  : (num1 > num && num1 > num2)?` num1 es el mayor igual a: ${num1}` : `el mayor es num2 igual a ${num2}`	<br>
+	<br>
+console.log(num3);	<br>
+</p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Calcula el sueldo de un trabajador dado su sueldo base (5,600) y
+              sabiendo que si ha trabajado más de 40 horas cobrará un 20% más.
+            </summary>
+            <p>let sueldo = 5600	<br>
+let extra = 0.2	<br>
+let horas = 52	<br>
+	<br>
+let pago = (horas >48)? `Ha trabajado mas de 48 horas cobrará ${sueldo*1.2}` : 'ha trabajado menos de 49 horas'	<br>
+	<br>
+console.log(pago);	<br>
+</p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary>
+              Indica la calificación de un alumno (SOBRESALIENTE 20-18, NOTABLE
+              17-15, APROBADO 15-11, SUSPENSO 10-0) según su calificación
+              numérica.
+            </summary>
+            <p>
+              let nota = 17	<br>
+	<br>
+let notas = 	<br>
+(nota>=18 && nota <=20)? 'Sobresaliente'	<br>
+ :(nota>=15 && nota <=17)? 'Notable'	<br>
+ :(nota>=11 && nota <=14)? 'Aprobado'	<br>
+ :(nota>=0 && nota <=10)? 'suspenso'	<br>
+: ' No valido'	<br>
+	<br>
+console.log(notas);	<br>
+	<br>
+
+            </p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+        <li class="li">
+          <details class="select">
+            <summary></summary>
+            <p></p>
+          </details>
+        </li>
+        <!-- ++++++++++++++++++++++++++++++ -->
+      </ol>
+      <!-- ////////////////////////////////// -->
+    </section>
+  </body>
 </html>

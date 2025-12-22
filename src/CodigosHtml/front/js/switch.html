@@ -49,12 +49,12 @@ default: opcional. Se ejecuta si ninguna coincidencia se cumple. <br> <br>
       <ol>
         <li class="li">
           <details class="select">
-            <summary>Dado un puntaje numérico score, imprime la categoría de rendimiento:</summary>
+            <summary>Dado un puntaje numérico score, imprime la categoría de rendimiento:
+            "Excelente" para score >= 90 <br>
+            "Bueno" para score >= 75<br>
+            "Regular" para score >= 60<br>
+            "Bajo" para cualquier otro valor<br></summary>
             <p>
-                "Excelente" para score >= 90 <br>
-"Bueno" para score >= 75<br>
-"Regular" para score >= 60<br>
-"Bajo" para cualquier otro valor<br>
               <br />
               <br />
             </p>
@@ -78,30 +78,44 @@ switch (true) {<br>
         <li class="li">
           <details class="select">
             <summary>Damos una variable comando que puede ser 'iniciar', 'parar', 'reiniciar' o 'status'. Ejecuta la función correspondiente para cada comando. Si no es ninguno de esos, imprime 'Comando desconocido'.</summary>
-            <p>
-                const comando = /* valor de comando */;<br>
-const accionar = {<br>
-  iniciar: () => console.log('Arrancando...'),<br>
-  parar: () => console.log('Parando...'),<br>
-  reiniciar: () => console.log('Reiniciando...'),<br>
-  status: () => console.log('Estado: OK')<br>
-}[comando];<br><br>
+            <p> let variable = 'reiniciar'	<br>
+	<br>
+switch (true) {	<br>
+    case variable==='status':  	<br>
+        console.log('Estado');	<br>
+        	<br>
+        break;	<br>
+    case variable === 'iniciar':	<br>
+        console.log('Iniciando...');	<br>
+        	<br>
+        break;	<br>
+    case variable === 'parar' :	<br>
+        console.log('Detenido');	<br>
+        	<br>
+        break;	<br>
+    case variable === 'reiniciar' :	<br>
+        console.log('Reiniciando...');	<br>
+        	<br>
+        break;	<br>
+	<br>
+    default:	<br>
+        console.log('Comando desconocido');	<br>
+        	<br>
+        break;	<br>
+}	<br>
 
-if (accionar) accionar();<br>
-else console.log('Comando desconocido');
-              <br />
-              <br />
             </p>
           </details>
         </li>
         <!-- ++++++++++++++++++++++++++++++ -->
         <li class="li">
           <details class="select">
-            <summary>Tenemos una variable código que puede ser 'A1', 'B2', 'C3' o cualquier otro. Por cada código, imprime el tipo de carnet:</summary>
-            <p>'A1' o 'A2' → "Carnet A" <br>
-'B1' o 'B2' → "Carnet B"<br>
-'C1' o 'C2' → "Carnet C"<br>
-Cualquier otro → "Carnet desconocido"<br>
+            <summary>Tenemos una variable código que puede ser 'A1', 'B2', 'C3' o cualquier otro. Por cada código, imprime el tipo de carnet:
+            'A1' o 'A2' → "Carnet A" <br>
+            'B1' o 'B2' → "Carnet B"<br>
+            'C1' o 'C2' → "Carnet C"<br>
+            Cualquier otro → "Carnet desconocido"<br></summary>
+            <p>
               <br />
               <br />
             </p>
@@ -129,12 +143,13 @@ switch (código) {<br>
         <!-- ++++++++++++++++++++++++++++++ -->
         <li class="li">
           <details class="select">
-            <summary>Dado una variable estado que puede ser 'pendiente', 'en proceso', 'completado' o 'fallido', imprime un mensaje de estado:</summary>
-            <p>'pendiente' → "El proceso aún no ha comenzado." <br>
-'en proceso' → "El proceso está en curso."<br>
-'completado' → "Proceso finalizado con éxito."<br>
-'fallido' → "El proceso ha fallado."<br>
-Cualquier otro valor → "Estado no reconocido."
+            <summary>Dado una variable estado que puede ser 'pendiente', 'en proceso', 'completado' o 'fallido', imprime un mensaje de estado:
+            'pendiente' → "El proceso aún no ha comenzado." <br>
+            'en proceso' → "El proceso está en curso."<br>
+            'completado' → "Proceso finalizado con éxito."<br>
+            'fallido' → "El proceso ha fallado."<br>
+            Cualquier otro valor → "Estado no reconocido."</summary>
+            <p>
               <br />
               <br />
             </p>
@@ -162,14 +177,13 @@ switch (estado) {<br>
         <!-- ++++++++++++++++++++++++++++++ -->
         <li class="li">
           <details class="select">
-            <summary>Una variable opcion puede tomar valores 'crear', 'editar', 'eliminar', 'ver'. Imprime una acción correspondiente:</summary>
-            <p>'crear' → "Creando elemento..." <br />
+            <summary>Una variable opción puede tomar valores 'crear', 'editar', 'eliminar', 'ver'. Imprime una acción correspondiente:
 'editar' → "Editando elemento..."<br />
 'eliminar' → "Eliminando elemento..."<br />
 'ver' → "Mostrando elementos..."<br />
-Cualquier otro → "Opción inválida. Intenta: crear, editar, eliminar, ver."
-              <br />
-              <br />
+Cualquier otro → "Opción inválida. Intenta: crear, editar, eliminar, ver."</summary>
+            <p>'crear' → "Creando elemento..." <br />
+            
             </p>
             <p>
                 const opcion = /* valor de opción */; <br>

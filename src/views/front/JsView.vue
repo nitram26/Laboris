@@ -58,7 +58,7 @@
         <!-- ++++++++++++++++++++++++++++++++++++++++++ -->
         <li class="li">
           <details class="select">
-            <summary class="laboris">Características y Gramática</summary>
+            <summary class="laboris">INITIUM Características y Gramática </summary>
             <a href="http://127.0.0.1:5503/src/CodigosHtml/front/js/caracteristicas.html" class="a" target="_blank">
               <h4>Teoría</h4>
             </a>

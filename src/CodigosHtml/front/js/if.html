@@ -1,308 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="/src/assets/image/home/CERVERA.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="../../../style.css" />
-    <title>ELEMENTOS RÁPIDOS</title>
-  </head>
-  <body>
-    <h1>IF</h1>
-    <section id="1">
-      <h2 class="subtitulo">Teoría</h2>
-      <ol>
-        <li class="li">
-          <details class="select">
-            <summary>Conceptos Fundamentales</summary>
-            <p>
-              En JavaScript, if es una estructura de control de flujo que
-              permite ejecutar un bloque de código solo cuando se cumple una
-              condición.
-              <br />
-              Es la forma más básica de tomar decisiones en un programa.
-              <br />
-              <br />
-              Fundamento
-              <br />
-              <br />
-              Sintaxis:
-              <br />
-              if (condicion) {
-              <br />
-              // código que se ejecuta si la condición es verdadera
-              <br />
-              }
-              <br />
-              Condición: una expresión que se evalúa a truthy (verdadero) o
-              falsy (falso).
-              <br />
-              Puedes usar else para ejecutar un bloque alternativo si la
-              condición es falsa:
-              <br />
-              if (condicion) {
-              <br />
-              // verdadero
-              <br />
-              } else {
-              <br />
-              // falso
-              <br />
-              }
-              <br />
-              También puedes usar else if para verificar múltiples condiciones
-              en serie:
-              <br />
-              if (condicion1) {
-              <br />
-              // verdadero1
-              <br />
-              } else if (condicion2) {
-              <br />
-              // verdadero2
-              <br />
-              } else {
-              <br />
-              // ninguno de los anteriores
-              <br />
-              }
-              <br />
-              <br />
-              Notas útiles
-              <br />
-              <br />
-              Valores truthy/falsy comunes:
-              <br />
-              falsy: false, 0, "", null, undefined, NaN
-              <br />
-              truthy: casi todo lo demás (incluye objetos, arrays, string vacía
-              es falsy, así que "" no es truthy)
-              <br />
-              Los operadores de comparación habituales (== vs ===) y los
-              operadores lógicos (&&, ||, !) suelen combinarse dentro de la
-              condición.
-              <br />
-              <br />
-              Ejemplos rápidos
-              <br />
-              <br />
-              if simple:
-              <br />
-              if (edad >= 18) { console.log("Eres mayor de edad"); }
-              <br />
-              <br />
-              con else:
-              <br />
-              if (temperatura > 30) {
-              <br />
-              console.log("Hace calor");
-              <br />
-              } else {
-              <br />
-              console.log("Hace fresco");
-              <br />
-              }
-              <br />
-              <br />
-              con else if:
-              <br />
-              if (nota >= 90) {
-              <br />
-              console.log("A");
-              <br />
-              } else if (nota >= 80) {
-              <br />
-              console.log("B");
-              <br />
-              } else {
-              <br />
-              console.log("Necesita mejorar");
-              <br />
-              }
-            </p>
-          </details>
-        </li>
-        <!-- ++++++++++++++++++++++++++++++ -->
-      </ol>
 
-      <!-- /////////////////////////////////////// -->
-      <h2 class="subtitulo">Ejercicios</h2>
-      <ol>
-        <li class="li">
-          <details class="select">
-            <summary>
-       Una atracción solo permite el acceso si la persona cumple **todas** estas condiciones: <br><br>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/src/assets/image/home/CERVERA.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../../../style.css" />
+  <title>ELEMENTOS RÁPIDOS</title>
+</head>
 
-- Tiene al menos 12 años  <br>
-- Mide más de 1.40 metros  <br>
-- No tiene problemas cardíacos (`tieneProblemasCardiacos = false`)
-            </summary>
+<body>
+  <h1>IF</h1>
+  <section id="1">
+    <h2 class="subtitulo">Teoría</h2>
+    <ol>
+      <li class="li">
+        <details class="select">
+          <summary>Conceptos Fundamentales</summary>
+          <p>
+            En JavaScript, if es una estructura de control de flujo que
+            permite ejecutar un bloque de código solo cuando se cumple una
+            condición.
+            <br />
+            Es la forma más básica de tomar decisiones en un programa.
+            <br />
+            <br />
+            Fundamento
+            <br />
+            <br />
+            Sintaxis:
+            <br />
+            if (condicion) {
+            <br />
+            // código que se ejecuta si la condición es verdadera
+            <br />
+            }
+            <br />
+            Condición: una expresión que se evalúa a truthy (verdadero) o
+            falsy (falso).
+            <br />
+            Puedes usar else para ejecutar un bloque alternativo si la
+            condición es falsa:
+            <br />
+            if (condicion) {
+            <br />
+            // verdadero
+            <br />
+            } else {
+            <br />
+            // falso
+            <br />
+            }
+            <br />
+            También puedes usar else if para verificar múltiples condiciones
+            en serie:
+            <br />
+            if (condicion1) {
+            <br />
+            // verdadero1
+            <br />
+            } else if (condicion2) {
+            <br />
+            // verdadero2
+            <br />
+            } else {
+            <br />
+            // ninguno de los anteriores
+            <br />
+            }
+            <br />
+            <br />
+            Notas útiles
+            <br />
+            <br />
+            Valores truthy/falsy comunes:
+            <br />
+            falsy: false, 0, "", null, undefined, NaN
+            <br />
+            truthy: casi todo lo demás (incluye objetos, arrays, string vacía
+            es falsy, así que "" no es truthy)
+            <br />
+            Los operadores de comparación habituales (== vs ===) y los
+            operadores lógicos (&&, ||, !) suelen combinarse dentro de la
+            condición.
+            <br />
+            <br />
+            Ejemplos rápidos
+            <br />
+            <br />
+            if simple:
+            <br />
+            if (edad >= 18) { console.log("Eres mayor de edad"); }
+            <br />
+            <br />
+            con else:
+            <br />
+            if (temperatura > 30) {
+            <br />
+            console.log("Hace calor");
+            <br />
+            } else {
+            <br />
+            console.log("Hace fresco");
+            <br />
+            }
+            <br />
+            <br />
+            con else if:
+            <br />
+            if (nota >= 90) {
+            <br />
+            console.log("A");
+            <br />
+            } else if (nota >= 80) {
+            <br />
+            console.log("B");
+            <br />
+            } else {
+            <br />
+            console.log("Necesita mejorar");
+            <br />
+            }
+          </p>
+        </details>
+      </li>
+      <!-- ++++++++++++++++++++++++++++++ -->
+    </ol>
 
-            <p>
-   let edad = 13;<br>
-let altura = 1.45;<br>
-let tieneProblemasCardiacos = false;<br><br>
+    <!-- /////////////////////////////////////// -->
+    <h2 class="subtitulo">Ejercicios</h2>
+    <ol>
+      <li class="li">
+        <details class="select">
+          <summary>
+            Una atracción solo permite el acceso si la persona cumple **todas** estas condiciones: <br><br>
 
-if (edad >= 12 && altura > 1.40 && !tieneProblemasCardiacos) {<br>
-  console.log("¡Puedes subir a la atracción!");<br>
-} else {<br>
-  console.log("No cumples con los requisitos para subir.");
-}
-            </p>
-          </details>
-        </li>
-        <!-- ++++++++++++++++++++++++++++++ -->
-        <li class="li">
-          <details class="select">
-            <summary>
-            Escribe un programa que reciba una hora (en formato 24 horas) y determine si corresponde a: <br><br>
+            - Tiene al menos 12 años <br>
+            - Mide más de 1.40 metros <br>
+            - No tiene problemas cardíacos (`tieneProblemasCardiacos = false`)
+          </summary>
 
-- Mañana (6 a 11)  <br>
-- Tarde (12 a 17)  <br>
-- Noche (18 a 23)  <br>
-- Madrugada (0 a 5)
-            </summary>
-           <p>let hora = 14;
+       <pre>
+        <code>
 
-if (hora >= 6 && hora <= 11) {<br>
-  console.log("Es mañana");<br>
-} else if (hora >= 12 && hora <= 17) {<br>
-  console.log("Es tarde");<br>
-} else if (hora >= 18 && hora <= 23) {<br>
-  console.log("Es noche");<br>
-} else if (hora >= 0 && hora <= 5) {<br>
-  console.log("Es madrugada");<br>
-} else {<br>
+          
+          let edad = 13;<br>
+          let altura = 1.45;<br>
+          let tieneProblemasCardíacos = false;<br><br>
+          
+          if (edad >= 12 && altura > 1.40 && !tieneProblemasCardíacos) {<br>
+            console.log("¡Puedes subir a la atracción!");<br>
+          } else {<br>
+            console.log("No cumples con los requisitos para subir.");
+          }
+        </code>
+      </pre>
+         
+        </details>
+      </li>
+      <!-- ++++++++++++++++++++++++++++++ -->
+      <li class="li">
+        <details class="select">
+          <summary>
+            Escribe un programa que reciba una hora (en formato 24 horas) y determine si corresponde a:
+            <br><br>
+            - Mañana (6 a 11) <br>
+            - Tarde (12 a 17) <br>
+            - Noche (18 a 23) <br>
+            - Madrugada (0 a 5)
+          </summary>
+
+          <pre>
+            <code>
+let hora = 14;
+
+if (hora >= 6 && hora  12) {
+  console.log("Es mañana");
+} else if (hora >= 12 && hora &lt;
+ 18) {
+  console.log("Es tarde");
+} else if (hora >= 18 && hora &lt;
+ 24) {
+  console.log("Es noche");
+} else if (hora >= 0 && hora &lt;
+ 6) {
+  console.log("Es madrugada");
+} else {
   console.log("Hora inválida");
-}</p>
-          </details>
-        </li>
-        <!-- ++++++++++++++++++++++++++++++ -->
-        <li class="li">
-          <details class="select">
-            <summary>
-           Crea un programa que reciba una calificación (número entre 0 y 100) y muestre el tipo de nota según la siguiente escala: <br><br>
+}
+</code>
+  </pre>
+        </details>
+      </li>
+      <!-- ++++++++++++++++++++++++++++++ -->
+      <li class="li">
+        <details class="select">
+          <summary>
+            Crea un programa que reciba una calificación (número entre 0 y 100) y muestre el tipo de nota según la
+            siguiente escala: <br><br>
 
-- 90 a 100: Excelente  <br>
-- 70 a 89: Aprobado  <br>
-- 50 a 69: Regular  <br>
-- Menos de 50: Reprobado<br>
-            </p></summary>
-
-            <p>let nota = 85; <br> <br>
-
-if (nota >= 90 && nota <= 100) { <br>
-  console.log("Excelente"); <br>
-} else if (nota >= 70 && nota < 90) { <br>
-  console.log("Aprobado"); <br>
-} else if (nota >= 50 && nota < 70) { <br>
-  console.log("Regular"); <br>
-} else if (nota >= 0 && nota < 50) { <br>
-  console.log("Reprobado"); <br>
-} else { <br>
-  console.log("Nota inválida"); <br>
-}</p>
-
-          </details>
-        </li>
-        <!-- ++++++++++++++++++++++++++++++ -->
-        <li class="li">
-          <details class="select">
-            <summary>
-              Dado una cantidad de productos cantidad:
-              <br />
-              si cantidad >= 10, aplica un descuento del 15% e imprime el precio
-              con descuento (asume precioUnitario = 9.99).
-              <br />
-              si cantidad < 10, imprime el precio total sin descuento.
-            </summary>
-            <p>
-              const cantidad = 12;
-              <br />
-              const precioUnitario = 9.99;
-              <br />
-              if (cantidad >= 10) {
-              <br />
-              const total = cantidad * precioUnitario;
-              <br />
-              const conDescuento = total * 0.85;
-              <br />
-              console.log("Total con descuento:", conDescuento.toFixed(2));
-              <br />
-              } else {
-              <br />
-              console.log("Total:", (cantidad * precioUnitario).toFixed(2)); }
-              <br />
-              <br />
+            - 90 a 100: Excelente <br>
+            - 70 a 89: Aprobado <br>
+            - 50 a 69: Regular <br>
+            - Menos de 50: Reprobado<br>
             </p>
-          </details>
-        </li>
-        <!-- ++++++++++++++++++++++++++++++ -->
-        <li class="li">
-          <details class="select">
-            <summary>
+          </summary>
+
+        <pre>
+          <code>
+              <h2>let nota = 85;  
+
+            if (nota >= 90 && nota &lt; 101) { 
+              console.log(); 
+              } else if (nota >= 70 && nota &lt; 90) { 
+                console.log("Aprobado"); 
+                } else if (nota >= 50 && nota &lt; 70) { 
+                  console.log("Regular"); 
+                  } else if (nota >= 0 && nota &lt; 50) { 
+                    console.log("Reprobado"); 
+                    } else { 
+                    console.log("Nota inválida"); 
+                    }</h2>
+          </code>
+        </pre>
+
+        </details>
+      </li>
+      <!-- ++++++++++++++++++++++++++++++ -->
+      <li class="li">
+        <details class="select">
+          <summary>
+            Dado una cantidad de productos cantidad:
+            <br />
+            si cantidad >= 10, aplica un descuento del 15% e imprime el precio
+            con descuento (asume precioUnitario = 9.99).
+            <br />
+            si cantidad &lt; 10, imprime el precio total sin descuento. </summary>
+              <p>
+                const cantidad = 12;
+                <br />
+                const precioUnitario = 9.99;
+                <br />
+                if (cantidad >= 10) {
+                <br />
+                const total = cantidad * precioUnitario;
+                <br />
+                const conDescuento = total * 0.85;
+                <br />
+                console.log("Total con descuento:", conDescuento.toFixed(2));
+                <br />
+                } else {
+                <br />
+                console.log("Total:", (cantidad * precioUnitario).toFixed(2)); }
+                <br />
+                <br />
+              </p>
+        </details>
+      </li>
+      <!-- ++++++++++++++++++++++++++++++ -->
+      <li class="li">
+        <details class="select">
+          <summary>
+
+            Dado una edad, imprime:
+            <br />
+            <br />
+
+         <pre>
+          <code>
+               "Infancia" si 0
+            &lt;= edad &lt; 12 
+            "Adolescencia" si 12
+            &lt;= edad &lt; 18 
+            "Adulto" si 18
+            &lt;= edad &lt; 65 
+            "Mayor" si edad >= 65
+            
+            Si la edad no es válida (menor que 0), imprime "Edad inválida".
+          </code>
+         </pre>
+
+          </summary>
+         
+   <pre>
+    <code>
+               const edad = 25;
           
-                Dado una edad, imprime:
-                <br />
-                <br />
-
-                "Infancia" si 0 <= edad < 12
-                <br />
-                "Adolescencia" si 12 <= edad < 18
-                <br />
-                "Adulto" si 18 <= edad < 65
-                <br />
-                "Mayor" si edad >= 65
-                <br />
-                Si la edad no es válida (menor que 0), imprime "Edad inválida".
+            if (edad
+            &lt; 0) { 
+            console.log("Edad inválida");
           
-            </summary>
-            <p>
-              const edad = 25;
-              <br />
-              if (edad < 0) {
-              <br />
-              console.log("Edad inválida");
-              <br />
-              } else if (edad < 12) {
-              <br />
-              console.log("Infancia");
-              <br />
-              } else if (edad < 18) {
-              <br />
-              console.log("Adolescencia");
-              <br />
-              } else if (edad < 65) {
-              <br />
-              console.log("Adulto");
-              <br />
-              } else {
-              <br />
-              console.log("Mayor");
-              <br />
-              }
-              <br />
-              <br />
-            </p>
-          </details>
-        </li>
-        <!-- ++++++++++++++++++++++++++++++ -->
-        <li class="li">
-          <details class="select">
-            <summary></summary>
-            <p>
-              <br />
-              <br />
-            </p>
-          </details>
-        </li>
-        <!-- ++++++++++++++++++++++++++++++ -->
-      </ol>
-      <!-- ////////////////////////////////// -->
-    </section>
-  </body>
+            } else if (edad
+            &lt; 12) { 
+            console.log("Infancia");
+          
+            } else if (edad
+            &lt; 18) { 
+            console.log("Adolescencia");
+          
+            } else if (edad
+            &lt; 65) { 
+            console.log("Adulto");
+          
+            } else {
+          
+            console.log("Mayor");
+          
+            }
+          
+          
+    </code>
+   </pre>
+        
+        </details>
+      </li>
+      <!-- ++++++++++++++++++++++++++++++ -->
+      <li class="li">
+        <details class="select">
+          <summary></summary>
+          <p>
+            <br />
+            <br />
+          </p>
+        </details>
+      </li>
+      <!-- ++++++++++++++++++++++++++++++ -->
+    </ol>
+    <!-- ////////////////////////////////// -->
+  </section>
+</body>
+
 </html>

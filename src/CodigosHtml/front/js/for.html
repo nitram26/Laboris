@@ -22,13 +22,17 @@
    
      <li class="li">  <details class="select">
         <summary>Escribe todos los números enteros comprendidos entre el 0 y el 100 (incluidos), de uno en uno, y en orden creciente</summary>
-      <p>
-        for (let index = 0; index < 101; index++) {	<br>
-    console.log(index); 	<br>
-}	<br>
-	<br>
+   <pre>
+    <code>
+     
+        for (let index = 0; index &lt; 101; index++) {	
+    console.log(index); 	
+}	
+	
 
-      </p>
+ 
+    </code>
+   </pre>
       </details></li>
       <!-- ************************************************************ -->
      <li class="li">  <details class="select">
@@ -41,114 +45,123 @@
       <!-- ************************************************************ -->
      <li class="li">  <details class="select">
         <summary>Suma todos los números comprendidos entre los dos números enteros que indique el usuario (sin incluirlos)</summary>
-     <p>let num1 = parseInt(prompt("Ingrese un número entero"));	<br>
-let num2 = parseInt(prompt("Ingrese otro número entero"));	<br>
-let summa = 0;	<br>
-	<br>
-if (num1 < num2) {	<br>
-  for (let index = num1 + 1; index < num2; index++) {	<br>
-    summa += index;	<br>
-    console.log(summa);	<br>
-  }	<br>
-} else {	<br>
-  for (let index = num2; index < num1; index++) {	<br>
-    summa += index;	<br>
-    console.log(summa);	<br>
-  }	<br>
-}	<br>
-</p>
+<pre>
+  <code>
+  let num1 = parseInt(prompt("Ingrese un número entero"));	
+let num2 = parseInt(prompt("Ingrese otro número entero"));	
+let summa = 0;	
+	
+if (num1 &lt; num2) {	
+  for (let index = num1 + 1; index &lt; num2; index++) {	
+    summa += index;	
+    console.log(summa);	
+  }	
+} else {	
+  for (let index = num2; index &lt; num1; index++) {	
+    summa += index;	
+    console.log(summa);	
+  }	
+}	
+
+  </code>
+</pre>
 
       </details></li>
       <!-- ************************************************************ -->
      <li class="li">  <details class="select">
         <summary>Escribe una función llamada "sumaArreglo" que reciba un arreglo de números y retorne la suma de todos sus elementos.</summary>
-        <p>
+<pre>
+  <code>
  
-//MODO1	<br>
-const array1 = [1, 2, 3, 4, 5, 6];	<br>
-let sumar1 = 0;	<br>
-for (let index = 0; index < array1.length; index++) {	<br>
-  sumar1 = sumar1 + array1[index];	<br>
-}	<br>
-console.log(sumar1);	<br>
-	<br>
-//MODO2	<br>
-const array2 = [1, 2, 3, 4, 5, 6, 7];	<br>
-let sumar2 = 0;	<br>
-for (let num of array2) {	<br>
-  sumar2 += num;	<br>
-}	<br>
-	<br>
-console.log(sumar2);	<br>
-	<br>
-//MODO3	<br>
-const array3 = [1, 2, 3, 4, 5, 6, 7, 8];	<br>
-let sumar3 = 0;	<br>
-	<br>
-array3.forEach((num) => {	<br>
-  sumar3 += num;	<br>
-});	<br>
-	<br>
-console.log(sumar3);	<br>
-	<br>
+//MODO1	
+const array1 = [1, 2, 3, 4, 5, 6];	
+let sumar1 = 0;	
+for (let index = 0; index &lt; array1.length; index++) {	
+  sumar1 = sumar1 + array1[index];	
+}	
+console.log(sumar1);	
+	
+//MODO2	
+const array2 = [1, 2, 3, 4, 5, 6, 7];	
+let sumar2 = 0;	
+for (let num of array2) {	
+  sumar2 += num;	
+}	
+	
+console.log(sumar2);	
+	
+//MODO3	
+const array3 = [1, 2, 3, 4, 5, 6, 7, 8];	
+let sumar3 = 0;	
+	
+array3.forEach((num) => {	
+  sumar3 += num;	
+});	
+	
+console.log(sumar3);	
+	
 
-        </p>
+      
+  </code>
+</pre>
       
       </details></li>
       <!-- ************************************************************ -->
      <li class="li">  <details class="select">
         <summary>Escribe una función llamada "contarVocales" que reciba una frase y retorne el número de vocales que contiene</summary>
-      <p>
-        MODO1 <BR></BR>
-        function contarVocales(frase) {	<br>
-  // Definimos las vocales (tanto mayúsculas como minúsculas)	<br>
-  const vocales = "aeiouáéíóúäëïöüAEIOUÁÉÍÓÚÄËÏÖÜ";	<br>
-  let count = 0;	<br>
-	<br>
-  for (let i = 0; i < frase.length; i++) {	<br>
-    if (vocales.indexOf(frase[i]) !== -1) {	<br>
-      count++;	<br>
-    }	<br>
-  }	<br>
-	<br>
-  return count;	<br>
-}	<br>
-	<br>
-// Ejemplo con tu frase	<br>
-let frase = "Hola, soy Cristian y me gusta el JavaScript";	<br>
-console.log(contarVocales(frase)); // Imprime el número de vocales	<br>
-	<br>
-// ////////////////////////////////////////|	<br>
-MODO2 <BR></BR>
-function contarVocales(frase) {	<br>
-  // Expresión regular para buscar todas las vocales (incluye mayúsculas)	<br>
-  const vocales = frase.match(/[aeiouáéíóúAEIOUÁÉÍÓÚ]/g);	<br>
-	<br>
-  // Si no hay vocales, retorna 0	<br>
-  return vocales ? vocales.length : 0;	<br>
-}	<br>
-	<br>
-let frases = "Hola, soy Cristian y me gusta el JavaScript";	<br>
-console.log(contarVocales(frases)); 	<br>
-//////////////////////////////////////////////	<br>
-	<br>
-  MODO3 <BR></BR>
-function contarVocales(frase) {	<br>
-  // Definimos las vocales	<br>
-  let vocales = "aeiouáéíóúAEIOUÁÉÍÓÚ";	<br>
-  let contador = 0;	<br>
-	<br>
-  // Recorremos cada carácter de la frase	<br>
-  for (let letra of frase) {	<br>
-    if (vocales.includes(letra)) {	<br>
-      contador++;	<br>
-    }	<br>
-  }	<br>
-	<br>
-  return contador;	<br>
-}	<br>
-	<br>
-let frasse = "Hola, soy Cristian y me gusta el JavaScript"; <br><br>
+<pre>
+  <code>
+       
+        MODO1
+        function contarVocales(frase) {	
+  // Definimos las vocales (tanto mayúsculas como minúsculas)	
+  const vocales = "aeiouáéíóúäëïöüAEIOUÁÉÍÓÚÄËÏÖÜ";	
+  let count = 0;	
+	
+  for (let i = 0; i &lt; frase.length; i++) {	
+    if (vocales.indexOf(frase[i]) !== -1) {	
+      count++;	
+    }	
+  }	
+	
+  return count;	
+}	
+	
+// Ejemplo con tu frase	
+let frase = "Hola, soy Cristian y me gusta el JavaScript";	
+console.log(contarVocales(frase)); // Imprime el número de vocales	
+	
+// ////////////////////////////////////////|	
+MODO2 
+function contarVocales(frase) {	
+  // Expresión regular para buscar todas las vocales (incluye mayúsculas)	
+  const vocales = frase.match(/[aeiouáéíóúAEIOUÁÉÍÓÚ]/g);	
+	
+  // Si no hay vocales, retorna 0	
+  return vocales ? vocales.length : 0;	
+}	
+	
+let frases = "Hola, soy Cristian y me gusta el JavaScript";	
+console.log(contarVocales(frases)); 	
+//////////////////////////////////////////////	
+	
+  MODO3 
+function contarVocales(frase) {	
+  // Definimos las vocales	
+  let vocales = "aeiouáéíóúAEIOUÁÉÍÓÚ";	
+  let contador = 0;	
+	
+  // Recorremos cada carácter de la frase	
+  for (let letra of frase) {	
+    if (vocales.includes(letra)) {	
+      contador++;	
+    }	
+  }	
+	
+  return contador;	
+}	
+	
+let frasse = "Hola, soy Cristian y me gusta el JavaScript"; 
 console.log(contarVocales(frasse));
       </p>
       </details></li>
@@ -156,23 +169,25 @@ console.log(contarVocales(frasse));
      <li class="li">  <details class="select">
         <summary>Escribe una función que genere los n primeros números de la secuencia de Fibonacci</summary>
       <p>
-        function generarFibonacci(n) {	<br>
-  const secuencia = [];	<br>
-	<br>
-  for (let i = 0; i < n; i++) {	<br>
-    if (i === 0) {	<br>
-      secuencia.push(0);	<br>
-    } else if (i === 1) {	<br>
-      secuencia.push(1);	<br>
-    } else {	<br>
-      secuencia.push(secuencia[i - 1] + secuencia[i - 2]);	<br>
-    }	<br>
-  }	<br>
-  return secuencia;	<br>
-}	<br>
-	<br>
+        function generarFibonacci(n) {	
+  const secuencia = [];	
+	
+  for (let i = 0; i &lt; n; i++) {	
+    if (i === 0) {	
+      secuencia.push(0);	
+    } else if (i === 1) {	
+      secuencia.push(1);	
+    } else {	
+      secuencia.push(secuencia[i - 1] + secuencia[i - 2]);	
+    }	
+  }	
+  return secuencia;	
+}	
+	
 console.log(generarFibonacci(10)); 
-      </p>
+    
+  </code>
+</pre>
       </details></li>
       <!-- ************************************************************ -->
      <li class="li">  <details class="select">
@@ -180,11 +195,5 @@ console.log(generarFibonacci(10));
       
       </details></li>
       <!-- ************************************************************ -->
-    
-  
-
-
-
- 
 </body>
 </html>
